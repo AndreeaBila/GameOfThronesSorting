@@ -11,11 +11,12 @@
 .navbar-text {
     font-size: 25px;
     margin-top: 20px; 
+    color: #D85D5A;
 }
 
 .navbar {
     max-height: 70px;
-    background-color: black;
+    background-color: #EBE2D7;
 
 }
 
