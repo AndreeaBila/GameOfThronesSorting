@@ -8,6 +8,7 @@
 
 .navbar-brand {
     font-size: 30px;
+    font-family: 
     margin-top: 25px;
     color: #A1040C !important; 
 }
@@ -30,4 +31,8 @@
     height: 80px;
     width: 700px;
     margin: auto;
+}
+
+.content {
+    margin-top: -20px;
 }
