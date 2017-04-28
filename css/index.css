@@ -1,0 +1,21 @@
+
+
+.logo {
+  top: 1px;
+  display: inline-block;
+  line-height: 1;
+  margin: 7px 0px 7px;
+  width: 55px;
+}
+
+.navbar-text {
+    font-size: 25px;
+    margin-top: 20px; 
+}
+
+.navbar {
+    max-height: 70px;
+    background-color: black;
+
+}
+
