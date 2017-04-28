@@ -6,10 +6,16 @@
     width: 55px;
 }
 
-.navbar-text {
-    font-size: 25px;
-    margin-top: 20px; 
-    color: #D85D5A;
+.navbar-brand {
+    font-size: 30px;
+    margin-top: 25px;
+    color: #A1040C !important; 
+}
+
+.navbar-text a {
+    color: #A1040C !important;
+    font-size: 17px;
+    margin-top: -5px;
 }
 
 .navbar {
