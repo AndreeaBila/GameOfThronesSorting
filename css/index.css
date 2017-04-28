@@ -1,11 +1,9 @@
-
-
 .logo {
-  top: 1px;
-  display: inline-block;
-  line-height: 1;
-  margin: 7px 0px 7px;
-  width: 55px;
+    top: 1px;
+    display: inline-block;
+    line-height: 1;
+    margin: 7px 0px 7px;
+    width: 55px;
 }
 
 .navbar-text {
@@ -17,6 +15,13 @@
 .navbar {
     max-height: 70px;
     background-color: #EBE2D7;
-
 }
 
+
+/* Carousle image styling*/
+
+.carousel-image {
+    height: 80px;
+    width: 700px;
+    margin: auto;
+}
