@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 2020px;
+    max-width: 2900px;
     min-width: 300px;
     width: 101.5%;
     margin: 0 auto;
@@ -21,6 +21,7 @@ body {
 .navRight {
     float: right;
     margin-top: 5px;
+    margin-right: 10px;
 }
 
 .nav ul {
@@ -31,7 +32,7 @@ body {
     display: inline-block;
 }
 
-.nav ul li a:link, .nav ul li a:visited, .button, button:active {
+.nav ul li a:link, .nav ul li a:visited, .button {
     text-decoration: none;
     color: #E4C575;
     font-size: 100%;

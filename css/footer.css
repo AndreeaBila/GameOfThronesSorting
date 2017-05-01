@@ -1,4 +1,5 @@
-.container {
+.footer {
+    margin: 0 auto;
     width: 101.5%;
     background-image: url('../img/new.jpg');
     box-shadow: 10px 10px 60px 20px #181818;
@@ -6,6 +7,7 @@
     text-shadow: 1.2px 1.2px #202020;
     margin-left: -8px;
     height: 80px;
+    margin-top: 70px;
 }
 
 .footerRight {

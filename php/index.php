@@ -15,6 +15,9 @@
         <link href="../css/index.css" rel="stylesheet">
         <link rel="shortcut icon" href="../img/westermore2.ico">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/toLogin.js"></script>
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -27,7 +30,7 @@
             <nav class="nav">
                 <div class="navRight">
                     <ul>
-                        <li><a href="#">Log In</a></li>
+                        <li><a href="login.php">Log In</a></li>
                     </ul>
                 </div>
 
@@ -49,7 +52,7 @@
     
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!--<script src="../Bootstrap/js/bootstrap.min.js"></script>-->
     </body>

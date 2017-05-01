@@ -1,4 +1,4 @@
-<footer class="container">
+<footer class="footer">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
 
     <div class="footerRight">
