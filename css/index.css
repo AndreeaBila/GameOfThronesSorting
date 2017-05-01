@@ -4,6 +4,8 @@ body {
 }
 
 .container {
+    max-width: 2020px;
+    min-width: 300px;
     width: 101.5%;
     margin: 0 auto;
     margin-left: -8px;
@@ -52,7 +54,7 @@ body {
 }
 
 .mainContent {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .mainContent img {
@@ -64,8 +66,8 @@ body {
     border: none;    
     background-image: url("../img/woodTexture.png");
     width: 30%;
-    margin-top: 80px;
-    height: 80px;
+    margin-top: 60px;
+    height: 100px;
     margin-left: 35%;
     border-radius: 10px;
     font-size: 130%;
