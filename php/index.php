@@ -49,7 +49,7 @@
 
             </div>
         </div>
-    
+        <?php include 'footer.php'; ?>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     
