@@ -13,6 +13,7 @@
         //the email is unique
         //we can proceed with the registration process
         register($db, $tempUser);
+        echo "Success";
     }
 
 
@@ -40,6 +41,7 @@
         //create a query to insert the information in the database and use prepared statemetns
         $query = "INSERT INTO Users VALUES(NULL, ?, $tempUser->password, $tempUser->salt, ?, ?, ?, 0);";
         $stmt = $db->prepare($query);
-        $stmt->bind_param("s")
+        $stmt->bind_param("ssss", $tempUser->name, $tempUser->email, $tempUser->title, $tempUser->dob);
+        $stmt->execute() or die("An error has occured and the signup process was unsuccesful!");
     }
 ?>
