@@ -1,11 +1,10 @@
 .footer {
     margin: 0 auto;
-    width: 101.5%;
+    width: 100%;
     background-image: url('../img/new.jpg');
-    box-shadow: 10px 10px 60px 20px #181818;
+    box-shadow: 10px 10px 60px 20px #000000;
     color: #690404;
     text-shadow: 1.2px 1.2px #202020;
-    margin-left: -8px;
     height: 80px;
     margin-top: 70px;
 }
@@ -19,3 +18,88 @@
 .footerLeft {
     padding: 15px;
 }
+
+.clear {
+    clear: both;
+}
+
+@media screen 
+and (min-width: 300px) 
+and (max-width: 400px)
+and (orientation: portrait) {
+    .footer {
+    height: 50px;
+    margin-top: 85px;
+}
+
+    .footerRight {
+        margin-right: 0px;
+    }
+
+    .footerRight img {
+        width: 35px;
+    }
+
+    .footerLeft {
+        font-size: 50%;
+        padding: 12px;
+    }
+}
+
+@media screen 
+and (min-width: 300px) 
+and (max-width: 500px)
+and (orientation: landscape) {
+    .footer {
+        height: 60px;
+        margin-top: 60px;
+    }
+
+    .footerRight {
+        padding: 6px;
+        margin-right: 0px;
+    }
+
+    .footerRight img {
+        width: 50px;
+    }
+
+    .footerLeft {
+        font-size: 70%;
+        padding: 13px;
+    }
+}
+
+@media screen 
+and (min-width: 401px) 
+and (max-width: 620px)
+and (orientation: portrait) {
+    .footer {
+        height: 60px;
+        margin-top: 250px;
+    }
+
+    .footerRight {
+        padding: 9px;
+        margin-right: 0px;
+    }
+
+    .footerRight img {
+        width: 40px;
+    }
+
+    .footerLeft {
+        font-size: 70%;
+        padding: 12px;
+    }
+}
+
+@media screen 
+and (min-width: 621px) 
+and (max-width: 800px)
+and (orientation: portrait) {
+    .footer {
+        margin-top: 400px;
+    }
+}
+

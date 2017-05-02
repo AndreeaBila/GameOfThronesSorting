@@ -6,9 +6,8 @@ body {
 .container {
     max-width: 2900px;
     min-width: 300px;
-    width: 101.5%;
+    width: 100%;
     margin: 0 auto;
-    margin-left: -8px;
     margin-top: -8px;
 }
 
