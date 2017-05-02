@@ -14,6 +14,8 @@
         //we can proceed with the registration process
         register($db, $tempUser);
         echo "Success";
+        //if the registration process was sucessful move the user to the next page in the structure
+        header("Location: main.php");
     }
 
 
