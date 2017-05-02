@@ -136,9 +136,16 @@
                 <input type="date" name="signupDoB" placeholder="Date of Birth">
                 <select id="signupTitle" placeholder="Title">
                     <option value="" disabled selected>Title</option>
+                    <option value="andal">Andal</option>
                     <option value="lady">Lady</option>
                     <option value="lord">Lord</option>
+                    <option value="sir">Sir</option>
                     <option value="king">King</option>
+                    <option value="queen">Queen</option>
+                    <option value="prince">Prince</option>
+                    <option value="princess">Princess</option>
+                    <option value="khal">Khal</option>
+                    <option value="khaleesi">Khaleesi</option>
                 </select>
                 <input type="submit" id="signupButton" value="Sign Up">
 

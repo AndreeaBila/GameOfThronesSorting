@@ -1,28 +1,29 @@
-.footer {
-    margin: 0 auto;
-    width: 100%;
-    background-image: url('../img/new.jpg');
-    box-shadow: 10px 10px 60px 20px #000000;
-    color: #690404;
-    text-shadow: 1.2px 1.2px #202020;
-    height: 80px;
-    margin-top: 70px;
+.myFooter {
+    margin: 0 auto !important;
+    width: 100% !important;
+    background-image: url('../img/new.jpg') !important;
+    box-shadow: 10px 10px 60px 20px #000000 !important;
+    color: #690404 !important;
+    text-shadow: 1.2px 1.2px #202020 !important;
+    height: 80px !important;
+    margin-top: 70px !important;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 
-.footerRight {
-    margin-right: 10px; 
-    float: right;
-    padding: 8px;
+.myFooterRight {
+    margin-right: 10px !important; 
+    float: right !important;
+    padding: 8px !important;
 }
 
-.footerLeft {
-    padding: 15px;
+.myFooterLeft {
+    padding: 30px !important;
 }
 
-.clear {
+.myClear {
     clear: both;
 }
-
+/*
 @media screen 
 and (min-width: 300px) 
 and (max-width: 400px)
@@ -102,4 +103,4 @@ and (orientation: portrait) {
         margin-top: 400px;
     }
 }
-
+*/
