@@ -8,15 +8,15 @@
         <title>Westermore</title>
 
         <!-- Bootstrap -->
-        <!--<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="../../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- FontAwesome -->
-        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="../../FontAwesome/css/font-awesome.min.css">-->
         <!-- My CSS -->
         <link href="../css/login.css" rel="stylesheet">
         <link rel="shortcut icon" href="../img/westermore2.ico">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="../js/login.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/login.js"></script>-->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,13 +26,131 @@
         <![endif]-->
     </head>
     <body>
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../img/carousel/1re.jpg" alt="First slide">
+                                <div class="carousel-caption">
+                                    <p>Join our community</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../img/carousel/2re.jpg" alt="Second slide">
+                                <div class="carousel-caption">
+                                    <p>Find out which family suits you best based on your personality</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../img/carousel/3re.jpg" alt="Third slide">
+                                <div class="carousel-caption">
+                                    <p>Discover more people like you, with common interests</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../img/carousel/4re.jpg" alt="Fourth slide">
+                                <div class="carousel-caption">
+                                    <p>Discuss Game of Thrones theories</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../img/carousel/5re.jpg" alt="Fifth slide">
+                                <div class="carousel-caption">
+                                    <p>Find out more about Westeros</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../img/carousel/6re.jpg" alt="Sixth slide">
+                                <div class="carousel-caption">
+                                    <p>Find out more about your favorite characters</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../img/carousel/7re.jpg" alt="Seventh slide">
+                                <div class="carousel-caption">
+                                    <p>Learn more about yourself</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../img/carousel/10re.jpg" alt="Eighth slide">
+                                <div class="carousel-caption">
+                                    <p>Be part of a great community</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../img/carousel/9re.jpg" alt="Ninth slide">
+                                <div class="carousel-caption">
+                                    <p>Gain more friends</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                    <div class="main-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h1>Find Your Westerosi Family</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="push">
+        </div>
+
+        <div class="container">
+            <form class="login" action="">
+                <h2>Log In</h2>
+
+                <input type="email" name="loginEmail" id="loginEmail" placeholder="Email">
+                <input type="password" name="loginPassword" id="loginPassword" placeholder="Password">
+                <input type="submit" id="loginButton" value="Log In">
+
+                <button id="loginCreateAccount">Create Account</button>
+            </form>
+
+            <form class="signup" action="">
+                <h2>Create Account</h2>
+
+                <input type="text" name="signupName" placeholder="First Name">
+                <input type="email" name="signupEmail" id="signupEmail" placeholder="Email">
+                <input type="password" name="signupPassword" id="signupPassword" placeholder="Password">
+                <input type="password" name="signupRePassword" id="signupPassword" placeholder="Retype Password">
+                <input type="date" name="signupDoB" placeholder="Date of Birth">
+                <select id="signupTitle" placeholder="Title">
+                    <option value="">Lady</option>
+                    <option value="">Lord</option>
+                </select>
+                <input type="submit" id="signupButton" value="Sign Up">
+
+                <button id="signupReturnToLogin">Already Have an Account</button>
+            </form>
+            
+        </div>
+
         
         <?php include 'footer.php'; ?>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!--<script src="../Bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="../../Bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>

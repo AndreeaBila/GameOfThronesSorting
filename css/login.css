@@ -1,0 +1,56 @@
+body {
+    /*background-image: url("../img/pattern2.jpg");*/
+    background-color: #202020;
+}
+
+.main-text {
+    position: absolute;
+    top: 10px;
+    width: 96.66666666666666%;
+    color: #FFF;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-clear {
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+
+.btn-clear:hover {
+    color: #000;
+    background-color: #FFF;
+}
+
+.item p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+
+.container {
+    box-shadow: 10px 10px 40px black;
+}
+
+input[type="email"], input[type="text"], input[type="password"], input[type="submit"], input[type="date"], button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.login button, .signup button {
+    border: none;
+    color: white;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.login h2, .signup h2 {
+    text-align: center;
+    margin: 30px 0px 30px;
+}
