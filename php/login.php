@@ -116,7 +116,7 @@
         </div>
 
         <div class="container">
-            <form class="login" action="">
+            <form class="login" id="loginForm">
                 <h2>Log In</h2>
 
                 <input type="email" name="loginEmail" id="loginEmail" placeholder="Email">
@@ -126,7 +126,7 @@
                 <button id="loginCreateAccount">Create Account</button>
             </form>
 
-            <form class="signup" action="">
+            <form class="signup" id="signupForm">
                 <h2>Create Account</h2>
 
                 <input type="text" name="signupName" placeholder="First Name">
@@ -135,8 +135,10 @@
                 <input type="password" name="signupRePassword" id="signupPassword" placeholder="Retype Password">
                 <input type="date" name="signupDoB" placeholder="Date of Birth">
                 <select id="signupTitle" placeholder="Title">
-                    <option value="">Lady</option>
-                    <option value="">Lord</option>
+                    <option value="" disabled selected>Title</option>
+                    <option value="lady">Lady</option>
+                    <option value="lord">Lord</option>
+                    <option value="king">King</option>
                 </select>
                 <input type="submit" id="signupButton" value="Sign Up">
 
