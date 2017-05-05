@@ -37,12 +37,12 @@ body {
     box-shadow: 10px 10px 40px black;
 }
 
-select, 
-input[type="email"], 
-input[type="text"], 
-input[type="password"], 
-input[type="submit"], 
-input[type="date"], 
+select,
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="date"],
 button {
     display: block;
     margin: 0 auto;
@@ -50,7 +50,8 @@ button {
     width: 40%;
 }
 
-.login button, .signup button {
+.login button,
+.signup button {
     border: none;
     color: #3f3f3f;
     background-color: transparent;
@@ -58,15 +59,17 @@ button {
     font-weight: bold;
 }
 
-.login h2, .signup h2 {
+.login h2,
+.signup h2 {
     text-align: center;
     margin: 30px 0px 30px;
 }
 
-input[type="email"], 
-input[type="text"], 
-input[type="password"],  
-input[type="date"], select {
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
     padding: 5px;
     background-color: transparent;
     color: grey;
@@ -75,7 +78,7 @@ input[type="date"], select {
     border-radius: 3px;
 }
 
-input[type="submit"] {
+input[type="button"] {
     border-radius: 7px;
     border: none;
     padding: 8px;
@@ -86,7 +89,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    transform: scale(0.95,0.95);
+    transform: scale(0.95, 0.95);
 }
 
 select {

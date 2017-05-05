@@ -121,7 +121,7 @@
 
                 <input type="email" name="loginEmail" id="loginEmail" placeholder="Email">
                 <input type="password" name="loginPassword" id="loginPassword" placeholder="Password">
-                <input type="submit" id="loginButton" value="Log In">
+                <input type="button" id="loginButton" value="Log In">
 
                 <button id="loginCreateAccount" type="button">Create Account</button>
             </form>
@@ -147,7 +147,7 @@
                     <option value="khal">Khal</option>
                     <option value="khaleesi">Khaleesi</option>
                 </select>
-                <input type="submit" id="signupButton" value="Sign Up">
+                <input type="button" id="signupButton" value="Sign Up">
 
                 <button id="signupReturnToLogin" type="button" >Already Have an Account</button>
             </form>
