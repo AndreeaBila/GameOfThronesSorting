@@ -38,10 +38,10 @@
         $tempUser->salt = sha1(time());
         $tempUser->password = sha1($tempUser->salt.'--'.$tempUser->password);
         //create a query to insert the information in the database and use prepared statemetns
-        $query = "INSERT INTO Users VALUES(NULL, ?, $tempUser->password, $tempUser->salt, ?, ?, ?, 1);";
+        $query = "INSERT INTO Users VALUES(NULL, ?, ?, ?, ?, ?, ?, '1');";
         echo json_encode($query);
         $stmt = $db->prepare($query);
-        $stmt->bind_param("ssss", $tempUser->name, $tempUser->email, $tempUser->title, $tempUser->dob);
+        $stmt->bind_param("ssssss", $tempUser->name, $tempUser->password, $tempUser->salt,$tempUser->email, $tempUser->title, $tempUser->dob);
         $stmt->execute() or die("An error has occured and the signup process was unsuccesful!");
     }
 ?>
