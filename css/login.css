@@ -41,7 +41,7 @@ select,
 input[type="email"],
 input[type="text"],
 input[type="password"],
-input[type="submit"],
+input[type="button"],
 input[type="date"],
 button {
     display: block;
@@ -88,7 +88,7 @@ input[type="button"] {
     color: #897A74;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     transform: scale(0.95, 0.95);
 }
 
