@@ -134,7 +134,7 @@
                 <input type="password" name="signupPassword" id="signupPassword" placeholder="Password">
                 <input type="password" name="signupRePassword" id="signupPassword" placeholder="Retype Password">
                 <input type="date" name="signupDoB" placeholder="Date of Birth">
-                <select id="signupTitle" placeholder="Title">
+                <select id="signupTitle" placeholder="Title" name="signupTitle">
                     <option value="" disabled selected>Title</option>
                     <option value="andal">Andal</option>
                     <option value="lady">Lady</option>

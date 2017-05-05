@@ -19,14 +19,12 @@
     }
 
 
-
-
     //method needed to check if the given email by the user is unique
     function checkEmail($db, $tempUser){
         //retrieve every email address from the database
-        $response = $db->query("SELECT E-mail FROM Users;");
+        $response = $db->query("SELECT 'E-mail' FROM Users;");
         //loop thorugh the email addresses and check if there are duplciates
-        while($row = fetch_array($response, MYSQLI_ASSOC)){
+        while($row = mysqli_fetch_array($response, MYSQLI_ASSOC)){
             if($row['E-mail'] == $tempUser->email){
                 return false;
             }
@@ -39,9 +37,9 @@
         //create a salt and use it to thas the user's password
         $tempUser->salt = sha1(time());
         $tempUser->password = sha1($tempUser->salt.'--'.$tempUser->password);
-
         //create a query to insert the information in the database and use prepared statemetns
-        $query = "INSERT INTO Users VALUES(NULL, ?, $tempUser->password, $tempUser->salt, ?, ?, ?, 0);";
+        $query = "INSERT INTO Users VALUES(NULL, ?, $tempUser->password, $tempUser->salt, ?, ?, ?, 1);";
+        echo json_encode($query);
         $stmt = $db->prepare($query);
         $stmt->bind_param("ssss", $tempUser->name, $tempUser->email, $tempUser->title, $tempUser->dob);
         $stmt->execute() or die("An error has occured and the signup process was unsuccesful!");

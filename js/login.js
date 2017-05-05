@@ -15,6 +15,10 @@ $('#signupReturnToLogin').click(function() {
     $('#signupForm').hide(500);
 });
 
+$('#signupButton').click(function() {
+    createAccount();
+});
+
 
 
 
@@ -31,7 +35,6 @@ $('#signupReturnToLogin').click(function() {
 function createAccount() {
     //get the form into a json format
     var formString = $('#signupForm').serialize();
-
     //create an ajax connection with the database
     $.ajax({
         data: formString,
@@ -40,9 +43,11 @@ function createAccount() {
         success: function(response) {
             //don't do anything
             //php will move the user to the next page in the structure
+            console.log(response);
         },
         error: function(response) {
             //display an alert staiting that the singup information was wrong
+            console.log(response);
         }
     });
 }
