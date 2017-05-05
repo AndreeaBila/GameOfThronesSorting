@@ -16,11 +16,12 @@
     $stmt->fetch();
     //create a new hash for the given password
     $tempPassword = sha1($salt.'--'.$password);
+    echo $dbPassword;
     if($tempPassword == $dbPassword){
-        echo $tempPassword;
+        echo $email;
         header("Location: main.php");
     }else{
-        die($tempPassword);
+        die($email);
     }
 
 ?>
