@@ -8,17 +8,19 @@
 
     //look for an entry in the database with the given email
     //if none exists give an errror
-    $query = "SELECT Password, Salt FROM Users WHERE(E-mail = ?);";
+    $query = "SELECT Password, Salt FROM Users WHERE(Email = ?);";
     $stmt = $db->prepare($query);
     $stmt->bind_param("s", $email);
-    $response = $stmt->execute();
-    $response = fetch_array($response, MYSQLI_ASSOC) or die("No entry has been found!");
+    $stmt->execute();
+    $stmt->bind_result($dbPassword, $salt);
+    $stmt->fetch();
     //create a new hash for the given password
-    $tempPassword = sha1($response['Salt'].'--'.$password);
-    if($tempPassword == $response['Password']){
+    $tempPassword = sha1($salt.'--'.$password);
+    if($tempPassword == $dbPassword){
+        echo $tempPassword;
         header("Location: main.php");
     }else{
-        die("Error");
+        die($tempPassword);
     }
 
 ?>
