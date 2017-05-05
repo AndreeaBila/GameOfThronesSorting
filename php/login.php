@@ -123,7 +123,7 @@
                 <input type="password" name="loginPassword" id="loginPassword" placeholder="Password">
                 <input type="submit" id="loginButton" value="Log In">
 
-                <button id="loginCreateAccount">Create Account</button>
+                <button id="loginCreateAccount" type="button">Create Account</button>
             </form>
 
             <form class="signup" id="signupForm">
@@ -149,7 +149,7 @@
                 </select>
                 <input type="submit" id="signupButton" value="Sign Up">
 
-                <button id="signupReturnToLogin">Already Have an Account</button>
+                <button id="signupReturnToLogin" type="button" >Already Have an Account</button>
             </form>
             
         </div>
@@ -161,5 +161,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
     </body>
 </html>

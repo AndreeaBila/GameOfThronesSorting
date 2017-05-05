@@ -3,7 +3,17 @@
 //blah blah
 //andreea e 0 :))
 
-
+//hide the signup form and only display the login form
+//swtich between them using the provided links
+$('#signupForm').hide();
+$('#loginCreateAccount').click(function() {
+    $('#loginForm').hide(500);
+    $('#signupForm').show(500);
+});
+$('#signupReturnToLogin').click(function() {
+    $('#loginForm').show(500);
+    $('#signupForm').hide(500);
+});
 
 
 
