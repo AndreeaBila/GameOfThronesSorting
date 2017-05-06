@@ -37,11 +37,13 @@
             <input type="button" name="submitSurveyAnswearButton" id="submitSurveyAnswearButton" value="Submit">
         </div>
 
-        <div class="questionLeft">
+        <section class="questionLeft">
+            <br>
             <div class="questionDiv">
                 <p class="questionText" id="surveyQuestion">Which is your favorite house</p>
             </div>   
-        </div>
+            <<br>
+        </section>
 
         <div class="clear"></div>
     
