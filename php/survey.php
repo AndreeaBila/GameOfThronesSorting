@@ -27,6 +27,23 @@
     </head>
     <body>
        
+        <div class="answearRight">
+            <form>
+                <input type="radio" name="answear" id="firstAnswear"><span>Stark</span><br>
+                <input type="radio" name="answear" id="secondAnswear"><span>Lannister</span><br>
+                <input type="radio" name="answear" id="thirdAnswear"><span>Targaryen</span><br>
+            </form>
+            
+            <input type="button" name="submitSurveyAnswearButton" id="submitSurveyAnswearButton" value="Submit">
+        </div>
+
+        <div class="questionLeft">
+            <div class="questionDiv">
+                <p class="questionText" id="surveyQuestion">Which is your favorite house</p>
+            </div>   
+        </div>
+
+        <div class="clear"></div>
     
     <!--jQuery (necessary for Bootstrap's JavaScript plugins) 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->

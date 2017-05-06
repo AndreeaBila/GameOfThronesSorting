@@ -1,0 +1,49 @@
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.answearRight {
+    float: right;
+    width: 40%;
+    background-color: darkgray;
+}
+
+.answearRight form{
+    background-color: grey;
+    width: 40%;
+    margin: 49% 25% ;
+    padding: 5%;
+    text-align: justify;
+    font-size: 120%;
+}
+
+.answearRight input[type="radio"] {
+    margin: 10px;
+}
+
+.questionLeft {
+    width: 60%;
+    text-align: center;
+    background-image: url('../img/ollena.jpg');
+}
+
+.questionText {
+  
+    padding: 5%;
+    width: 40%;
+    margin: 40% 25% ;
+    text-align: center;
+    font-size: 120%;
+    background-color: grey;
+}
+
+.answearRight input[type="button"] {
+    float: right;
+    /*vertical-align: bottom;*/
+    /*margin: 10% 10% 0% 0%;*/
+}

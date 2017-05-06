@@ -1,6 +1,8 @@
 body {
     /*background-image: url("../img/pattern2.jpg");*/
     background-color: #202020;
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .container {
