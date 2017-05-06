@@ -23,7 +23,8 @@
 .myClear {
     clear: both;
 }
-/*
+
+
 @media screen 
 and (min-width: 300px) 
 and (max-width: 400px)
@@ -33,15 +34,15 @@ and (orientation: portrait) {
     margin-top: 85px;
 }
 
-    .footerRight {
+    .myFooterRight {
         margin-right: 0px;
     }
 
-    .footerRight img {
+    .myFooterRight img {
         width: 35px;
     }
 
-    .footerLeft {
+    .myFooterLeft {
         font-size: 50%;
         padding: 12px;
     }
@@ -51,21 +52,21 @@ and (orientation: portrait) {
 and (min-width: 300px) 
 and (max-width: 500px)
 and (orientation: landscape) {
-    .footer {
+    .myFooter {
         height: 60px;
         margin-top: 60px;
     }
 
-    .footerRight {
+    .myFooterRight {
         padding: 6px;
         margin-right: 0px;
     }
 
-    .footerRight img {
+    .myFooterRight img {
         width: 50px;
     }
 
-    .footerLeft {
+    .myFooterLeft {
         font-size: 70%;
         padding: 13px;
     }
@@ -75,21 +76,21 @@ and (orientation: landscape) {
 and (min-width: 401px) 
 and (max-width: 620px)
 and (orientation: portrait) {
-    .footer {
+    .myFooter {
         height: 60px;
         margin-top: 250px;
     }
 
-    .footerRight {
+    .myFooterRight {
         padding: 9px;
         margin-right: 0px;
     }
 
-    .footerRight img {
+    .myFooterRight img {
         width: 40px;
     }
 
-    .footerLeft {
+    .myFooterLeft {
         font-size: 70%;
         padding: 12px;
     }
@@ -99,8 +100,8 @@ and (orientation: portrait) {
 and (min-width: 621px) 
 and (max-width: 800px)
 and (orientation: portrait) {
-    .footer {
+    .myFooter {
         margin-top: 400px;
     }
 }
-*/
+
