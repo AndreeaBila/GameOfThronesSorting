@@ -2,30 +2,33 @@
     //file needed to create a user account on the database
 
     //create database connection
-    $db = new mysqli('localhost', 'root', '', 'westermoredb') or die("Couldn't realize database connection");
+    $db = new mysqli('localhost', 'root', '', 'westermoredb') or die("Error");
     //import the user file to have access to the user class
     require_once "User.php";
     //retrieve the data from the front end application and prevent XSS attacks
     $tempUser = new User(0,strip_tags($_POST['signupName']), strip_tags($_POST['signupPassword']), '', strip_tags($_POST['signupEmail']), strip_tags($_POST['signupTitle']), strip_tags($_POST['signupDoB']), 0);
 
     //verify if the given email adress is unique
-    if(checkEmail($db, $tempUser)){
+    if(checkEmail($db, $tempUser) == true){
         //the email is unique
         //we can proceed with the registration process
-        register($db, $tempUser);
-        echo "Success";
-        //if the registration process was sucessful move the user to the next page in the structure
-        header("Location: main.php");
+        if(register($db, $tempUser) == true){
+            echo "Success";
+        }else{
+            echo "Error";
+        }
+    }else{
+        echo "Error";
     }
 
 
     //method needed to check if the given email by the user is unique
     function checkEmail($db, $tempUser){
         //retrieve every email address from the database
-        $response = $db->query("SELECT 'E-mail' FROM Users;");
+        $response = $db->query("SELECT Email FROM Users;");
         //loop thorugh the email addresses and check if there are duplciates
         while($row = mysqli_fetch_array($response, MYSQLI_ASSOC)){
-            if($row['E-mail'] == $tempUser->email){
+            if($row['Email'] == $tempUser->email){
                 return false;
             }
         }
@@ -42,6 +45,7 @@
         echo json_encode($query);
         $stmt = $db->prepare($query);
         $stmt->bind_param("ssssss", $tempUser->name, $tempUser->password, $tempUser->salt,$tempUser->email, $tempUser->title, $tempUser->dob);
-        $stmt->execute() or die("An error has occured and the signup process was unsuccesful!");
+        $stmt->execute() or die("Error");
+        return true;
     }
 ?>

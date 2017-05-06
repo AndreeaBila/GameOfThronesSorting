@@ -15,8 +15,22 @@ $('#signupReturnToLogin').click(function() {
     $('#signupForm').hide(500);
 });
 
+//script that will hide every alert when the page is loaded
+$('.alert').hide();
 
+//script that runs when the log in buttton is clicked
+$('#loginButton').click(function() {
+    signIn();
+});
 
+//script that will run when the sing up button is clicked
+$('#signupButton').click(function() {
+    if ($('#signupPassword').val() == $('#signupRePassword').val()) {
+        createAccount();
+    } else {
+        $('#signup_passwordAlert').show(300);
+    }
+});
 
 //SIGN UP SCRIPT
 //call this method when the user presses the sign up button and wants to create an account on the server
@@ -34,10 +48,16 @@ function createAccount() {
             //don't do anything
             //php will move the user to the next page in the structure
             console.log(response);
+            if (response == "Error") {
+                $('#signup_generalAlert').show(300);
+            } else {
+                window.location.href = '../php/main.php';
+            }
         },
         error: function(response) {
             //display an alert staiting that the singup information was wrong
             console.log(response);
+            $('#signup_generalAlert').show(300);
         }
     });
 }
@@ -56,11 +76,16 @@ function signIn() {
             //don't do anything
             //php will move the user to the desired webpage
             console.log("Success: " + response);
-            window.location.href = '../php/main.php';
+            if (response == "Error") {
+                $('#login_emailAlert').show(400);
+            } else {
+                window.location.href = '../php/main.php';
+            }
         },
         error: function(response) {
             //display an alert staiting that the login information was wrong
             console.log("Error: " + response);
+            $('#login_emailAlert').show(400);
         }
     });
 }
