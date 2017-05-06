@@ -15,16 +15,6 @@ $('#signupReturnToLogin').click(function() {
     $('#signupForm').hide(500);
 });
 
-$('#loginButton').click(function() {
-    signIn();
-});
-
-
-
-
-
-
-
 
 
 
@@ -65,11 +55,12 @@ function signIn() {
         success: function(response) {
             //don't do anything
             //php will move the user to the desired webpage
-            console.log(response);
+            console.log("Success: " + response);
+            window.location.href = '../php/main.php';
         },
         error: function(response) {
             //display an alert staiting that the login information was wrong
-            console.log(response);
+            console.log("Error: " + response);
         }
     });
 }
