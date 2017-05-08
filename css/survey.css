@@ -4,7 +4,7 @@ body {
 }
 
 .question-section {
-   background-image: url("got2.jpg");
+   background-image: url("../img/got2.jpg");
    background-size: 100%;
 }
 
@@ -138,7 +138,7 @@ html, body, .question-section, .answear-section {
 }
 
 .my-btn {
-    background-image: url("woodTexture.png");
+    background-image: url("../img/woodTexture.png");
     box-shadow: 10px 10px 40px black;
     color: #E4C575;
 }
