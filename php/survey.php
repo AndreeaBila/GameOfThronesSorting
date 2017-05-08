@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Title</title>
+        <title>Westermore Survey</title>
 
         <!-- Bootstrap -->
         <link href="../../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +13,7 @@
         <!--<link rel="stylesheet" href="../../FontAwesome/css/font-awesome.min.css">-->
         <!-- My CSS -->
         <link href="../css/survey.css" rel="stylesheet">
-        <!--<link rel="shortcut icon" href="../img/.ico">-->
+        <link rel="shortcut icon" href="../img/westermore2.ico">
 
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="../js/actions.js"></script>-->
