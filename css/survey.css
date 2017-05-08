@@ -1,56 +1,164 @@
 body {
-    margin: 0px !important;
-    padding: 0px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    color: #333333;
 }
 
-.clear {
-    clear: both;
+.question-section {
+   background-image: url("got2.jpg");
+   background-size: 100%;
 }
 
-.answearRight {
-    float: right;
-    width: 40%;
-    background-color: darkgray;
+.answear-section {
+    background-color: #221511;
 }
 
-.questionLeft {
-    width: 60%;
-    background-color: lightgray;
+@media screen 
+  and (max-width: 1420px)
+  and (min-width: 1000px) {
+    .question-section {
+        width: 60%;
+        background-size: cover;
+    }
 
+    .answear-section{
+        width: 40%;
+    }
 }
 
-.questionLeft img {
-    width: 100%;
-    max-height: 920px;
+@media screen 
+  and (max-width: 999.999px)
+  and (min-width: 710px) {
+    .question-section {
+        width: 60%;
+        background-size: cover;
+    }
+
+    .answear-section{
+        width: 40%;
+    }
 }
 
-.answearRight form{
-    background-color: grey;
-    width: 40%;
-    margin: 49% 25% ;
-    padding: 5%;
-    text-align: justify;
-    font-size: 120%;
+@media screen 
+  and (max-width: 709.999px)
+  and (min-width: 450px) {
+    .question-section {
+        width: 60%;
+        background-size: cover;
+    }
+
+    .answear-section{
+        width: 40%;
+    }
 }
 
-.answearRight input[type="radio"] {
-    margin: 10px;
+@media screen 
+  and (max-width: 449.999px)
+  and (min-width: 280px) {
+    .question-section {
+        width: 60%;
+        background-size: cover;
+    }
+
+    .answear-section{
+        width: 40%;
+    }
 }
 
-.answearRight input[type="button"] {
-    float: right;
-    vertical-align: bottom;
-    margin: 10% 10% 0% 0%;
+html, body, .question-section, .answear-section {
+    min-height: 100%;
+    height:100%;
 }
 
-.questionLeft div {
-    position: relative;
-    background-color: grey;
-    margin: 49% 25% 49%;
-    padding: 5%;
-    width: 40%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 120%;
-    margin-top: 200px;
+.question-div {
+    padding: 40% 30%;
+    color: #E5DFD2;
+    font-size: 200%;
 }
+
+.answear-form {
+    padding: 50% 10%;;
+    font-size: 140%;
+    color: #E5DFD2;
+}
+
+@media screen 
+  and (max-width: 1420px)
+  and (min-width: 1000px) {
+    .question-div {
+    padding: 50% 15% 45%;
+    font-size: 180%;
+    }
+
+    .answear-form {
+        padding: 65% 10% 40%;
+        font-size: 140%;
+    }
+}
+
+@media screen 
+  and (max-width: 999.999px)
+  and (min-width: 710px) {
+   .question-div {
+    padding: 70% 15%;
+    font-size: 170%;
+    }
+
+    .answear-form {
+        padding: 100% 10% 20%;
+        font-size: 130%;
+    } 
+}
+
+@media screen 
+  and (max-width: 709.999px)
+  and (min-width: 450px) {
+    .question-div {
+        padding: 90% 5%;
+        font-size: 130%;
+    }
+
+    .answear-form {
+        padding: 125% 7% 20%;
+        font-size: 110%;
+    } 
+}
+
+@media screen 
+  and (max-width: 449.999px)
+  and (min-width: 280px) {
+    .question-div {
+        padding: 120% 1%;
+        font-size: 110%;
+    }
+
+    .answear-form {
+        padding: 165% 1%;
+        font-size: 100%;
+    } 
+}
+
+.my-btn {
+    background-image: url("woodTexture.png");
+    box-shadow: 10px 10px 40px black;
+    color: #E4C575;
+}
+
+@media screen 
+  and (max-width: 1440px)
+  and (min-width: 280px) {
+    .my-btn {
+        margin-top: 28%;
+    }
+}
+
+
+@media screen 
+  and (max-width: 600px)
+  and (min-width: 280px) {
+    .my-btn {
+       width: 70%;
+       height: 35px;
+       font-size: 92%;
+    }
+}
+
