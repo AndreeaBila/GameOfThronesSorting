@@ -44,6 +44,7 @@
         </section>
 
         <section class="pull-left col-md-7 text-center fill question-section">
+            <!--<div class="message">Get sorted into your House</div>-->
             <div class="question-div">
                 <p class="question-p" id="question">Which do you find more important?</p>
             </div>

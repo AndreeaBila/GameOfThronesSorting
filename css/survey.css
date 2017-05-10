@@ -205,3 +205,8 @@ label {
     background: url("../img/wood.png") no-repeat;
     background-position: 0 0; 
 }*/
+
+.message {
+    color: red;
+    background-color: black;
+}
