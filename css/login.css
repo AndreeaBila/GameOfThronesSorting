@@ -97,3 +97,9 @@ input[type="button"]:hover {
 select {
     background-color: #202020;
 }
+
+.alert-custom {
+    width: 40% !important;
+    margin: 0 auto;
+    margin-top: 5px;
+}

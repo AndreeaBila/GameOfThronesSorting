@@ -32,6 +32,11 @@ $('#signupButton').click(function() {
     }
 });
 
+//this function will close the alert that was displayed when the cross button is clicked
+$('a.close').click(function() {
+    $(this).parent().hide();
+});
+
 //SIGN UP SCRIPT
 //call this method when the user presses the sign up button and wants to create an account on the server
 //verify if his passwords match and handle the process

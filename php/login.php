@@ -121,8 +121,8 @@
 
                 <input type="email" name="loginEmail" id="loginEmail" placeholder="Email">
                 <input type="password" name="loginPassword" id="loginPassword" placeholder="Password">
-                <div class="alert alert-danger alert-dismissable" id="login_emailAlert">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <div class="alert alert-danger alert-dismissable alert-custom" id="login_emailAlert">
+                    <a class="close" aria-label="close">&times;</a>
                     <strong>Error!</strong> The e-mail or password are incorrect.
                 </div>
                 <input type="button" id="loginButton" value="Log In">
@@ -134,15 +134,15 @@
                 <h2>Create Account</h2>
 
                 <input type="text" name="signupName" placeholder="First Name">
-                <div class="alert alert-danger alert-dismissable" id="signup_generalAlert">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <div class="alert alert-danger alert-dismissable alert-custom" id="signup_generalAlert">
+                    <a class="close" aria-label="close">&times;</a>
                     <strong>Error!</strong> We have encountered a problem.
                 </div>
                 <input type="email" name="signupEmail" id="signupEmail" placeholder="Email">
                 <input type="password" name="signupPassword" id="signupPassword" placeholder="Password">
                 <input type="password" name="signupRePassword" id="signupRePassword" placeholder="Retype Password">
-                <div class="alert alert-warning alert-dismissable" id="signup_passwordAlert">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <div class="alert alert-warning alert-dismissable alert-custom" id="signup_passwordAlert">
+                    <a class="close" aria-label="close">&times;</a>
                     <strong>Warning!</strong> The two passwords do not match.
                 </div>
                 <input type="text" name="signupDoB" onfocus="(this.type='date')" placeholder="Date of Birth">
