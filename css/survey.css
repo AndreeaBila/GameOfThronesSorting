@@ -145,7 +145,7 @@ html, body, .question-section, .answear-section {
 
 @media screen 
   and (max-width: 1440px)
-  and (min-width: 280px) {
+  and (min-width: 600px) {
     .my-btn {
         margin-top: 28%;
     }
@@ -153,7 +153,7 @@ html, body, .question-section, .answear-section {
 
 
 @media screen 
-  and (max-width: 600px)
+  and (max-width: 599.999px)
   and (min-width: 280px) {
     .my-btn {
        width: 70%;
