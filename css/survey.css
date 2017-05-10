@@ -1,17 +1,22 @@
+
+/*Over all font styling */
 body {
     font-family: 'Times New Roman', Times, serif !important;
     color: #333333;
 }
 
+/*Question Image Background Fit*/
 .question-section {
    background-image: url("../img/got.jpg");
    background-size: 100%;
 }
 
+/*Answear Background*/
 .answear-section {
     background-color: #221511;
 }
 
+/*Responsive Media Queries For the Background*/
 @media screen 
   and (max-width: 1420px)
   and (min-width: 1000px) {
@@ -64,23 +69,43 @@ body {
     }
 }
 
+/*Radio Icons Styling*/
+.fa-circle {
+    margin-right: 10px;
+    font-size: 85%;
+    color: #FBEBC7;
+}
+
+/*Fitting Height to 100%*/
 html, body, .question-section, .answear-section {
     min-height: 100%;
     height:100%;
 }
 
+/*Styling & Positioning the Question*/
 .question-div {
-    padding: 40% 30%;
+    padding: 33% 25%;
     color: #E5DFD2;
-    font-size: 200%;
+    font-size: 210%;
 }
 
+.question-p {
+    width: 82%;
+    margin: 0% 10%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+
+}
+
+/*Stiling & Positioning the Answears*/
 .answear-form {
-    padding: 50% 10%;;
-    font-size: 140%;
+    padding: 45% 5% 50%;
+    font-size: 170%;
     color: #E5DFD2;
 }
 
+/*Media Queries for Question&Answears Positioning*/
 @media screen 
   and (max-width: 1420px)
   and (min-width: 1000px) {
@@ -137,37 +162,42 @@ html, body, .question-section, .answear-section {
     } 
 }
 
-.my-btn {
-    background-image: url("../img/woodTexture.png");
+/*Button Styling*/
+.my-btn,
+.my-btn:active:focus, 
+.my-btn:focus, 
+.my-btn:active, 
+.my-btn:active:hover{
+    width: 200px;
+    font-size: 150%;
+    background-image: url("../img/woodTexture.png") !important;
     box-shadow: 10px 10px 40px black;
-    color: #E4C575;
-}
-/*
-@media screen 
-  and (max-width: 1440px)
-  and (min-width: 600px) {
-    .my-btn {
-        margin-top: 28%;
-    }
+    color: #E5DFD2;
+   
 }
 
+.my-btn:hover {
+    transform: scale(0.95,0.95);
+}
 
+/*Media Queries for Adapting the Button*/
 @media screen 
-  and (max-width: 599.999px)
+  and (max-width: 800px)
   and (min-width: 280px) {
     .my-btn {
        width: 70%;
        height: 35px;
        font-size: 92%;
     }
-}*/
+}
 
-/*input[type="radio"] {
+/*Making the Radio Buttons Invisible*/
+input[type="radio"] {
     opacity: 0;
     width: 0;
     margin: 0;
 }
-
+/*
 label {
     margin-bottom: 10px;
     display: inline-block;
