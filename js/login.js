@@ -37,6 +37,24 @@ $('a.close').click(function() {
     $(this).parent().hide();
 });
 
+//make ENTER default button for login
+$('#loginForm').keypress(function(e) {
+    // body...
+    if (e.keyCode == 13) {
+        $('#loginButton').click();
+    }
+});
+
+
+//make ENTER default button for signup
+$('#signupForm').keypress(function(e) {
+    // body...
+    if (e.keyCode == 13) {
+        $('#signupButton').click();
+    }
+});
+
+
 //SIGN UP SCRIPT
 //call this method when the user presses the sign up button and wants to create an account on the server
 //verify if his passwords match and handle the process
