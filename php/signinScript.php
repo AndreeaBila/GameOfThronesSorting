@@ -17,9 +17,17 @@
     //create a new hash for the given password
     $tempPassword = sha1($salt.'--'.$password);
     if($tempPassword == $dbPassword){
+        //fetch the user id
+        $userID = getUserID($db, $email);
         exit('Success');
     }else{
         die('Error');
+    }
+
+
+
+    function getUserID($db, $email){
+        //code
     }
 
 ?>
