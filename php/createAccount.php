@@ -13,9 +13,9 @@
         //the email is unique
         //we can proceed with the registration process
         if(register($db, $tempUser) == true){
+            $userID = getUserID($db, $tempUser->email);
             session_id($userID);
             session_start();
-            $userID = getUserID($db, $tempUser);
             echo "Success";
         }else{
             echo "Error";

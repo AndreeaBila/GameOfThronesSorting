@@ -8,33 +8,21 @@
 
     //look for an entry in the database with the given email
     //if none exists give an errror
-    $query = "SELECT Password, Salt FROM Users WHERE(Email = ?);";
+    $query = "SELECT Password, Salt, UserID FROM Users WHERE(Email = ?);";
     $stmt = $db->prepare($query);
     $stmt->bind_param("s", $email);
     $stmt->execute();
-    $stmt->bind_result($dbPassword, $salt);
+    $stmt->bind_result($dbPassword, $salt, $userID);
     $stmt->fetch();
     //create a new hash for the given password
     $tempPassword = sha1($salt.'--'.$password);
     if($tempPassword == $dbPassword){
-        //fetch the user id
-        $userID = getUserID($db, $email);
+        $userID;
         session_id($userID);
         session_start();
         exit('Success');
     }else{
         die('Error');
-    }
-
-    function getUserID($db, $email){
-        //create the query and use prepared statements
-        $query = "SELECT UserID FROM Users WHERE(Email = ?);";
-        $stmt = $db->prepare($query);
-        $stmt->bind_param("s", $email);
-        $stmt->execute();
-        $stmt->bind_result($userID);
-        $stmt->fetch();
-        return $userID;
     }
 
 ?>
