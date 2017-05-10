@@ -1,7 +1,6 @@
 <?php
     session_start();
-    echo session_id();
-    require 'security.php';         
+    require 'security.php';       
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,5 +14,10 @@
     </head>
     <body>
 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../../Bootstrap/js/bootstrap.min.js"></script>
+        <script src="../js/main.js"></script>
     </body>
 </html>
