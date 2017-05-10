@@ -173,7 +173,7 @@ html, body, .question-section, .answear-section {
     background-image: url("../img/woodTexture.png") !important;
     box-shadow: 10px 10px 40px black;
     color: #E5DFD2;
-   
+    outline: none;
 }
 
 .my-btn:hover {

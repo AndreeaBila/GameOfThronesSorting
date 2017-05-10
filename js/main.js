@@ -3,7 +3,7 @@ $(function() {
     $.getJSON('../php/getHouseID.php', function(data) {
         var houseID = data;
         if (houseID == 1) {
-            window.location.href = '../php/survey.php';
+            window.location.href = '../php/welcome.php';
         } else {
             //do something else
         }

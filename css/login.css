@@ -50,6 +50,7 @@ button {
     margin: 0 auto;
     margin-top: 20px;
     width: 40%;
+    outline: none;
 }
 
 .login button,
@@ -59,6 +60,7 @@ button {
     background-color: transparent;
     margin-bottom: 30px;
     font-weight: bold;
+    outline: none;
 }
 
 .login h2,
@@ -88,10 +90,12 @@ input[type="button"] {
     background-image: url('../img/woodTexture.png');
     box-shadow: 10px 10px 40px black;
     color: #897A74;
+    outline: none;
 }
 
 input[type="button"]:hover {
     transform: scale(0.95, 0.95);
+    outline: none;
 }
 
 select {
