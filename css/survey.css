@@ -142,7 +142,7 @@ html, body, .question-section, .answear-section {
     box-shadow: 10px 10px 40px black;
     color: #E4C575;
 }
-
+/*
 @media screen 
   and (max-width: 1440px)
   and (min-width: 600px) {
@@ -160,7 +160,7 @@ html, body, .question-section, .answear-section {
        height: 35px;
        font-size: 92%;
     }
-}
+}*/
 
 /*input[type="radio"] {
     opacity: 0;
