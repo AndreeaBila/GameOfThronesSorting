@@ -16,7 +16,7 @@
             $userID = getUserID($db, $tempUser->email);
             session_id($userID);
             session_start();
-            echo "Success";
+            echo $userID;
         }else{
             echo "Error";
         }
@@ -45,7 +45,6 @@
         $tempUser->password = sha1($tempUser->salt.'--'.$tempUser->password);
         //create a query to insert the information in the database and use prepared statemetns
         $query = "INSERT INTO Users VALUES(NULL, ?, ?, ?, ?, ?, ?, '1');";
-        echo json_encode($query);
         $stmt = $db->prepare($query);
         $stmt->bind_param("ssssss", $tempUser->name, $tempUser->password, $tempUser->salt,$tempUser->email, $tempUser->title, $tempUser->dob);
         $stmt->execute() or die("Error");

@@ -3,5 +3,14 @@
     if(!is_numeric(session_id())){
         header("Location: index.php");
         exit();
+    }else{
+        $userID = session_id();
+        $urlID = $_GET['userID'];
+        if($userID != $urlID){
+            header("Location: index.php");
+            exit();
+        }
     }
+
+
 ?>

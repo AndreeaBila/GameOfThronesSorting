@@ -70,16 +70,14 @@ function createAccount() {
         success: function(response) {
             //don't do anything
             //php will move the user to the next page in the structure
-            console.log(response);
             if (response == "Error") {
                 $('#signup_generalAlert').show(300);
             } else {
-                window.location.href = '../php/main.php';
+                window.location.href = '../php/main.php?userID=' + response;
             }
         },
         error: function(response) {
             //display an alert staiting that the singup information was wrong
-            console.log(response);
             $('#signup_generalAlert').show(300);
         }
     });
@@ -102,7 +100,7 @@ function signIn() {
             if (response == "Error") {
                 $('#login_emailAlert').show(400);
             } else {
-                window.location.href = '../php/main.php';
+                window.location.href = '../php/main.php?userID=' + response;
             }
         },
         error: function(response) {

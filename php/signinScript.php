@@ -20,7 +20,8 @@
         $userID;
         session_id($userID);
         session_start();
-        exit('Success');
+        echo $userID;
+        exit();
     }else{
         die('Error');
     }
