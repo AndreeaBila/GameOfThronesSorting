@@ -19,15 +19,22 @@
     if($tempPassword == $dbPassword){
         //fetch the user id
         $userID = getUserID($db, $email);
+        session_id($userID);
+        session_start();
         exit('Success');
     }else{
         die('Error');
     }
 
-
-
     function getUserID($db, $email){
-        //code
+        //create the query and use prepared statements
+        $query = "SELECT UserID FROM Users WHERE(Email = ?);";
+        $stmt = $db->prepare($query);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $stmt->bind_result($userID);
+        $stmt->fetch();
+        return $userID;
     }
 
 ?>

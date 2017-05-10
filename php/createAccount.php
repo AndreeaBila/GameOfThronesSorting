@@ -13,6 +13,9 @@
         //the email is unique
         //we can proceed with the registration process
         if(register($db, $tempUser) == true){
+            session_id($userID);
+            session_start();
+            $userID = getUserID($db, $tempUser);
             echo "Success";
         }else{
             echo "Error";
@@ -47,5 +50,16 @@
         $stmt->bind_param("ssssss", $tempUser->name, $tempUser->password, $tempUser->salt,$tempUser->email, $tempUser->title, $tempUser->dob);
         $stmt->execute() or die("Error");
         return true;
+    }
+
+    function getUserID($db, $email){
+        //create the query and use prepared statements
+        $query = "SELECT UserID FROM Users WHERE(Email = ?);";
+        $stmt = $db->prepare($query);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $stmt->bind_result($userID);
+        $stmt->fetch();
+        return $userID;
     }
 ?>
