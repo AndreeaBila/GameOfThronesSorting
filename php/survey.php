@@ -30,13 +30,13 @@
         <section class="pull-right col-md-5 answear-section">
             <form class="answear-form">
                 <div class="radio">
-                    <label><input type="radio" name="option" id="option1"><i class="fa fa-circle" aria-hidden="true" id="icon1"></i></label>
+                    <label><input type="radio" name="option" id="option1"><i class="fa fa-circle" aria-hidden="true" id="icon1"></i><span id='answear1'></span></label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="option" id="option2"><i class="fa fa-circle" aria-hidden="true" id="icon2"></i></label>
+                    <label><input type="radio" name="option" id="option2"><i class="fa fa-circle" aria-hidden="true" id="icon2"></i><span id="answear2"></span></label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="option" id="option3"><i class="fa fa-circle" aria-hidden="true" id="icon3"></i></label>
+                    <label><input type="radio" name="option" id="option3"><i class="fa fa-circle" aria-hidden="true" id="icon3"></i><span id="answear3"></span></label>
                 </div>
             </form>
 

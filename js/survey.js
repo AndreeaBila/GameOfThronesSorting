@@ -35,7 +35,8 @@ $(function() {
                 chooseHouse(optionHouse);
                 checkAny = true;
             }
-            if (checkAny) {
+            $('.fa-circle').css('color', 'white');
+            if (checkAny && i < array.length) {
                 surveyLoop(array, ++i);
             }
         });
@@ -65,14 +66,11 @@ function radio3() {
 
 //method that will perform the survey operations
 function surveyLoop(array, i) {
-    if (i <= array.length) {
-        $('#question').html(array[i].question);
-        $('#icon1').text(array[i].option_1.answear);
-        $('#icon2').text(array[i].option_2.answear);
-        $('#icon3').text(array[i].option_3.answear);
-
-        console.log(house);
-    }
+    $('#question').html(array[i].question);
+    $('#answear1').text(array[i].option_1.answear);
+    $('#answear2').text(array[i].option_2.answear);
+    $('#answear3').text(array[i].option_3.answear);
+    console.log(house);
 }
 
 function chooseHouse(optionHouse) {
