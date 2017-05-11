@@ -120,17 +120,8 @@ function signIn() {
 
 //script to check if every detail has been filled
 function checkDetails() {
-    // if ($('#signupName').val() == null || $('#signupEmail').val() == null || $('#signupPassword').val() == null || $('#signupDoB').val() == null || $('#signupTitle').val() == null) {
-    //     return false;
-    // }
-    // return true;
-    var inputs = $('#signupForm').children();
-    for (var i = 0; i < inputs.length; i++) {
-        if ($(inputs[i]).is('input')) {
-            if ($(inputs[i]).val() == null) {
-                return false;
-            }
-        }
+    if ($('#signupName').val() == '' || $('#signupEmail').val() == '' || $('#signupPassword').val() == '') {
+        return false;
     }
     return true;
 }
