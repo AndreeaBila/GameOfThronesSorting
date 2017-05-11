@@ -36,7 +36,7 @@ $(function() {
                 checkAny = true;
             }
             $('.fa-circle').css('color', 'white');
-            if (checkAny && i < array.length) {
+            if (checkAny) {
                 surveyLoop(array, ++i);
             }
         });
@@ -66,14 +66,19 @@ function radio3() {
 
 //method that will perform the survey operations
 function surveyLoop(array, i) {
-    $('#question').html(array[i].question);
-    $('#answear1').text(array[i].option_1.answear);
-    $('#answear2').text(array[i].option_2.answear);
-    $('#answear3').text(array[i].option_3.answear);
+    if (i < array.length) {
+        $('#question').html(array[i].question);
+        $('#answear1').text(array[i].option_1.answear);
+        $('#answear2').text(array[i].option_2.answear);
+        $('#answear3').text(array[i].option_3.answear);
 
-    $('.question-section').css({backgroundImage: array[i].backgroundImage});
-    $('.answear-section').css({backgroundColor: array[i].backgroundColor});
-
+        $('.question-section').css({ backgroundImage: array[i].backgroundImage });
+        $('.answear-section').css({ backgroundColor: array[i].backgroundColor });
+    } else {
+        //calculate house score
+        //change page
+        calculateScore();
+    }
     console.log(house);
 }
 
@@ -100,4 +105,50 @@ function chooseHouse(optionHouse) {
         default:
             console.log("Error");
     }
+}
+
+function calculateScore() {
+    //get max value from house
+    var scores = [h = {
+            count: house.lannister,
+            name: "Lannister",
+        },
+        h = {
+            count: house.stark,
+            name: "Stark",
+        },
+        h = {
+            count: house.targaryen,
+            name: "Targaryen",
+        },
+        h = {
+            count: house.baratheon,
+            name: "Baratheon",
+        },
+        h = {
+            count: house.night,
+            name: "Night",
+        },
+        h = {
+            count: house.martell,
+            name: "Martell",
+        }
+    ];
+
+    var max = scores[0].count;
+    for (var i = 1; i < scores.length; i++) {
+        if (scores[i].count > max) {
+            max = scores[i].count;
+        }
+    }
+    console.log(max);
+    var top = new Array();
+    for (var i = 0; i < scores.length; i++) {
+        if (scores[i].count == max) {
+            top.push(i);
+        }
+    }
+    var item = top[Math.floor(Math.random() * top.length)];
+    item = scores[item];
+    console.log(item);
 }
