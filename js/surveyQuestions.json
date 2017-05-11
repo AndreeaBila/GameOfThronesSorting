@@ -1,39 +1,105 @@
 {
     "questionArray": [{
-            "question": "",
-            "answear_1": "",
-            "answear_2": "",
-            "answear_3": ""
+            "question": "Which one is more important to you?",
+            "option_1": {
+                "answear": "Familly",
+                "house": "Stark"
+            },
+            "option_2": {
+                "answear": "Duty",
+                "house": "Night"
+            },
+            "option_3": {
+                "answear": "Honor",
+                "house": "Lannister"
+            },
+            "backgroundImage": "",
+            "backgroundColor": ""
         },
         {
-            "question": "",
-            "answear_1": "",
-            "answear_2": "",
-            "answear_3": ""
+            "question": "Are you:",
+            "option_1": {
+                "answear": "Passionate about everything you do",
+                "house": "Martell"
+            },
+            "option_2": {
+                "answear": "Determined in all your decisions",
+                "house": "Targaryen"
+            },
+            "option_3": {
+                "answear": "Dependent on your friends",
+                "house": "Baratheon"
+            },
+            "backgroundImage": "",
+            "backgroundColor": ""
         },
         {
-            "question": "",
-            "answear_1": "",
-            "answear_2": "",
-            "answear_3": ""
+            "question": "Which is your weapon of your choice?",
+            "option_1": {
+                "answear": "Crossbow",
+                "house": "Night"
+            },
+            "option_2": {
+                "answear": "Spear",
+                "house": "Martell"
+            },
+            "option_3": {
+                "answear": "Sword",
+                "house": "Lannister"
+            },
+            "backgroundImage": "",
+            "backgroundColor": ""
         },
         {
-            "question": "",
-            "answear_1": "",
-            "answear_2": "",
-            "answear_3": ""
+            "question": "Which skill would you prefer learning?",
+            "option_1": {
+                "answear": "How to be merciful",
+                "house": "Targaryen"
+            },
+            "option_2": {
+                "answear": "How to lead",
+                "house": "Baratheon"
+            },
+            "option_3": {
+                "answear": "How to fight",
+                "house": "Night"
+            },
+            "backgroundImage": "",
+            "backgroundColor": ""
         },
         {
-            "question": "",
-            "answear_1": "",
-            "answear_2": "",
-            "answear_3": ""
+            "question": "Your friend has commited a crime that is normally punishable byt death. You're the one who passes the sentence. What do you do?",
+            "option_1": {
+                "answear": "You find a loophole to protect them",
+                "house": "Lannister"
+            },
+            "option_2": {
+                "answear": "You do your duty - Justice above all",
+                "house": "Stark"
+            },
+            "option_3": {
+                "answear": "You simply pardon them",
+                "house": "Martell"
+            },
+            "backgroundImage": "",
+            "backgroundColor": ""
         },
         {
-            "question": "",
-            "answear_1": "",
-            "answear_2": "",
-            "answear_3": ""
+            "question": "What do you do the night before the war?",
+            "option_1": {
+                "answear": "Make a sacrifice to the gods",
+                "house": "Baratheon"
+            },
+            "option_2": {
+                "answear": "Empower you people",
+                "house": "Targaryen"
+            },
+            "option_3": {
+                "answear": "Plan an unconventional strategy",
+                "house": "Stark"
+            },
+            "backgroundImage": "",
+            "backgroundColor": ""
         }
     ]
 }

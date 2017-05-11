@@ -30,23 +30,23 @@
         <section class="pull-right col-md-5 answear-section">
             <form class="answear-form">
                 <div class="radio">
-                    <label><input type="radio" name="option" id="option1"><i class="fa fa-circle" aria-hidden="true" id="icon1"></i>Family</label>
+                    <label><input type="radio" name="option" id="option1"><i class="fa fa-circle" aria-hidden="true" id="icon1"></i></label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="option" id="option2"><i class="fa fa-circle" aria-hidden="true" id="icon2"></i>Duty</label>
+                    <label><input type="radio" name="option" id="option2"><i class="fa fa-circle" aria-hidden="true" id="icon2"></i></label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="option" id="option3"><i class="fa fa-circle" aria-hidden="true" id="icon3"></i>Honor</label>
+                    <label><input type="radio" name="option" id="option3"><i class="fa fa-circle" aria-hidden="true" id="icon3"></i></label>
                 </div>
             </form>
 
-            <button class="btn btn-lg pull-right my-btn" type="submit">Submit</button>
+            <button class="btn btn-lg pull-right my-btn" id="submit">Submit</button>
         </section>
 
         <section class="pull-left col-md-7 text-center fill question-section">
             <!--<div class="message">Get sorted into your House</div>-->
             <div class="question-div">
-                <p class="question-p" id="question">Which do you find more important?</p>
+                <p class="question-p" id="question"></p>
             </div>
         </section>
 
