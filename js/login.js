@@ -26,8 +26,15 @@ $('#loginButton').click(function() {
 //script that will run when the sing up button is clicked
 $('#signupButton').click(function() {
     if ($('#signupPassword').val() == $('#signupRePassword').val()) {
-        createAccount();
+        if (checkDetails()) {
+            createAccount();
+        } else {
+            $('#signup_fillDetailsAlert').show(300);
+        }
     } else {
+        if (!checkDetails()) {
+            $('#signup_fillDetailsAlert').show(300);
+        }
         $('#signup_passwordAlert').show(300);
     }
 });
@@ -109,4 +116,21 @@ function signIn() {
             $('#login_emailAlert').show(400);
         }
     });
+}
+
+//script to check if every detail has been filled
+function checkDetails() {
+    // if ($('#signupName').val() == null || $('#signupEmail').val() == null || $('#signupPassword').val() == null || $('#signupDoB').val() == null || $('#signupTitle').val() == null) {
+    //     return false;
+    // }
+    // return true;
+    var inputs = $('#signupForm').children();
+    for (var i = 0; i < inputs.length; i++) {
+        if ($(inputs[i]).is('input')) {
+            if ($(inputs[i]).val() == null) {
+                return false;
+            }
+        }
+    }
+    return true;
 }

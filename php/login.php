@@ -140,7 +140,11 @@
                 <input type="text" name="signupName" placeholder="First Name">
                 <div class="alert alert-danger alert-dismissable alert-custom" id="signup_generalAlert">
                     <a class="close" aria-label="close">&times;</a>
-                    <strong>Error!</strong> We have encountered a problem.
+                    <strong>Error!</strong> The provided email address in already in use.
+                </div>
+                <div class="alert alert-info alert-dismissable alert-custom" id="signup_fillDetailsAlert">
+                    <a class="close" aria-label="close">&times;</a>
+                    <strong>Sorry!</strong> You have to fill in all the details!
                 </div>
                 <input type="email" name="signupEmail" id="signupEmail" placeholder="Email">
                 <input type="password" name="signupPassword" id="signupPassword" placeholder="Password">
