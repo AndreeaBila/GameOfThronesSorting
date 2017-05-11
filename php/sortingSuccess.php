@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en-Us">
     <head>
@@ -29,7 +30,23 @@
         
         <div class="container">
             <div class="jumbotron">
-                <h1 id="addHouseResult">You're a Lannister</h1>
+                <h1 id="addHouseResult">
+                <?php
+                    $db = new mysqli('localhost', 'root', '', 'westermoredb') or die("Error");
+                    $userID = session_id();
+                    $query = "SELECT HouseID FROM Users WHERE(UserID = $userID);";
+                    $response = $db->query($query);
+                    $houseID_array = mysqli_fetch_array($response, MYSQLI_ASSOC);
+                    $houseID = $houseID_array['HouseID'];
+                    $result = $db->query("SELECT Name FROM Houses WHERE(HouseID = $houseID);");
+                    $houseName_array = mysqli_fetch_array($result, MYSQLI_ASSOC);
+                    $houseName = $houseName_array['Name'];
+                    if($houseName === "Night"){
+                        echo "You are a man of the Nigth's watch!";
+                    }else{
+                        echo "You are a ".$houseName.'!';
+                    }
+                ?></h1>
                 <h2>Congrats! You have been sorted into your rightful Westerosi home</h2>
                 <p id="addPresentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor labore quidem sint porro facilis quisquam odit deserunt molestiae eaque, temporibus aut soluta fugiat rem nemo, culpa distinctio repellendus placeat. Neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque laudantium amet quo, deserunt mollitia, culpa ipsam, pariatur quis quasi reiciendis, iste enim nulla. Non, facilis quo, illo similique molestias sequi?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laborum veritatis ad dolores quos maxime perferendis similique quasi deserunt, eveniet atque, impedit itaque assumenda quae ratione. Incidunt omnis impedit inventore?</p>
                 <p><a class="btn btn-primary btn-lg my-btn" href="#" role="button">Learn more</a></p>

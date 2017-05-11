@@ -141,7 +141,6 @@ function calculateScore() {
             max = scores[i].count;
         }
     }
-    console.log(max);
     var top = new Array();
     for (var i = 0; i < scores.length; i++) {
         if (scores[i].count == max) {
@@ -150,5 +149,15 @@ function calculateScore() {
     }
     var item = top[Math.floor(Math.random() * top.length)];
     item = scores[item];
-    console.log(item);
+    $.ajax({
+        data: item,
+        type: 'get',
+        url: "../php/createHouseConnection.php",
+        success: function(response) {
+            window.location.href = '../php/sortingSuccess.php';
+        },
+        error: function(response) {
+
+        }
+    });
 }
