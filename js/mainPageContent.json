@@ -1,0 +1,70 @@
+{
+    "array": [{
+        "Stark": {
+            "houseTitle": "",
+            "motto": "",
+            "iconPath": "",
+            "familyPath": "",
+            "homePath": "",
+            "flagPath": "",
+            "aboutHome": "",
+            "historyDescription": "",
+            "aboutFamily": ""
+        },
+        "Targaryen": {
+            "houseTitle": "",
+            "motto": "",
+            "iconPath": "",
+            "familyPath": "",
+            "homePath": "",
+            "flagPath": "",
+            "aboutHome": "",
+            "historyDescription": "",
+            "aboutFamily": ""
+        },
+        "Baratheon": {
+            "houseTitle": "",
+            "motto": "",
+            "iconPath": "",
+            "familyPath": "",
+            "homePath": "",
+            "flagPath": "",
+            "aboutHome": "",
+            "historyDescription": "",
+            "aboutFamily": ""
+        },
+        "Night": {
+            "houseTitle": "",
+            "motto": "",
+            "iconPath": "",
+            "familyPath": "",
+            "homePath": "",
+            "flagPath": "",
+            "aboutHome": "",
+            "historyDescription": "",
+            "aboutFamily": ""
+        },
+        "Martell": {
+            "houseTitle": "",
+            "motto": "",
+            "iconPath": "",
+            "familyPath": "",
+            "homePath": "",
+            "flagPath": "",
+            "aboutHome": "",
+            "historyDescription": "",
+            "aboutFamily": ""
+        },
+        "Lannister": {
+            "houseTitle": "",
+            "motto": "",
+            "iconPath": "",
+            "familyPath": "",
+            "homePath": "",
+            "flagPath": "",
+            "aboutHome": "",
+            "historyDescription": "",
+            "aboutFamily": ""
+        }
+    }]
+}
