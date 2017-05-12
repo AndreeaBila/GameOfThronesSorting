@@ -70,6 +70,10 @@ function surveyLoop(array, i) {
     $('#answear1').text(array[i].option_1.answear);
     $('#answear2').text(array[i].option_2.answear);
     $('#answear3').text(array[i].option_3.answear);
+
+    $('.question-section').css({backgroundImage: array[i].backgroundImage});
+    $('.answear-section').css({backgroundColor: array[i].backgroundColor});
+
     console.log(house);
 }
 

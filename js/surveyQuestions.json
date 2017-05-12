@@ -13,8 +13,8 @@
                 "answear": "Honor",
                 "house": "Lannister"
             },
-            "backgroundImage": "",
-            "backgroundColor": ""
+            "backgroundImage": "url('../img/questions/question1.jpg')",
+            "backgroundColor": "#221511"
         },
         {
             "question": "Are you:",
@@ -30,8 +30,8 @@
                 "answear": "Dependent on your friends",
                 "house": "Baratheon"
             },
-            "backgroundImage": "",
-            "backgroundColor": ""
+            "backgroundImage": "url('../img/questions/question2.jpg')",
+            "backgroundColor": "#EC815F"
         },
         {
             "question": "Which is your weapon of your choice?",
@@ -47,8 +47,8 @@
                 "answear": "Sword",
                 "house": "Lannister"
             },
-            "backgroundImage": "",
-            "backgroundColor": ""
+            "backgroundImage": "url('../img/questions/question3.jpg')",
+            "backgroundColor": "#E1BF59"
         },
         {
             "question": "Which skill would you prefer learning?",
@@ -64,8 +64,8 @@
                 "answear": "How to fight",
                 "house": "Night"
             },
-            "backgroundImage": "",
-            "backgroundColor": ""
+            "backgroundImage": "url('../img/questions/question4.jpg')",
+            "backgroundColor": "#917D8B"
         },
         {
             "question": "Your friend has commited a crime that is normally punishable byt death. You're the one who passes the sentence. What do you do?",
@@ -81,8 +81,8 @@
                 "answear": "You simply pardon them",
                 "house": "Martell"
             },
-            "backgroundImage": "",
-            "backgroundColor": ""
+            "backgroundImage": "url('../img/questions/question5.jpg')",
+            "backgroundColor": "#0C0C0D"
         },
         {
             "question": "What do you do the night before the war?",
@@ -98,8 +98,8 @@
                 "answear": "Plan an unconventional strategy",
                 "house": "Stark"
             },
-            "backgroundImage": "",
-            "backgroundColor": ""
+            "backgroundImage": "url('../img/questions/question6.jpg')",
+            "backgroundColor": "#896339"
         }
     ]
 }

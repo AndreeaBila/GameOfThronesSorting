@@ -7,7 +7,7 @@ body {
 
 /*Question Image Background Fit*/
 .question-section {
-   background-image: url("../img/got.jpg");
+   background-image: url("../img/questions/question1.jpg");
    background-size: 100%;
 }
 
