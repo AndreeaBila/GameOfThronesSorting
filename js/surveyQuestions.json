@@ -1,6 +1,6 @@
 {
     "questionArray": [{
-            "question": "Which one is more important to you?",
+            "question": "Which one of these is more important to you?",
             "option_1": {
                 "answear": "Familly",
                 "house": "Stark"
@@ -14,7 +14,7 @@
                 "house": "Lannister"
             },
             "backgroundImage": "url('../img/questions/question1.jpg')",
-            "backgroundColor": "#221511"
+            "backgroundColor": "#BA8D7A"
         },
         {
             "question": "Are you:",
@@ -34,7 +34,7 @@
             "backgroundColor": "#EC815F"
         },
         {
-            "question": "Which is your weapon of your choice?",
+            "question": "Which one of these is your weapon of choice?",
             "option_1": {
                 "answear": "Crossbow",
                 "house": "Night"
@@ -48,10 +48,10 @@
                 "house": "Lannister"
             },
             "backgroundImage": "url('../img/questions/question3.jpg')",
-            "backgroundColor": "#E1BF59"
+            "backgroundColor": "#C8D0A9"
         },
         {
-            "question": "Which skill would you prefer learning?",
+            "question": "Which skill would you reather learn?",
             "option_1": {
                 "answear": "How to be merciful",
                 "house": "Targaryen"
@@ -65,33 +65,33 @@
                 "house": "Night"
             },
             "backgroundImage": "url('../img/questions/question4.jpg')",
-            "backgroundColor": "#917D8B"
+            "backgroundColor": "#403136"
         },
         {
-            "question": "Your friend has commited a crime that is normally punishable byt death. You're the one who passes the sentence. What do you do?",
+            "question": "Your friend has commited a crime punishable by death. You're the one who passes the sentence. What do you do?",
             "option_1": {
                 "answear": "You find a loophole to protect them",
                 "house": "Lannister"
             },
             "option_2": {
-                "answear": "You do your duty - Justice above all",
+                "answear": "You do your duty - justice above all",
                 "house": "Stark"
             },
             "option_3": {
-                "answear": "You simply pardon them",
+                "answear": "You simply pardon them - power has it's perks",
                 "house": "Martell"
             },
             "backgroundImage": "url('../img/questions/question5.jpg')",
-            "backgroundColor": "#0C0C0D"
+            "backgroundColor": "#222222"
         },
         {
-            "question": "What do you do the night before the war?",
+            "question": "What do you do the night before a war?",
             "option_1": {
                 "answear": "Make a sacrifice to the gods",
                 "house": "Baratheon"
             },
             "option_2": {
-                "answear": "Empower you people",
+                "answear": "Empower your people",
                 "house": "Targaryen"
             },
             "option_3": {
@@ -99,7 +99,7 @@
                 "house": "Stark"
             },
             "backgroundImage": "url('../img/questions/question6.jpg')",
-            "backgroundColor": "#896339"
+            "backgroundColor": "#D4761C"
         }
     ]
 }
