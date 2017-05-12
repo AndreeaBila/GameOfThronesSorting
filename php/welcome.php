@@ -12,7 +12,7 @@
         <!-- FontAwesome -->
         <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.min.css">
         <!-- My CSS -->
-        <!--<link href="../css/survey.css" rel="stylesheet">-->
+        <link href="../css/welcome.css" rel="stylesheet">
         <link rel="shortcut icon" href="../img/westermore2.ico">
 
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -27,7 +27,12 @@
     </head>
     <body>
         
-        salut
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Welcome to our comunity!</h1>
+            </div>
+        </div>
+
         <!--jQuery (necessary for Bootstrap's JavaScript plugins)--> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
