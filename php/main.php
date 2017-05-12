@@ -1,6 +1,7 @@
 <?php
     session_start();
-    require 'security.php';       
+    require 'security.php';  
+    checkSession();
 ?>
 <!DOCTYPE html>
 <html lang="en">

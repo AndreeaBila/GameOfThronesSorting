@@ -1,8 +1,3 @@
-//stuff for user interface
-//jQUery
-//blah blah
-//andreea e 0 :))
-
 //hide the signup form and only display the login form
 //swtich between them using the provided links
 $('#signupForm').hide();
@@ -80,7 +75,7 @@ function createAccount() {
             if (response == "Error") {
                 $('#signup_generalAlert').show(300);
             } else {
-                window.location.href = '../php/main.php?userID=' + response;
+                window.location.href = '../php/main.php';
             }
         },
         error: function(response) {
@@ -107,7 +102,7 @@ function signIn() {
             if (response == "Error") {
                 $('#login_emailAlert').show(400);
             } else {
-                window.location.href = '../php/main.php?userID=' + response;
+                window.location.href = '../php/main.php';
             }
         },
         error: function(response) {

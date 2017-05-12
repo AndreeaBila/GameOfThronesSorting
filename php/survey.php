@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php 
+    session_start();
+    require_once "security.php";
+    checkSession();
+    checkHouseIDNull();
+?>
 <!DOCTYPE html>
 <html lang="en-Us">
     <head>
