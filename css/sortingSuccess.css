@@ -24,7 +24,7 @@ body {
     font-size: 150%;
     background-image: url("../img/woodTexture.png") !important;
     box-shadow: 10px 10px 40px black;
-    color: #E5DFD2;
+    color: #E5DFD2 !important;
     outline: none;
 }
 

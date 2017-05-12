@@ -42,9 +42,9 @@
                     $houseName_array = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     $houseName = $houseName_array['Name'];
                     if($houseName === "Night"){
-                        echo "You are a man of the Nigth's watch!";
+                        echo "You're a man of the Nigth's watch!";
                     }else{
-                        echo "You are a ".$houseName.'!';
+                        echo "You're a ".$houseName.'!';
                     }
                 ?></h1>
                 <h2>Congrats! You have been sorted into your rightful Westerosi home</h2>
