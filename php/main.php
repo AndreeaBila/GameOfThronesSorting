@@ -1,7 +1,7 @@
 <?php
     session_start();
     require 'security.php';  
-   // checkSession();
+    checkSession();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +52,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariahaspopup="true" aria-expanded="false"> <span class="caret"></span></a>
                             <ul class="dropdown-menu pull-right">
-                                <li><a href="index.php">Sign Out</a></li>
+                                <li><a href="index.php"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+                                <li><a id="openPostButton" data-toggle="modal" data-target="#postsModal"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send a raven</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -110,6 +111,59 @@
                     
             </section>
         </div>
+
+        <!-- The modal for the send the raven interface -->
+         <div class="modal fade" id="postsModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- This will be the header of the modal -->
+                    <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal">&times;</button>
+                        <h2>Raven Network</h2>
+                    </div>
+                    <div class="main-body">
+                        <div class="well">
+                            asdsd
+                        </div>
+                        <div class="well">
+                            asdsd
+                        </div>
+                        <div class="well">
+                            asdsd
+                        </div>
+                        <div class="well">
+                            asdsd
+                        </div>
+                        <div class="well">
+                            asdsd
+                        </div>
+                        <div class="well">
+                            asdsd
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-center">Send a raven</h1>
+                    </div>
+                    <div class="main-body">
+                        <form id="postsForm">
+                            <div class="form-group">
+                                <label for="Title">Title</label>
+                                <input class="form-control" type="text" name="Title" id="Title" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="Content">Comment:</label>
+                                <textarea class="form-control" rows="5" name="Content" id="Content"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-success btn-lg" id="btnSendRaven">Send It</a>
+                        <a class="btn btn-danger btn-lg" data-dismiss="modal" id="modalDismiss">Dismiss</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
