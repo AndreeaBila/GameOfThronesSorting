@@ -1,9 +1,9 @@
 {
     "array": [{
         "Stark": {
-            "houseTitle": "",
-            "motto": "",
-            "iconPath": "",
+            "houseTitle": "House Stark",
+            "motto": "Words: 'Winter is coming'",
+            "iconPath": "../img/sigils/stark.png",
             "familyPath": "",
             "homePath": "",
             "flagPath": "",
@@ -12,9 +12,9 @@
             "aboutFamily": ""
         },
         "Targaryen": {
-            "houseTitle": "",
-            "motto": "",
-            "iconPath": "",
+            "houseTitle": "House Targaryen",
+            "motto": "Words: 'Fire and Blood'",
+            "iconPath": "../img/sigils/targaryen.png",
             "familyPath": "",
             "homePath": "",
             "flagPath": "",
@@ -23,9 +23,9 @@
             "aboutFamily": ""
         },
         "Baratheon": {
-            "houseTitle": "",
-            "motto": "",
-            "iconPath": "",
+            "houseTitle": "House Baratheon",
+            "motto": "Words: 'Ours is The Fury'",
+            "iconPath": "../img/sigils/baratheon.png",
             "familyPath": "",
             "homePath": "",
             "flagPath": "",
@@ -34,9 +34,9 @@
             "aboutFamily": ""
         },
         "Night": {
-            "houseTitle": "",
-            "motto": "",
-            "iconPath": "",
+            "houseTitle": "Night's Watch",
+            "motto": "Words: 'I am The Sword in The Darkness'",
+            "iconPath": "../img/sigils/night.png",
             "familyPath": "",
             "homePath": "",
             "flagPath": "",
@@ -45,9 +45,9 @@
             "aboutFamily": ""
         },
         "Martell": {
-            "houseTitle": "",
-            "motto": "",
-            "iconPath": "",
+            "houseTitle": "House Martell",
+            "motto": "Words: 'Unbowed, Unbent, Unbroken'",
+            "iconPath": "../img/sigils/martell.png",
             "familyPath": "",
             "homePath": "",
             "flagPath": "",
@@ -56,12 +56,12 @@
             "aboutFamily": ""
         },
         "Lannister": {
-            "houseTitle": "",
-            "motto": "",
-            "iconPath": "",
-            "familyPath": "",
-            "homePath": "",
-            "flagPath": "",
+            "houseTitle": "House Lannister",
+            "motto": "Words: 'Hear Me Roar'",
+            "iconPath": "../img/sigils/lannister.png",
+            "familyPath": "../img/families/lannister.jpg",
+            "homePath": "../img/homes/lannister.jpg",
+            "flagPath": "../img/flags/lannister.jpg",
             "aboutHome": "",
             "historyDescription": "",
             "aboutFamily": ""

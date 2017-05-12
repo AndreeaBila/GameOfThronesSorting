@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 85%;
 }
 
 .sigil {
@@ -66,10 +66,28 @@ body {
     margin-top: 60px;
 }
 
-.home img {
-    width: 40%;
+.home img, .family img {
+    width: 70%;
 }
 
-.family img {
-    width: 50%;
+.content-left {
+    padding: 20px;
+}
+
+.content-left h3 {
+    margin-top: 40px;
+    font-size: 180%;
+}
+
+.content-left p {
+    margin-left: 10%;
+    width: 80%;
+    font-size: 140%;
+    text-align: justify;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 350%;
 }

@@ -69,16 +69,20 @@
 
             <section class="col-md-9 content-left text-center">
                     <h1>House Lannister</h1>
-                    <h4>Words: "Hear me roar"</h4>
+                    <h2>Words: "Hear me roar"</h2>
 
                     <div class="family">
-                        <h4>Family and Friends</h4>
+                        <h3>Family and Friends</h3>
                         <img src="../img/families/lannister1.png" alt="no">  
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
+                        fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
+                        dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
+                        ab non tenetur illo, dignissimos reiciendis minima nobis.</p>
                     </div>
                     
                     <div class="home">
-                        <h4>Home</h4>
-                        <img class="cols-md-3" src="../img/homes/casterlyRock.jpg" alt="no">
+                        <h3>Home</h3>
+                        <img src="../img/homes/lannister.jpg" alt="no">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
                         fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
                         dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
@@ -87,7 +91,7 @@
                     </div>
 
                     <div class="more">
-                        <h4>History</h4>
+                        <h3>History</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, obcaecati magnam
                             voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur dolore, labore facere 
                             laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in ab non tenetur illo, 
