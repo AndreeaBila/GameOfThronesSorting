@@ -73,7 +73,7 @@
 
                     <div class="family">
                         <h4>Family and Friends</h4>
-                        <img src="../img/families/lannister3.jpg" alt="no">  
+                        <img src="../img/families/lannister1.png" alt="no">  
                     </div>
                     
                     <div class="home">
