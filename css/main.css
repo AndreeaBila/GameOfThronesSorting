@@ -16,8 +16,7 @@ body {
 }
 
 .my-nav {
-    margin-top: 3px;
-    background-color: gray;
+    background-color: #F19B68 !important;
 }
 
 .navbar {
@@ -64,6 +63,7 @@ body {
     background-color: white;
     padding: 20px;
     margin-top: 60px;
+    box-shadow: 10px 10px 70px 5px black;
 }
 
 .home img, .family img {
