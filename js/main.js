@@ -7,6 +7,18 @@ $(function() {
         }
     });
 
+    updatePage();
+
+
+
+
+
+
+
+
+
+
+    //Raven controls
     $('#btnSendRaven').click(function() {
         var post = $('#postsForm').serialize();
         //send post to database
@@ -43,3 +55,21 @@ $(function() {
         $('#sendRavenButton').show(500);
     });
 });
+
+function updatePage() {
+    //retrieve the house object from the json file
+    $.getJSON('../php/getHouseID.php', function(response) {
+        $.getJSON('../js/mainPageContent.json', function(houses) {
+            var userHouse;
+            houses.array.forEach(function(element) {
+                if (element.houseID == response) {
+                    userHouse = element;
+                }
+            }, this);
+
+            //update the page elements
+
+
+        });
+    });
+}

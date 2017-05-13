@@ -1,6 +1,6 @@
 {
     "array": [{
-        "Stark": {
+            "houseID": "2",
             "houseTitle": "House Stark",
             "motto": "Words: 'Winter is coming'",
             "iconPath": "../img/sigils/stark.png",
@@ -11,7 +11,8 @@
             "historyDescription": "",
             "aboutFamily": ""
         },
-        "Targaryen": {
+        {
+            "houseID": "5",
             "houseTitle": "House Targaryen",
             "motto": "Words: 'Fire and Blood'",
             "iconPath": "../img/sigils/targaryen.png",
@@ -22,7 +23,8 @@
             "historyDescription": "",
             "aboutFamily": ""
         },
-        "Baratheon": {
+        {
+            "houseID": "6",
             "houseTitle": "House Baratheon",
             "motto": "Words: 'Ours is The Fury'",
             "iconPath": "../img/sigils/baratheon.png",
@@ -33,7 +35,8 @@
             "historyDescription": "",
             "aboutFamily": ""
         },
-        "Night": {
+        {
+            "houseID": "4",
             "houseTitle": "Night's Watch",
             "motto": "Words: 'I am The Sword in The Darkness'",
             "iconPath": "../img/sigils/night.png",
@@ -44,7 +47,8 @@
             "historyDescription": "",
             "aboutFamily": ""
         },
-        "Martell": {
+        {
+            "houseID": "7",
             "houseTitle": "House Martell",
             "motto": "Words: 'Unbowed, Unbent, Unbroken'",
             "iconPath": "../img/sigils/martell.png",
@@ -55,7 +59,8 @@
             "historyDescription": "",
             "aboutFamily": ""
         },
-        "Lannister": {
+        {
+            "houseID": "3",
             "houseTitle": "House Lannister",
             "motto": "Words: 'Hear Me Roar'",
             "iconPath": "../img/sigils/lannister.png",
@@ -66,5 +71,5 @@
             "historyDescription": "",
             "aboutFamily": ""
         }
-    }]
+    ]
 }
