@@ -48,7 +48,24 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#" id="addTitle">Queen Andreea Lannister </a></li>
+                        <li><a href="#" id="addTitle">
+                        <?php
+                            //create database connection
+                            require_once "User.php";
+                            $db = new mysqli('localhost', 'root', '', 'westermoredb') or die("Error");
+                            $userID = session_id();
+                            //select the user's title name and houseID
+                            $query = "SELECT Title, Name, HouseID FROM Users WHERE(UserID = $userID);";
+                            $response = $db->query($query);
+                            $array = mysqli_fetch_array($response, MYSQLI_ASSOC);
+                            $user = new User($userID, $array['Name'], '-', '-', '-', $array['Title'], '-', $array['HouseID']);
+                            //find the house name
+                            $query = "SELECT Name FROM Houses WHERE(HouseID = $user->houseID)";
+                            $response = $db->query($query);
+                            $array = mysqli_fetch_array($response, MYSQLI_ASSOC);
+                            echo ucfirst($user->title).' '.$user->name.' '.$array['Name'];
+                        ?>
+                        </a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariahaspopup="true" aria-expanded="false"> <span class="caret"></span></a>
                             <ul class="dropdown-menu pull-right">
@@ -139,7 +156,7 @@
                             <h2>Raven Network</h2>
                         </div>
                         <div class="main-body">
-                            <div class="well">
+                            <!--<div class="well">
                                 <footer>
                                     <p class="pull-right">5th of May 2017</p> 
                                     <h4>Queen Andreea of House Lannister</h4>
@@ -148,29 +165,7 @@
                                 <hr>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam itaque cumque unde provident sunt ea 
                                     quae. Vero unde, optio harum iure qui dolores sed animi ipsam ratione vitae. Saepe, delectus! </p>
-                            </div>
-
-                            <div class="well">
-                                <footer>
-                                    <p class="pull-right">5th of May 2017</p> 
-                                    <h4>Queen Andreea of House Lannister</h4>
-                                    <p>| #lorem #ipsum</p>
-                                </footer>
-                                <hr>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam itaque cumque unde provident sunt ea 
-                                    quae. Vero unde, optio harum iure qui dolores sed animi ipsam ratione vitae. Saepe, delectus! </p>
-                            </div>
-
-                            <div class="well">
-                                <footer>
-                                    <p class="pull-right">5th of May 2017</p> 
-                                    <h4>Queen Andreea of House Lannister</h4>
-                                    <p>| #lorem #ipsum</p>
-                                </footer>
-                                <hr>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam itaque cumque unde provident sunt ea 
-                                    quae. Vero unde, optio harum iure qui dolores sed animi ipsam ratione vitae. Saepe, delectus! </p>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     
@@ -189,8 +184,8 @@
                                 <input class="form-control" type="date" name="date" id="dateModalInput" value="">
                             </div>
                             <div class="form-group">
-                                <label for="Details">Details (add your tags)</label>
-                                <input class="form-control" type="text" name="details" id="detailsModalInput" value="">
+                                <label for="Details">Title (add your tags)</label>
+                                <input class="form-control" type="text" name="titleModalInput" id="titleModalInput" value="">
                             </div>
                             <div class="form-group">
                                 <label for="Content">Message:</label>

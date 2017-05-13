@@ -10,14 +10,6 @@ $(function() {
     updatePage();
 
 
-
-
-
-
-
-
-
-
     //Raven controls
     $('#btnSendRaven').click(function() {
         var post = $('#postsForm').serialize();
@@ -28,6 +20,8 @@ $(function() {
             url: "../php/insertPost.php",
             success: function(response) {
                 console.log("Success: " + response);
+                //get the posts from the database
+                location.reload();
             },
             error: function(response) {
                 console.log("Error: " + response);
@@ -38,7 +32,9 @@ $(function() {
     $('#openPostButton').click(function() {
         //get the posts from the database
         $.getJSON('../php/getPosts.php', function(data) {
-
+            data.forEach(function(element) {
+                appendPost(element);
+            }, this);
         });
     });
 
@@ -87,3 +83,58 @@ function updatePage() {
         });
     });
 }
+
+//function neede toappend each post to the post forum
+function appendPost(element) {
+    $.ajax({
+        data: element,
+        type: "get",
+        url: '../php/getCurrentUser.php',
+        success: function(response) {
+            var result = JSON.parse(response);
+            createPost(element, result);
+        },
+        error: function(response) {
+
+        }
+    });
+}
+
+function createPost(element, response) {
+    //add the main container for the post - well 
+    $('.main-body').append('<div class="well" id="' + element.postID + '">');
+    //add the footer
+    $('#' + element.postID).append('<footer>');
+    //add the <p> element to display the date that the post was created on
+    $('#' + element.postID + ' footer').append('<p class="pull-right">' + element.dateCreated + '</p>');
+    //add the h4 tag to display the user information
+    $('#' + element.postID + ' footer').append('<h4>' + response.title + " " + response.name + " of House " + response.houseID + '</h4>');
+    //add the <p> element for the tags
+    $('#' + element.postID + ' footer').append('<p>' + element.title + '</p>');
+    //close the footer
+    $('#' + element.postID).append('</footer>');
+    //add the space line <hr>
+    $('#' + element.postID).append('<hr>');
+    //add the <p> item to show the post content
+    $('#' + element.postID).append('<p>' + element.content + '</p>');
+    //close the main container well
+    $('.main-body').append('</div>');
+}
+
+// async function requestNotification() {
+//     //get the posts from the database
+//     $('.main-body').empty();
+//     $.getJSON('../php/getPosts.php', function(data) {
+//         data.forEach(function(element) {
+//             appendPost(element);
+//         }, this);
+//     });
+//     await sleep(10000);
+//     requestNotification();
+// }
+
+// function sleep(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// requestNotification();

@@ -13,7 +13,7 @@
     $houseID = $array['HouseID'];
 
     //create a new Post object to work with
-    $post = new Post(0, strip_tags($_GET['Title']), strip_tags($_GET['Content']), time(), $userID, $houseID);
+    $post = new Post(0, strip_tags($_GET['titleModalInput']), strip_tags($_GET['Content']), strip_tags($_GET['date']), $userID, $houseID);
 
     //insert the newly created post in the database
     $query = "INSERT INTO Posts VALUES(NULL, ?, ?, ?, ?, ?);";
