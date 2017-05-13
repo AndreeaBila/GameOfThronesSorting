@@ -12,7 +12,7 @@
         <title>Westermore</title>
 
         <!-- Bootstrap -->
-        <!--<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+        <!--<link href="../../Bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
         <!-- FontAwesome -->
         <!--<link rel="stylesheet" href="../../FontAwesome/css/font-awesome.min.css">-->
         <!-- My CSS -->
@@ -55,10 +55,10 @@
         </div>
     
     
-    <!--jQuery (necessary for Bootstrap's JavaScript plugins) 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!--<script src="../Bootstrap/js/bootstrap.min.js"></script>-->
+    <!--<script src="../../Bootstrap/js/bootstrap.min.js"></script>-->
     <!-- The js script for this file -->
     </body>
 </html>

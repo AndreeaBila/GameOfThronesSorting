@@ -1,7 +1,7 @@
 <?php
     session_start();
     require 'security.php';  
-    checkSession();
+    //checkSession();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img class="sigil" alt="Sigil" src="../img/sigils/lannister.png"></a>
+                    <a class="navbar-brand" href="#"><img alt="Sigil" src="../img/westermore2.png"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
@@ -65,101 +65,145 @@
 
         <div class="container  my-content">        
             <aside class="col-md-3 pull-right">
-                <img class=" flag" src="../img/flags/lannister.jpg" alt="">
+                <img class="flag" src="../img/flags/lannister.jpg" alt="">
             </aside>
 
             <section class="col-md-9 content-left text-center">
-                    <h1>House Lannister</h1>
-                    <h2>Words: "Hear me roar"</h2>
-
-                    <div class="family">
-                        <h3>Family and Friends</h3>
-                        <img src="../img/families/lannister1.png" alt="no">  
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
-                        fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
-                        dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
-                        ab non tenetur illo, dignissimos reiciendis minima nobis.</p>
-                    </div>
+                <div class="col-md-4 icon">
+                    <img class="sigil" id="titleSigil" src="../img/sigils/lannister.png" alt="no">
+                </div>
+                <div class="col-md-4">
+                    <h1 id="addHouse">House Lannister</h1>
+                    <h2 id="addWords">Words: "Hear me roar"</h2>
+                </div>
+                <div class="col-md-4 icon">
+                    <img class="sigil" id="titleSigil" src="../img/sigils/lannister.png" alt="no">
+                </div>
                     
-                    <div class="home">
-                        <h3>Home</h3>
-                        <img src="../img/homes/lannister.jpg" alt="no">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
-                        fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
-                        dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
-                        ab non tenetur illo, dignissimos reiciendis minima nobis.</p>
-                        
-                    </div>
+                <div class="overview col-md-12">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
+                    fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
+                    dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
+                    ab non tenetur illo, dignissimos reiciendis minima nobis.</p>
+                </div>
 
-                    <div class="more">
-                        <h3>History</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, obcaecati magnam
-                            voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur dolore, labore facere 
-                            laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in ab non tenetur illo, 
-                            dignissimos reiciendis minima nobis. Harum ut possimus quasi, numquam, nam officiis. Doloremque soluta nulla, 
-                            fugit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, obcaecati 
-                            magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur dolore, labore 
-                            facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in ab non tenetur 
-                            illo, dignissimos reiciendis minima nobis. Harum ut possimus quasi, numquam, nam officiis. Doloremque soluta 
-                            nulla, fugit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, 
-                            obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur dolore,
-                            labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in ab non
-                            tenetur illo, dignissimos reiciendis minima nobis. Harum ut possimus quasi, numquam, nam officiis. Doloremque 
-                            soluta nulla, fugit.</p>
-                    </div> 
+                <div class="family col-md-12">
+                    <h3>Family and Friends</h3>
+                    <img src="../img/families/lannister.png" alt="no">  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
+                    fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
+                    dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
+                    ab non tenetur illo, dignissimos reiciendis minima nobis.</p>
+                </div>
                 
+                <div class="home col-md-12">
+                    <h3>Home</h3>
+                    <img src="../img/homes/lannister.jpg" alt="no">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
+                    fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
+                    dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
+                    ab non tenetur illo, dignissimos reiciendis minima nobis.</p>
                     
+                </div>
+
+                <div class="more col-md-12">
+                    <h3>History</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, obcaecati magnam
+                        voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur dolore, labore facere 
+                        laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in ab non tenetur illo, 
+                        dignissimos reiciendis minima nobis. Harum ut possimus quasi, numquam, nam officiis. Doloremque soluta nulla, 
+                        fugit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, obcaecati 
+                        magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur dolore, labore 
+                        facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in ab non tenetur 
+                        illo, dignissimos reiciendis minima nobis. Harum ut possimus quasi, numquam, nam officiis. Doloremque soluta 
+                        nulla, fugit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, 
+                        obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur dolore,
+                        labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in ab non
+                        tenetur illo, dignissimos reiciendis minima nobis. Harum ut possimus quasi, numquam, nam officiis. Doloremque 
+                        soluta nulla, fugit.</p>
+                </div> 
             </section>
         </div>
+
+        <div class="clear"></div>
 
         <!-- The modal for the send the raven interface -->
          <div class="modal fade" id="postsModal">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <!-- This will be the header of the modal -->
-                    <div class="modal-header">
-                        <button class="close" type="button" data-dismiss="modal">&times;</button>
-                        <h2>Raven Network</h2>
+                    <div id="ravenNetwork">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal">&times;</button>
+                            <h2>Raven Network</h2>
+                        </div>
+                        <div class="main-body">
+                            <div class="well">
+                                <footer>
+                                    <p class="pull-right">5th of May 2017</p> 
+                                    <h4>Queen Andreea of House Lannister</h4>
+                                    <p>| #lorem #ipsum</p>
+                                </footer>
+                                <hr>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam itaque cumque unde provident sunt ea 
+                                    quae. Vero unde, optio harum iure qui dolores sed animi ipsam ratione vitae. Saepe, delectus! </p>
+                            </div>
+
+                            <div class="well">
+                                <footer>
+                                    <p class="pull-right">5th of May 2017</p> 
+                                    <h4>Queen Andreea of House Lannister</h4>
+                                    <p>| #lorem #ipsum</p>
+                                </footer>
+                                <hr>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam itaque cumque unde provident sunt ea 
+                                    quae. Vero unde, optio harum iure qui dolores sed animi ipsam ratione vitae. Saepe, delectus! </p>
+                            </div>
+
+                            <div class="well">
+                                <footer>
+                                    <p class="pull-right">5th of May 2017</p> 
+                                    <h4>Queen Andreea of House Lannister</h4>
+                                    <p>| #lorem #ipsum</p>
+                                </footer>
+                                <hr>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam itaque cumque unde provident sunt ea 
+                                    quae. Vero unde, optio harum iure qui dolores sed animi ipsam ratione vitae. Saepe, delectus! </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="main-body">
-                        <div class="well">
-                            asdsd
+                    
+
+                    <button id="sendRavenButton" class="btn btn-1 btn-lg">Send a Raven</button>
+
+                    <div id="sendRaven">
+                        <div class="modal-header">
+                            <h2>Send a raven</h2>
                         </div>
-                        <div class="well">
-                            asdsd
-                        </div>
-                        <div class="well">
-                            asdsd
-                        </div>
-                        <div class="well">
-                            asdsd
-                        </div>
-                        <div class="well">
-                            asdsd
-                        </div>
-                        <div class="well">
-                            asdsd
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class="text-center">Send a raven</h1>
-                    </div>
+                        
                     <div class="main-body">
                         <form id="postsForm">
                             <div class="form-group">
-                                <label for="Title">Title</label>
-                                <input class="form-control" type="text" name="Title" id="Title" value="">
+                                <label for="Date">Date</label>
+                                <input class="form-control" type="date" name="date" id="dateModalInput" value="">
                             </div>
                             <div class="form-group">
-                                <label for="Content">Comment:</label>
-                                <textarea class="form-control" rows="5" name="Content" id="Content"></textarea>
+                                <label for="Details">Details (add your tags)</label>
+                                <input class="form-control" type="text" name="details" id="detailsModalInput" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="Content">Message:</label>
+                                <textarea class="form-control" rows="12" name="Content" id="Content"></textarea>
                             </div>
                         </form>
+                        </div>
+                        <div class="twoButtons">
+                            <button class="btn btn-lg btn-2" id="btnSendRaven">Send It</button>
+                            <button class="btn btn-lg btn-2" id="returnToNetwork">Return</button>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <a class="btn btn-success btn-lg" id="btnSendRaven">Send It</a>
-                        <a class="btn btn-danger btn-lg" data-dismiss="modal" id="modalDismiss">Dismiss</a>
-                    </div>
+                        
                 </div>
             </div>
     </div>

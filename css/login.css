@@ -107,3 +107,8 @@ select {
     margin: 0 auto;
     margin-top: 5px;
 }
+
+#loginForm {
+    overflow: hidden !important;
+    display: block;
+}

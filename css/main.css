@@ -2,25 +2,24 @@ body {
     margin: 0px !important;
     padding: 0px !important;
     font-family: 'Times New Roman', Times, serif;
-    /*background-image: url('../img/pattern2.jpg');*/
-    background-color: #e0e0e0;
+    background-image: url('../img/pattern2.jpg');
+    background-size: 70%;
+    background-color: #B33C3C;
+    color: #3B221A;
 }
 
 .container {
     width: 85%;
 }
 
-.sigil {
-    width: 11%;
-    margin-top: -13px;
-}
 
-.my-nav {
-    background-color: #f0f0f0 !important;
+.my-nav, .navbar {
+    background-image: url('../img/woodTexture.png');
 }
 
 .navbar {
     height: 80px !important;
+
 }
 
 .navbar-nav li {
@@ -37,8 +36,9 @@ body {
 #addTitle,
 #addTitle:hover,
 #addTitle:focus,
-#addTitle:active {
-    color: gray;
+#addTitle:active,
+.caret {
+    color: #ECCBA0;
 }
 
 .dropdown-menu>li>a {
@@ -52,6 +52,7 @@ body {
 }
 
 .flag {
+    margin-top: -3px;
     margin-left: 15%;
     width: 90%;
 }
@@ -94,12 +95,81 @@ h1 {
     font-size: 350%;
 }
 
+.sigil {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.navbar-brand img {
+    width: 25%;
+    margin-top: -15px;
+}
+
 .main-body {
-    max-height: 200px;
+    max-height: 420px;
     overflow-y: scroll;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 #Content {
     max-width: 100%;
-    max-height: 200px;
+    max-height: 450px;
+}
+
+.btn-1 {
+    width: 30%;
+    margin: 1% 35%;
+}
+
+.twoButtons {
+    margin: 2% 0% 2% 30%;
+}
+
+.btn-2 {
+    width: 30%;
+    display: inline-block;
+}
+
+.btn,
+.btn:active:focus, 
+.btn:focus, 
+.btn:active, 
+.btn:active:hover{
+    background-image: url("../img/woodTexture.png") !important;
+    box-shadow: 10px 10px 40px black;
+    color: #ECCBA0 !important;
+    outline: none;
+}
+
+.btn:hover {
+    transform: scale(0.95,0.95);
+    outline: none;
+}
+
+.modal {
+    margin-top: 70px;
+}
+
+.modal-header {
+    background-image: url("../img/woodTexture.png") !important;
+    color: #ECCBA0 !important;
+}
+
+.well, #postsForm input, #postsForm textarea {
+    background-image: url('../img/paper1.jpg');
+    color: #3B221A;
+}
+
+.model-content {
+    background-image: url("../img/pattern2.png") !important;
+}
+
+#postsForm label {
+    font-weight: normal;
+    font-size: 130%;
+}
+
+hr {
+    border-color: #DBBD91;
 }

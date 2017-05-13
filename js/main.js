@@ -29,4 +29,17 @@ $(function() {
             console.log(data);
         });
     });
+
+    $('#sendRaven').hide();
+    $('#sendRavenButton').click(function() {
+    $('#sendRavenButton').hide(500);
+    $('#ravenNetwork').hide(500);
+    $('#sendRaven').show(500);
+    });
+
+    $('#returnToNetwork').click(function() {
+    $('#sendRaven').hide(500);
+    $('#ravenNetwork').show(500);
+    $('#sendRavenButton').show(500);
+    });
 });

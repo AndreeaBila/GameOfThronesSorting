@@ -50,7 +50,6 @@ body {
 .nav ul li a:active,
 button:hover,
 button:active {
-    color: #684A3C;
     transform: scale(0.95, 0.95);
     outline: none;
 }
