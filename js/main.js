@@ -26,20 +26,20 @@ $(function() {
     $('#openPostButton').click(function() {
         //get the posts from the database
         $.getJSON('../php/getPosts.php', function(data) {
-            console.log(data);
+
         });
     });
 
     $('#sendRaven').hide();
     $('#sendRavenButton').click(function() {
-    $('#sendRavenButton').hide(500);
-    $('#ravenNetwork').hide(500);
-    $('#sendRaven').show(500);
+        $('#sendRavenButton').hide(500);
+        $('#ravenNetwork').hide(500);
+        $('#sendRaven').show(500);
     });
 
     $('#returnToNetwork').click(function() {
-    $('#sendRaven').hide(500);
-    $('#ravenNetwork').show(500);
-    $('#sendRavenButton').show(500);
+        $('#sendRaven').hide(500);
+        $('#ravenNetwork').show(500);
+        $('#sendRavenButton').show(500);
     });
 });
