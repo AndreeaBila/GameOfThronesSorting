@@ -16,7 +16,7 @@ body {
 }
 
 .my-nav {
-    background-color: #F19B68 !important;
+    background-color: #f0f0f0 !important;
 }
 
 .navbar {
@@ -34,6 +34,7 @@ body {
     background-color: transparent !important;
 }
 
+#addTitle,
 #addTitle:hover,
 #addTitle:focus,
 #addTitle:active {
