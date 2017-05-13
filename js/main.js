@@ -68,8 +68,22 @@ function updatePage() {
             }, this);
 
             //update the page elements
+            //update sigils
+            $('.sigil').attr("src", userHouse.iconPath);
 
-
+            //update title and motto
+            $('#addHouse').html(userHouse.houseTitle);
+            $('#addWords').html(userHouse.motto);
+            //change flag
+            $('.flag').attr("src", userHouse.flagPath);
+            //change family photo and text
+            $('#familyPhoto').attr("src", userHouse.familyPath);
+            $('#aboutFamily').html(userHouse.aboutFamily);
+            //change home photo description
+            $('#homePath').attr("src", userHouse.homePath);
+            $('#aboutHome').html(userHouse.aboutHome);
+            //change history desription
+            $('#historyDescription').html(userHouse.historyDescription);
         });
     });
 }

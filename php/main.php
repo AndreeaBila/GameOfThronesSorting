@@ -90,8 +90,8 @@
 
                 <div class="family col-md-12">
                     <h3>Family and Friends</h3>
-                    <img src="../img/families/lannister.png" alt="no">  
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
+                    <img id="familyPhoto" src="../img/families/lannister.png" alt="no">  
+                    <p id="aboutFamily">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
                     fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
                     dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
                     ab non tenetur illo, dignissimos reiciendis minima nobis.</p>
@@ -99,8 +99,8 @@
                 
                 <div class="home col-md-12">
                     <h3>Home</h3>
-                    <img src="../img/homes/lannister.jpg" alt="no">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
+                    <img id="homePath" src="../img/homes/lannister.jpg" alt="no">
+                    <p id="aboutHome">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
                     fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
                     dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
                     ab non tenetur illo, dignissimos reiciendis minima nobis.</p>
@@ -109,7 +109,7 @@
 
                 <div class="more col-md-12">
                     <h3>History</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, obcaecati magnam
+                    <p id="historyDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit fuga, obcaecati magnam
                         voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur dolore, labore facere 
                         laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in ab non tenetur illo, 
                         dignissimos reiciendis minima nobis. Harum ut possimus quasi, numquam, nam officiis. Doloremque soluta nulla, 
