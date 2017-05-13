@@ -123,8 +123,8 @@
             <form class="login" id="loginForm">
                 <h2>Log In</h2>
 
-                <input type="email" name="loginEmail" id="loginEmail" placeholder="Email">
-                <input type="password" name="loginPassword" id="loginPassword" placeholder="Password">
+                <input type="email" name="loginEmail" id="loginEmail" placeholder="Email" required>
+                <input type="password" name="loginPassword" id="loginPassword" placeholder="Password" required>
                 <div class="alert alert-danger alert-dismissable alert-custom" id="login_emailAlert">
                     <a class="close" aria-label="close">&times;</a>
                     <strong>Error!</strong> The e-mail or password are incorrect.
@@ -137,7 +137,7 @@
             <form class="signup" id="signupForm">
                 <h2>Create Account</h2>
 
-                <input type="text" name="signupName" placeholder="First Name">
+                <input type="text" name="signupName" placeholder="First Name" required>
                 <div class="alert alert-danger alert-dismissable alert-custom" id="signup_generalAlert">
                     <a class="close" aria-label="close">&times;</a>
                     <strong>Error!</strong> The provided email address in already in use.
@@ -146,15 +146,15 @@
                     <a class="close" aria-label="close">&times;</a>
                     <strong>Sorry!</strong> You have to fill in all the details!
                 </div>
-                <input type="email" name="signupEmail" id="signupEmail" placeholder="Email">
-                <input type="password" name="signupPassword" id="signupPassword" placeholder="Password">
-                <input type="password" name="signupRePassword" id="signupRePassword" placeholder="Retype Password">
+                <input type="email" name="signupEmail" id="signupEmail" placeholder="Email" required>
+                <input type="password" name="signupPassword" id="signupPassword" placeholder="Password" required>
+                <input type="password" name="signupRePassword" id="signupRePassword" placeholder="Retype Password" required>
                 <div class="alert alert-warning alert-dismissable alert-custom" id="signup_passwordAlert">
                     <a class="close" aria-label="close">&times;</a>
                     <strong>Warning!</strong> The two passwords do not match.
                 </div>
-                <input type="text" name="signupDoB" onfocus="(this.type='date')" placeholder="Date of Birth">
-                <select id="signupTitle" placeholder="Title" name="signupTitle">
+                <input type="text" name="signupDoB" onfocus="(this.type='date')" placeholder="Date of Birth" required>
+                <select id="signupTitle" placeholder="Title" name="signupTitle" required>
                     <option value="" disabled selected>Title</option>
                     <option value="andal">Andal</option>
                     <option value="lady">Lady</option>
