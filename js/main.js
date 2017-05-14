@@ -32,9 +32,9 @@ $(function() {
     $('#openPostButton').click(function() {
         //get the posts from the database
         $.getJSON('../php/getPosts.php', function(data) {
-            data.forEach(function(element) {
-                appendPost(element);
-            }, this);
+            for (var i = data.length - 1; i >= 0; i--) {
+                appendPost(data[i]);
+            }
         });
     });
 
