@@ -9,7 +9,8 @@
             "flagPath": "../img/flags/stark.png",
             "aboutHome": "",
             "historyDescription": "",
-            "aboutFamily": ""
+            "aboutFamily": "",
+            "houseOverview": ""
         },
         {
             "houseID": "5",
@@ -21,7 +22,8 @@
             "flagPath": "../img/flags/targaryen.jpg",
             "aboutHome": "",
             "historyDescription": "",
-            "aboutFamily": ""
+            "aboutFamily": "",
+            "houseOverview": ""
         },
         {
             "houseID": "6",
@@ -33,7 +35,8 @@
             "flagPath": "../img/flags/baratheon.jpg",
             "aboutHome": "",
             "historyDescription": "",
-            "aboutFamily": ""
+            "aboutFamily": "",
+            "houseOverview": ""
         },
         {
             "houseID": "4",
@@ -45,7 +48,8 @@
             "flagPath": "../img/flags/night.jpg",
             "aboutHome": "",
             "historyDescription": "",
-            "aboutFamily": ""
+            "aboutFamily": "",
+            "houseOverview": ""
         },
         {
             "houseID": "7",
@@ -57,7 +61,8 @@
             "flagPath": "../img/flags/martell.jpg",
             "aboutHome": "",
             "historyDescription": "",
-            "aboutFamily": ""
+            "aboutFamily": "",
+            "houseOverview": ""
         },
         {
             "houseID": "3",
@@ -69,7 +74,8 @@
             "flagPath": "../img/flags/lannister.jpg",
             "aboutHome": "",
             "historyDescription": "",
-            "aboutFamily": ""
+            "aboutFamily": "",
+            "houseOverview": ""
         }
     ]
 }

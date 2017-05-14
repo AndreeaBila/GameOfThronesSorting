@@ -99,7 +99,7 @@
                     
                 <div class="overview col-md-12">
                     <h3>About</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
+                    <p id="houseOverview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero facere esse odit 
                     fuga, obcaecati magnam voluptate neque consequuntur voluptatibus quidem, inventore minus? Explicabo pariatur 
                     dolore, labore facere laborum. Eaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis id in 
                     ab non tenetur illo, dignissimos reiciendis minima nobis.</p>

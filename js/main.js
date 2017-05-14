@@ -66,7 +66,6 @@ function updatePage() {
             //update the page elements
             //update sigils
             $('.sigil').attr("src", userHouse.iconPath);
-
             //update title and motto
             $('#addHouse').html(userHouse.houseTitle);
             $('#addWords').html(userHouse.motto);
@@ -80,6 +79,8 @@ function updatePage() {
             $('#aboutHome').html(userHouse.aboutHome);
             //change history desription
             $('#historyDescription').html(userHouse.historyDescription);
+            //change house overview
+            $('#houseOverview').html(userHouse.houseOverview);
         });
     });
 }
