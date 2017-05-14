@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="family col-md-12">
-                    <h3>Family and Friends</h3>
+                    <h3>Members, Friends, Ancestors and Household</h3>
                     <img id="familyPhoto" src="">  
                     <p id="aboutFamily"></p>
                 </div>
