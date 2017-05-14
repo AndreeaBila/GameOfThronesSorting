@@ -63,7 +63,12 @@
                             $query = "SELECT Name FROM Houses WHERE(HouseID = $user->houseID)";
                             $response = $db->query($query);
                             $array = mysqli_fetch_array($response, MYSQLI_ASSOC);
-                            echo ucfirst($user->title).' '.$user->name.' '.$array['Name'];
+                            $user->name = ucfirst($user->name);
+                            if($array['Name'] != "Night"){
+                                echo ucfirst($user->title).' '.$user->name.' of House '.$array['Name'];
+                            }else{
+                                echo ucfirst($user->title).' '.$user->name." of the Night's Watch";
+                            }
                         ?>
                         </a></li>
                         <li class="dropdown">
