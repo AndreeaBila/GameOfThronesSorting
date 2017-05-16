@@ -7,6 +7,10 @@ body {
     color: #3B221A;
 }
 
+.small-show {
+    visibility: hidden;
+}
+
 .container {
     width: 85%;
 }
@@ -18,7 +22,6 @@ body {
 
 .navbar {
     height: 80px !important;
-
 }
 
 .navbar-nav li {
@@ -172,3 +175,493 @@ h1 {
 hr {
     border-color: #DBBD91;
 }
+
+@media screen 
+and (max-width: 1720px)
+and (min-width: 1500px) {
+    h1 {
+       font-size: 270%;  
+    }
+
+    h2 {
+        font-size: 180%;
+    }
+
+    .content-left h3 {
+        font-size: 150%;
+    }
+
+    .content-left p {
+        font-size: 130%;
+    }
+
+    .flag {
+        margin-left: -20px;
+        width: 115%;
+    } 
+    .sigil {
+        margin-top: 5px;
+    }
+}
+
+@media screen 
+and (max-width: 1499.999px)
+and (min-width: 1300px) {
+    h1 {
+       font-size: 270%;  
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .content-left h3 {
+        font-size: 135%;
+    }
+
+    .content-left p {
+        font-size: 120%;
+    }
+
+    .flag {
+        margin-left: -40px;
+        width: 120%;
+    } 
+    .sigil {
+        width: 55%;
+        margin-top: 13px;
+    }
+}
+
+@media screen 
+and (max-width: 1299.999px)
+and (min-width: 1100px) {
+    h1 {
+       font-size: 230%;  
+    }
+
+    h2 {
+        font-size: 124%;
+    }
+
+    .content-left h3 {
+        font-size: 115%;
+    }
+
+    .content-left p {
+        font-size: 100%;
+    }
+
+    .flag {
+        margin-left: -40px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 15px;
+    }
+}
+
+@media screen 
+and (max-width: 1099.999px)
+and (min-width: 992px) {
+    h1 {
+       font-size: 220%;  
+    }
+
+    h2 {
+        font-size: 107%;
+    }
+
+    .content-left h3 {
+        font-size: 98%;
+    }
+
+    .content-left p {
+        font-size: 88%;
+    }
+
+    .flag {
+        margin-left: -40px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 15px;
+    }
+
+    #addTitle {
+        font-size: 75%;
+    }
+}
+
+@media screen 
+and (max-width: 991.999px)
+and (min-width: 830px) {
+    h1 {
+       font-size: 170%;  
+    }
+
+    h2 {
+        font-size: 83%;
+    }
+
+    .content-left h3 {
+        font-size: 80%;
+    }
+
+    .content-left p {
+        font-size: 75%;
+    }
+
+    .flag {
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    #addTitle {
+        font-size: 70%;
+    }
+
+    .navbar-brand img {
+        width: 20%;
+    }
+}
+
+@media screen 
+and (max-width: 829.999px)
+and (min-width: 779px) {
+    h1 {
+       font-size: 150%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 75%;
+    }
+
+    .my-content {
+        margin-top: 40px;
+    }
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 80%;
+    }
+
+    .content-left p {
+        font-size: 75%;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        height: 60px !important;
+    }
+
+    .navbar-nav li {
+        margin-top: 5px;
+        margin-right: -5px;
+        font-size: 70%;
+    }
+
+    .navbar-brand img {
+        width: 17%;
+    }    
+}
+
+@media screen 
+and (max-width: 778.999px)
+and (min-width: 767px) {
+    h1 {
+       font-size: 150%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 75%;
+    }
+
+    .my-content {
+        margin-top: 40px;
+    }
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 80%;
+    }
+
+    .content-left p {
+        font-size: 75%;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        height: 60px !important;
+    }
+
+    #addTitle {
+        font-size: 80%;
+        margin-top: -50px;
+        margin-left: 120px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 300px;
+    }
+
+    .navbar-brand img {
+        width: 17%;
+    }   
+
+}
+
+@media screen 
+and (max-width: 766.999px)
+and (min-width: 480px) {
+    h1 {
+       font-size: 230%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 160%;
+        margin-bottom: -200px;
+    }
+
+    .my-content {
+        margin-top: -900px;
+    }
+
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 130%;
+    }
+
+    .content-left p {
+        font-size: 100%;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .change-left {
+        float: left !important;
+    }
+
+    #addTitle {
+        
+        margin-top: -50px;
+        margin-left: 80px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 300px;
+    }
+    .navbar-brand img {
+        width: 17%;
+    }
+
+    .small-hide {
+        visibility: hidden;
+    }
+    
+}
+
+@media screen 
+and (max-width: 479.999px)
+and (min-width: 365px) {
+    h1 {
+       font-size: 210%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 140%;
+        margin-bottom: -150px;
+    }
+
+    .my-content {
+        margin-top: -900px;
+    }
+
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 110%;
+    }
+
+    .content-left p {
+        font-size: 90%;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .change-left {
+        float: left !important;
+    }
+
+    #addTitle {
+        font-size: 90%;
+        margin-top: -50px;
+        margin-left: 50px;
+        width: 250px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 250px;
+    }
+
+    .navbar-brand img {
+        width: 17%;
+    }
+
+    .small-hide {
+        visibility: hidden;
+    }
+}
+
+
+@media screen 
+and (max-width: 364.999px)
+and (min-width: 280px) {
+    h1 {
+       font-size: 180%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 120%;
+        margin-bottom: -100px;
+    }
+
+    .my-content {
+        margin-top: -800px;
+    }
+
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 100%;
+    }
+
+    .content-left p {
+        font-size: 90%;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .change-left {
+        float: left !important;
+    }
+
+    #addTitle {
+        font-size: 80%;
+        margin-top: -50px;
+        margin-left: 50px;
+        width: 250px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 230px;
+    }
+
+    .navbar-brand img {
+        width: 20%;
+    }
+
+    .small-hide {
+        visibility: hidden;
+    }
+}
+
+@media screen 
+and (max-width: 334.999px)
+and (min-width: 310px) {
+    h2 {
+        margin-bottom: -70px;
+    }
+
+    .my-content {
+        margin-top: -700px;
+    }
+    #addTitle {
+        font-size: 80%;
+        margin-top: -50px;
+        margin-left: 50px;
+        width: 250px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 225px;
+    }
+
+    .small-hide {
+        visibility: hidden;
+    }
+}
+

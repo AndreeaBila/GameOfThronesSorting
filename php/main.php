@@ -36,17 +36,17 @@
             <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" datatarget="#
+                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#
                     bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    </button>
+                    </button>-->
                     <a class="navbar-brand" href="#"><img alt="Sigil" src="../img/westermore2.png"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                <div class="pull-right change-left" >
                     <ul class="nav navbar-nav">
                         <li><a href="#" id="addTitle">
                         <?php
@@ -86,41 +86,41 @@
         <div class="clear"></div>
 
         <div class="container  my-content">        
-            <aside class="col-md-3 pull-right">
+            <aside class="col-md-3 col-sm-3 pull-right small-hide">
                 <img class="flag" src="" alt="">
             </aside>
 
-            <section class="col-md-9 content-left text-center">
-                <div class="col-md-4 icon">
+            <section class="col-md-9 col-sm-9 content-left text-center">
+                <div class="col-md-4 col-sm-4 icon">
                     <img class="sigil" id="titleSigil" src="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <h1 id="addHouse"></h1>
                     <h2 id="addWords"></h2>
                 </div>
-                <div class="col-md-4 icon">
+                <div class="col-md-4 col-sm-4 icon small-hide">
                     <img class="sigil" id="titleSigil" src="">
                 </div>
                     
-                <div class="overview col-md-12">
+                <div class="overview col-md-12 col-sm-12">
                     <h3>About</h3>
                     <p id="houseOverview"></p>
                 </div>
 
-                <div class="family col-md-12">
+                <div class="family col-md-12 col-sm-12">
                     <h3>Members, Friends, Ancestors and Household</h3>
                     <img id="familyPhoto" src="">  
                     <p id="aboutFamily"></p>
                 </div>
                 
-                <div class="home col-md-12">
+                <div class="home col-md-12 col-sm-12">
                     <h3>Home</h3>
                     <img id="homePath" src="">
                     <p id="aboutHome"></p>
                     
                 </div>
 
-                <div class="more col-md-12">
+                <div class="more col-md-12 col-sm-12">
                     <h3>History</h3>
                     <p id="historyDescription"></p>
                 </div> 
