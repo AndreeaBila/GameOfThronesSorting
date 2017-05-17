@@ -109,7 +109,11 @@ function createPost(element, response) {
     //add the <p> element to display the date that the post was created on
     $('#' + element.postID + ' footer').append('<p class="pull-right">' + element.dateCreated + '</p>');
     //add the h4 tag to display the user information
-    $('#' + element.postID + ' footer').append('<h4>' + response.title + " " + response.name + " of House " + response.houseID + '</h4>');
+    if (response.houseID != "Night") {
+        $('#' + element.postID + ' footer').append('<h4>' + response.title + " " + response.name + " of House " + response.houseID + '</h4>');
+    } else {
+        $('#' + element.postID + ' footer').append('<h4>' + response.title + " " + response.name + " of The Night's Watch </h4>");
+    }
     //add the <p> element for the tags
     $('#' + element.postID + ' footer').append('<p>' + element.title + '</p>');
     //close the footer

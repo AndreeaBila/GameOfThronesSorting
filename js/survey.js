@@ -36,6 +36,7 @@ $(function() {
                 checkAny = true;
             }
             $('.fa-circle').css('color', 'white');
+            $('input').prop("checked", false);
             if (checkAny) {
                 surveyLoop(array, ++i);
             }
@@ -79,7 +80,6 @@ function surveyLoop(array, i) {
         //change page
         calculateScore();
     }
-    console.log(house);
 }
 
 function chooseHouse(optionHouse) {
@@ -102,8 +102,6 @@ function chooseHouse(optionHouse) {
         case "Targaryen":
             house.targaryen++;
             break;
-        default:
-            console.log("Error");
     }
 }
 
