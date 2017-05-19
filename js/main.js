@@ -103,7 +103,7 @@ function appendPost(element) {
 
 function createPost(element, response) {
     //add the main container for the post - well 
-    $('.main-body').append('<div class="well" id="' + element.postID + '">');
+    $('#post-body').append('<div class="well" id="' + element.postID + '">');
     //add the footer
     $('#' + element.postID).append('<footer>');
     //add the <p> element to display the date that the post was created on
@@ -123,12 +123,12 @@ function createPost(element, response) {
     //add the <p> item to show the post content
     $('#' + element.postID).append('<p>' + element.content + '</p>');
     //close the main container well
-    $('.main-body').append('</div>');
+    $('#post-body').append('</div>');
 }
 
 // async function requestNotification() {
 //     //get the posts from the database
-//     $('.main-body').empty();
+//     $('#post-body').empty();
 //     $.getJSON('../php/getPosts.php', function(data) {
 //         data.forEach(function(element) {
 //             appendPost(element);

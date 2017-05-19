@@ -139,7 +139,7 @@
                             <button class="close" type="button" data-dismiss="modal">&times;</button>
                             <h2>Raven Network</h2>
                         </div>
-                        <div class="main-body">
+                        <div class="main-body" id="post-body">
                             <!--<div class="well">
                                 <footer>
                                     <p class="pull-right">5th of May 2017</p> 
