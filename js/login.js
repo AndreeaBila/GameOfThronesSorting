@@ -115,7 +115,8 @@ function signIn() {
 
 //script to check if every detail has been filled
 function checkDetails() {
-    if ($('#signupName').val() == '' || $('#signupEmail').val() == '' || $('#signupPassword').val() == '') {
+    var str = $('#signupEmail').val();
+    if ($('#signupName').val() == '' || $('#signupEmail').val() == '' || $('#signupPassword').val() == '' || str.indexOf('@') == -1) {
         return false;
     }
     return true;

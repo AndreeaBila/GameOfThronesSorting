@@ -142,7 +142,7 @@
                 </div>
                 <div class="alert alert-info alert-dismissable alert-custom" id="signup_fillDetailsAlert">
                     <a class="close" aria-label="close">&times;</a>
-                    <strong>Sorry!</strong> You have to fill in all the details!
+                    <strong>Sorry!</strong> You have to fill in all the details and a valid email adress!
                 </div>
                 <input type="email" name="signupEmail" id="signupEmail" placeholder="Email" required>
                 <input type="password" name="signupPassword" id="signupPassword" placeholder="Password" required>
