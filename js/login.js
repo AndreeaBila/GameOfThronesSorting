@@ -98,7 +98,6 @@ function signIn() {
         success: function(response) {
             //don't do anything
             //php will move the user to the desired webpage
-            console.log("Success: " + response);
             if (response == "Error") {
                 $('#login_emailAlert').show(400);
             } else {
@@ -107,7 +106,6 @@ function signIn() {
         },
         error: function(response) {
             //display an alert staiting that the login information was wrong
-            console.log("Error: " + response);
             $('#login_emailAlert').show(400);
         }
     });

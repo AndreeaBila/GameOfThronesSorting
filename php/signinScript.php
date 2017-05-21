@@ -17,7 +17,6 @@
     //create a new hash for the given password
     $tempPassword = sha1($salt.'--'.$password);
     if($tempPassword == $dbPassword){
-        $userID;
         session_id($userID);
         session_start();
         echo $userID;

@@ -19,12 +19,10 @@ $(function() {
             type: "get",
             url: "../php/insertPost.php",
             success: function(response) {
-                console.log("Success: " + response);
                 //get the posts from the database
                 location.reload();
             },
             error: function(response) {
-                console.log("Error: " + response);
             }
         });
     });
