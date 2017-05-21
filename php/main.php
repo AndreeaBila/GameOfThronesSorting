@@ -158,6 +158,7 @@
 
                     <div id="sendRaven">
                         <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal">&times;</button>
                             <h2>Send a raven</h2>
                         </div>
                         
@@ -168,12 +169,12 @@
                                 <input class="form-control" type="date" name="date" id="dateModalInput" value="">
                             </div>
                             <div class="form-group">
-                                <label for="Details">Title (add your tags)</label>
+                                <label for="Details">Subject</label>
                                 <input class="form-control" type="text" name="titleModalInput" id="titleModalInput" value="">
                             </div>
                             <div class="form-group">
                                 <label for="Content">Message:</label>
-                                <textarea class="form-control" rows="12" name="Content" id="Content"></textarea>
+                                <textarea class="form-control" rows="8" name="Content" id="Content"></textarea>
                             </div>
                         </form>
                         </div>
@@ -185,7 +186,8 @@
                         
                 </div>
             </div>
-    </div>
+        </div>
+
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

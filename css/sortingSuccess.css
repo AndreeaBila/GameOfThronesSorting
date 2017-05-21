@@ -12,6 +12,13 @@ body {
     background-color: #E5DFD2;
 }
 
+@media screen 
+and (max-width: 1440px) {
+    .jumbotron {
+        margin-top: 8%;
+    }
+}
+
 /*Button Styling*/
 .my-btn,
 .my-btn:active:focus, 
