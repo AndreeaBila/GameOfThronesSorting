@@ -37,13 +37,13 @@
             <div class="jumbotron">
                 <h1 id="addHouseResult">
                 <?php
-                    $db = new mysqli('localhost', 'root', '', 'westermoredb') or die("Error");
+                    require 'createConnection.php';
                     $userID = session_id();
-                    $query = "SELECT HouseID FROM Users WHERE(UserID = $userID);";
+                    $query = "SELECT HouseID FROM users WHERE(UserID = $userID);";
                     $response = $db->query($query);
                     $houseID_array = mysqli_fetch_array($response, MYSQLI_ASSOC);
                     $houseID = $houseID_array['HouseID'];
-                    $result = $db->query("SELECT Name, HouseDescription FROM Houses WHERE(HouseID = $houseID);");
+                    $result = $db->query("SELECT Name, HouseDescription FROM houses WHERE(HouseID = $houseID);");
                     $houseName_array = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     $houseName = $houseName_array['Name'];
                     if($houseName === "Night"){

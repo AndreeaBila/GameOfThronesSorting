@@ -13,9 +13,10 @@
         <title>Westermore</title>
 
         <!-- Bootstrap -->
-        <link href="../../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
         <!-- FontAwesome -->
-        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/8dd7dadaef.js"></script>
         <!-- My CSS -->
         <link href="../css/main.css" rel="stylesheet">
         <link rel="shortcut icon" href="../img/westermore2.ico">
@@ -52,15 +53,15 @@
                         <?php
                             //create database connection
                             require_once "User.php";
-                            $db = new mysqli('localhost', 'root', '', 'westermoredb') or die("Error");
+                            require 'createConnection.php';
                             $userID = session_id();
                             //select the user's title name and houseID
-                            $query = "SELECT Title, Name, HouseID FROM Users WHERE(UserID = $userID);";
+                            $query = "SELECT Title, Name, HouseID FROM users WHERE(UserID = $userID);";
                             $response = $db->query($query);
                             $array = mysqli_fetch_array($response, MYSQLI_ASSOC);
                             $user = new User($userID, $array['Name'], '-', '-', '-', $array['Title'], '-', $array['HouseID']);
                             //find the house name
-                            $query = "SELECT Name FROM Houses WHERE(HouseID = $user->houseID)";
+                            $query = "SELECT Name FROM houses WHERE(HouseID = $user->houseID)";
                             $response = $db->query($query);
                             $array = mysqli_fetch_array($response, MYSQLI_ASSOC);
                             $user->name = ucfirst($user->name);

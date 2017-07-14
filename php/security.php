@@ -28,8 +28,8 @@
     }
     function getHouseID(){
         $userID = session_id();
-        $db = new mysqli('localhost', 'root', '', 'westermoredb') or die("Error");
-        $response = $db->query("SELECT HouseID FROM Users WHERE(UserID = $userID);");
+        require 'createConnection.php';
+        $response = $db->query("SELECT HouseID FROM users WHERE(UserID = $userID);");
         $array = mysqli_fetch_array($response, MYSQLI_ASSOC);
         $houseID = $array["HouseID"];
         return $houseID;
