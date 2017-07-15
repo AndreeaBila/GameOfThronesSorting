@@ -37,7 +37,7 @@
             <div class="jumbotron">
                 <h1>Welcome to our comunity!</h1>
                 <h3>Get started by taking our survey and getting sorted into your house.</h3>
-                <p><a class="btn btn-primary btn-lg my-btn" href="#" onclick="location.href='survey.php'" role="button">Take survey</a></p>
+                <p><a class="btn btn-primary btn-lg my-btn" href="#" onclick="location.href='survey'" role="button">Take survey</a></p>
             </div>
         </div>
 

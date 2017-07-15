@@ -2,7 +2,7 @@
     //script that will verify is the current session has been set up corectly
     function checkSession(){
         if(!is_numeric(session_id())){
-            header("Location: index.php");
+            header("Location: index");
             exit();
         }
     }
@@ -10,20 +10,20 @@
         $userID = session_id();
         $urlID = $_GET['userID'];
         if($userID != $urlID){
-            header("Location: index.php");
+            header("Location: index");
             exit();
         }
     }
     function checkHouseIDNull(){
         $houseID = getHouseID();
         if($houseID != 1){
-            header("Location: main.php");
+            header("Location: main");
         }
     }
     function checkHouseIDSet(){
         $houseID = getHouseID();
         if($houseID == 1){
-            header("Location: welcome.php");
+            header("Location: welcome");
         }
     }
     function getHouseID(){

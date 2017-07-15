@@ -14,9 +14,10 @@
         <title>You have been sorted!</title>
 
         <!-- Bootstrap -->
-        <link href="../../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- FontAwesome -->
-        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.min.css">
+        <!-- FontAwesome -->
+        <script src="https://use.fontawesome.com/8dd7dadaef.js"></script>       
         <!-- My CSS -->
         <link href="../css/sortingSuccess.css" rel="stylesheet">
         <link rel="shortcut icon" href="../img/westermore2.ico">
@@ -58,7 +59,7 @@
                         echo $houseName_array['HouseDescription'];
                     ?>
                 </p>
-                <p><a class="btn btn-primary btn-lg my-btn" href="#" onclick="location.href='main.php'" role="button">Learn more</a></p>
+                <p><a class="btn btn-primary btn-lg my-btn" href="#" onclick="location.href='main'" role="button">Learn more</a></p>
             </div>
         </div>
 
@@ -66,7 +67,7 @@
        <!--jQuery (necessary for Bootstrap's JavaScript plugins)--> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="../../Bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- The js script for this file -->
         <script src="../js/survey.js"></script>
     </body>

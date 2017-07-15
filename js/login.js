@@ -75,7 +75,7 @@ function createAccount() {
             if (response == "Error") {
                 $('#signup_generalAlert').show(300);
             } else {
-                window.location.href = '../php/main.php';
+                window.location.href = '../php/main';
             }
         },
         error: function(response) {
@@ -101,7 +101,7 @@ function signIn() {
             if (response == "Error") {
                 $('#login_emailAlert').show(400);
             } else {
-                window.location.href = '../php/main.php';
+                window.location.href = '../php/main';
             }
         },
         error: function(response) {

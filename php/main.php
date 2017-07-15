@@ -75,7 +75,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariahaspopup="true" aria-expanded="false"> <span class="caret"></span></a>
                             <ul class="dropdown-menu pull-right">
-                                <li><a href="index.php"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+                                <li><a href="index"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
                                 <li><a id="openPostButton" data-toggle="modal" data-target="#postsModal"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send a raven</a></li>
                             </ul>
                         </li>
@@ -184,7 +184,7 @@
                             <button class="btn btn-lg btn-2" id="returnToNetwork">Return</button>
                         </div>
                     </div>
-                        
+                    <input type="hidden" name="numberOfPosts" id="numberOfPosts" value="0">
                 </div>
             </div>
         </div>

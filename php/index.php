@@ -34,7 +34,7 @@
             <nav class="nav">
                 <div class="navRight">
                     <ul>
-                        <li><a href="login.php">Log In</a></li>
+                        <li><a href="login">Log In</a></li>
                     </ul>
                 </div>
 

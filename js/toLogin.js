@@ -1,6 +1,6 @@
-$(function () {
-    $('#indexButton').click(function () {
-        window.location.href = '../php/login.php';
+$(function() {
+    $('#indexButton').click(function() {
+        window.location.href = '../php/login';
         return false;
     });
 });

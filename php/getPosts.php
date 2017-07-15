@@ -5,7 +5,7 @@
     //import the user file to have access to the user class
     require_once "Post.php";
 
-    $query = "SELECT * FROM posts WHERE(PostID != 1);";
+    $query = "SELECT * FROM posts WHERE(PostID != 1) ORDER BY DateCreated DESC;";
     $response = $db->query($query);
     $array = array();
     while($row = mysqli_fetch_array($response, MYSQLI_ASSOC)){

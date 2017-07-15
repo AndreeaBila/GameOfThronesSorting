@@ -1,14 +1,16 @@
 $(function() {
     //get the house id from the database
-    $.getJSON('../php/getHouseID.php', function(data) {
+    $.getJSON('../php/getHouseID', function(data) {
         var houseID = data;
         if (houseID == 1) {
-            window.location.href = '../php/welcome.php';
+            window.location.href = '../php/welcome';
         }
     });
 
     updatePage();
 
+
+    requestNotification();
 
     //Raven controls
     $('#btnSendRaven').click(function() {
@@ -20,33 +22,26 @@ $(function() {
             url: "../php/insertPost.php",
             success: function(response) {
                 //get the posts from the database
-                location.reload();
+                $('#returnToNetwork').click();
+                requestNotification();
             },
-            error: function(response) {
-            }
+            error: function(response) {}
         });
-    });
-
-    $('#openPostButton').click(function() {
-        //get the posts from the database
-        $.getJSON('../php/getPosts.php', function(data) {
-            for (var i = data.length - 1; i >= 0; i--) {
-                appendPost(data[i]);
-            }
-        });
+        $('input[type=text], textarea').val("");
+        $('input[type=date]').val('');
     });
 
     $('#sendRaven').hide();
     $('#sendRavenButton').click(function() {
-        $('#sendRavenButton').hide(500);
-        $('#ravenNetwork').hide(500);
-        $('#sendRaven').show(500);
+        $('#sendRavenButton').hide(350);
+        $('#ravenNetwork').hide(350);
+        $('#sendRaven').show(350);
     });
 
     $('#returnToNetwork').click(function() {
-        $('#sendRaven').hide(500);
-        $('#ravenNetwork').show(500);
-        $('#sendRavenButton').show(500);
+        $('#sendRaven').hide(350);
+        $('#ravenNetwork').show(350);
+        $('#sendRavenButton').show(350);
     });
 });
 
@@ -124,20 +119,23 @@ function createPost(element, response) {
     $('#post-body').append('</div>');
 }
 
-// async function requestNotification() {
-//     //get the posts from the database
-//     $('#post-body').empty();
-//     $.getJSON('../php/getPosts.php', function(data) {
-//         data.forEach(function(element) {
-//             appendPost(element);
-//         }, this);
-//     });
-//     await sleep(10000);
-//     requestNotification();
-// }
+async function requestNotification() {
+    //get the posts from the database
+    $.ajaxSetup({ async: false });
+    $.getJSON('../php/getPosts.php', function(data) {
+        var savedData = $('#numberOfPosts').val();
+        if (savedData < data.length) {
+            $('#post-body').empty();
+            data.forEach(function(element) {
+                appendPost(element);
+            }, this);
+        }
+    });
+    $.ajaxSetup({ async: true });
+    await sleep(10000);
+    requestNotification();
+}
 
-// function sleep(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms));
-// }
-
-// requestNotification();
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}

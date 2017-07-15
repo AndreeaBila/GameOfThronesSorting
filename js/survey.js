@@ -152,7 +152,7 @@ function calculateScore() {
         type: 'get',
         url: "../php/createHouseConnection.php",
         success: function(response) {
-            window.location.href = '../php/sortingSuccess.php';
+            window.location.href = '../php/sortingSuccess';
         },
         error: function(response) {
 

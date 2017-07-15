@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+Redirect 301 /php/createAccount /php/main
+Redirect 301 /php/createConnection /php/main
+Redirect 301 /php/createHouseConnection /php/main
+Redirect 301 /php/footer /php/main
+Redirect 301 /php/getCurrentUser /php/main
+Redirect 301 /php/getHouseID /php/main
+Redirect 301 /php/getPosts /php/main
+Redirect 301 /php/House /php/main
+Redirect 301 /php/insertPost /php/main
+Redirect 301 /php/Post /php/main
+Redirect 301 /php/security /php/main
+Redirect 301 /php/signinScript /php/main
+Redirect 301 /php/User /php/main
