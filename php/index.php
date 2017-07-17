@@ -49,10 +49,14 @@
 
         <div class="clear"></div>
 
-        <div class="indexContent text-center">
-          <img src="../img/bigsigil.png" alt="Which house do you fight for? *Image Unavailable"> 
+        <div class="indexContent jumbotron">
+          <!-- <img src="../img/bigsigil.png" alt="Which house do you fight for? *Image Unavailable">  -->
+        </div>
+        <div class="text-center">
           <button class="woodBtn myBtn" id="indexButton">Find out where you belong</button>
         </div>
+        
+        
 
         <?php include 'footer.php'; ?>
       </div>
@@ -62,5 +66,6 @@
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    <script src="../js/login.js"></script>
       <!-- The js script for this file -->
+      <script src="../js/index.js"></script>
     </body>
 </html>

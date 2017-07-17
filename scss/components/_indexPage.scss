@@ -1,29 +1,45 @@
-.indexContent {
-  img {
-    width: 100%;
-    position: center;
-    size: cover;
-    opacity: 0.8;
-    margin: 3vh 0vh;
-  }
-
-  #indexButton {
-    font-size: 1.4em;
-  }
-  margin-bottom: 5vh;
+.jumbotron {
+  height: 65vh;
+  background-image: url('../img/bigsigil.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
 }
 
-@media screen and (max-width: 800px) {
-  .indexContent {
-  img {
-    //position: center;
-    opacity: 0.8;
-    margin: 3vh 0vh;
-  }
-
-  #indexButton {
-    font-size: 1.2em;
-  }
-  margin-bottom: 5vh;
+#indexButton {
+  font-size: 1.7em;
+  margin: 1.5em;
 }
+
+
+
+@media screen and (max-width: 500px) {
+  #indexButton {
+    font-size: 1em;
+  }
+}
+
+
+@media screen and (max-aspect-ratio: 3/2)
+and (orientation: portrait) {
+.jumbotron {
+    height: 45vh;
+  }
+}
+
+@media screen and (max-aspect-ratio: 16/9)
+and (orientation: portrait) {
+.jumbotron {
+    height: 38vh;
+  }
+}
+
+
+@media screen and (max-aspect-ratio: 16/9)
+and (min-aspect-ratio: 4/3)
+and (orientation: portrait) {
+.jumbotron {
+    height: 50vh;
+  }
 }

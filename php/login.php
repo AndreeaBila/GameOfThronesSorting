@@ -123,55 +123,90 @@
       <div id="push"></div>
 
       <!-- Login Form -->
-      <form class="login" id="loginForm">
-        <h2>Log In</h2>
+      <form class="login text-center" id="loginForm">
+        <h3>Log In</h3>
+        <div class="form-group form-inline">
+          <label for="email"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></label>
+          <input class="form-control" type="email" name="loginEmail" id="loginEmail" placeholder="Email" required>
+        </div>
 
-        <input type="email" name="loginEmail" id="loginEmail" placeholder="Email" required>
-        <input type="password" name="loginPassword" id="loginPassword" placeholder="Password" required>
+        <div class="form-group form-inline">
+          <label for="password"><i class="fa fa-key fa-lg" aria-hidden="true"></i></label>
+          <input class="form-control" type="password" name="loginPassword" id="loginPassword" placeholder="Password" required>
+        </div>
+
         <div class="alert alert-danger alert-dismissable alert-custom" id="login_emailAlert">
           <a class="close" aria-label="close">&times;</a>
           <strong>Error!</strong> The e-mail or password are incorrect.
         </div>
-        <input type="button" id="loginButton" value="Log In">
+
+        <input type="button" class="woodBtn myBtn" id="loginButton" value="Log In">
 
         <button id="loginCreateAccount" type="button">Create Account</button>
       </form>
 
       <!-- Signup Form -->
-      <form class="signup" id="signupForm">
-        <h2>Create Account</h2>
+      <form class="signup text-center" id="signupForm">
+        <h3>Create Account</h3>
+        
+        <div class="form-group form-inline">
+          <label for="user"><i class="fa fa-user fa-lg" aria-hidden="true"></i></label>
+          <input type="text" name="signupName" placeholder="First Name" required>
+         </div>
 
-        <input type="text" name="signupName" placeholder="First Name" required>
         <div class="alert alert-danger alert-dismissable alert-custom" id="signup_generalAlert">
           <a class="close" aria-label="close">&times;</a>
           <strong>Error!</strong> The provided email address in already in use.
         </div>
-        <div class="alert alert-info alert-dismissable alert-custom" id="signup_fillDetailsAlert">
-          <a class="close" aria-label="close">&times;</a>
-          <strong>Sorry!</strong> You have to fill in all the details and a valid email adress!
+
+        <div class="form-group form-inline">
+          <label for="email"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></label>
+          <input type="email" name="signupEmail" id="signupEmail" placeholder="Email" required>
         </div>
-        <input type="email" name="signupEmail" id="signupEmail" placeholder="Email" required>
-        <input type="password" name="signupPassword" id="signupPassword" placeholder="Password" required>
-        <input type="password" name="signupRePassword" id="signupRePassword" placeholder="Retype Password" required>
+
+        <div class="form-group form-inline">
+          <label for="password"><i class="fa fa-key fa-lg" aria-hidden="true"></i></label>
+          <input type="password" name="signupPassword" id="signupPassword" placeholder="Password" required>
+        </div>
+
+        <div class="form-group form-inline">
+          <label for="repassword"><i class="fa fa-key fa-lg" aria-hidden="true"></i></label>
+          <input type="password" name="signupRePassword" id="signupRePassword" placeholder="Retype Password" required>
+        </div>
+
         <div class="alert alert-warning alert-dismissable alert-custom" id="signup_passwordAlert">
           <a class="close" aria-label="close">&times;</a>
           <strong>Warning!</strong> The two passwords do not match.
         </div>
-        <input type="text" name="signupDoB" onfocus="(this.type='date')" placeholder="Date of Birth" required>
-        <select id="signupTitle" placeholder="Title" name="signupTitle" required>
-          <option value="" disabled selected>Title</option>
-          <option value="andal">Andal</option>
-          <option value="lady">Lady</option>
-          <option value="lord">Lord</option>
-          <option value="sir">Sir</option>
-          <option value="king">King</option>
-          <option value="queen">Queen</option>
-          <option value="prince">Prince</option>
-          <option value="princess">Princess</option>
-          <option value="khal">Khal</option>
-          <option value="khaleesi">Khaleesi</option>
-        </select>
-        <input type="button" id="signupButton" value="Sign Up">
+
+        <div class="form-group form-inline">
+            <label for="dob"><i class="fa fa-birthday-cake fa-lg" aria-hidden="true"></i></label>
+          <input type="text" name="signupDoB" onfocus="(this.type='date')" placeholder="Date of Birth" required>
+        </div>
+
+        <div class="form-group form-inline">
+          <label for="title"><i class="fa fa-sitemap fa-lg" aria-hidden="true"></i></label>
+          <select id="signupTitle" placeholder="Title" name="signupTitle" required>
+            <option value="" disabled selected id="optionPlaceholder">Title</option>
+            <option value="andal">Andal</option>
+            <option value="lady">Lady</option>
+            <option value="lord">Lord</option>
+            <option value="sir">Sir</option>
+            <option value="king">King</option>
+            <option value="queen">Queen</option>
+            <option value="prince">Prince</option>
+            <option value="princess">Princess</option>
+            <option value="khal">Khal</option>
+            <option value="khaleesi">Khaleesi</option>
+          </select>
+        </div>
+
+        <div class="alert alert-info alert-dismissable alert-custom" id="signup_fillDetailsAlert">
+          <a class="close" aria-label="close">&times;</a>
+          <strong>Sorry!</strong> You have to fill in all the details and a valid email adress!
+        </div>
+
+        <input class="woodBtn myBtn" type="button" id="signupButton" value="Sign Up">
 
         <button id="signupReturnToLogin" type="button" >Already Have an Account</button>
       </form>

@@ -1,4 +1,4 @@
-<footer class="myFooter">
+<footer id="myFooter">
   
   <div class="text-center disclaimer">
     <h5 >Disclaimer</h5>
