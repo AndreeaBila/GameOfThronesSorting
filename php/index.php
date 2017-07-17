@@ -49,7 +49,7 @@
 
         <div class="clear"></div>
 
-        <div class="indexContent jumbotron">
+        <div class="indexContent jumbotron indexJumbotron">
           <!-- <img src="../img/bigsigil.png" alt="Which house do you fight for? *Image Unavailable">  -->
         </div>
         <div class="text-center">

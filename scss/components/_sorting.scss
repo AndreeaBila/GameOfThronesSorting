@@ -1,0 +1,191 @@
+.sigilBkg {
+  background-image: url('../img/2.jpg');
+  background-attachment: fixed;
+  background-size: 70%;
+}
+
+.myJumbotron {
+  width: 70%;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 5vh;
+  padding: 3em 3em 6em 3em;
+  border-radius: 15px !important;
+  box-shadow: 20px 20px 70px 10px black;
+  box-shadow: 20px 20px 70px 10px black;
+  background-color: #E5DFD2;
+  h2 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 2em;
+    padding: 1em 0.3em;
+    
+  }
+  button {
+    a {
+      color: $secondary-color;
+      font-size: 1.7em;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+#addHouseResult {
+  font-size: 3em;
+}
+
+#congrats {
+  font-size: 1.6em;
+  margin-top: 40px;
+}
+
+#addPresentation {
+  font-size: 1.6em;
+}
+  
+@media screen 
+and (max-width: 1440px)
+and (min-width: 874px) {
+  .myJumbotron {
+    width: 75%;
+  }
+}
+
+@media screen 
+and (max-width: 873.9999px)
+and (min-width: 596px) {
+  .myJumbotron {
+    padding: 2em 2em 6em 2em;
+    width: 85%;
+    h2 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+  #addHouseResult {
+    font-size: 2.8em;
+  }
+
+  #congrats {
+    margin-top: 30px;
+    font-size: 1.4em;
+  }
+
+  #addPresentation {
+    font-size: 1.2em;
+  } 
+}
+
+@media screen 
+and (max-width: 595.9999px)
+and (min-width: 493px) {
+  .myJumbotron {
+    padding: 1em 1em 6em 1em;
+    width: 90%;
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+  #addHouseResult {
+    font-size: 2.3em;
+  }
+
+  #congrats {
+    margin-top: 25px;
+    font-size: 1.3em;
+  }
+
+  #addPresentation {
+    font-size: 1.2em;
+  } 
+}
+
+@media screen 
+and (max-width: 492.9999px)
+and (min-width: 468px) {
+  .myJumbotron {
+    padding: 1em 1em 6em 1em;
+    width: 90%;
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.4em;
+    }
+  }
+  #addHouseResult {
+    font-size: 2em;
+  }
+
+  #congrats {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+
+  #addPresentation {
+    font-size: 1.1em;
+  } 
+}
+
+@media screen 
+and (max-width: 467.9999px)
+and (min-width: 333px) {
+  .myJumbotron {    
+    padding: 1em 1em 6em 1em;
+    width: 90%;
+    h2 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.3em;
+    }
+  }
+  #addHouseResult {
+    font-size: 1.6em;
+  }
+
+  #congrats {
+    margin-top: 20px;
+    font-size: 1.1em;
+  }
+
+  #addPresentation {
+    font-size: 1em;
+  } 
+}
+
+@media screen 
+and (max-width: 332.9999px) {
+  .myJumbotron {
+    padding: 1em 1em 6em 1em;
+    width: 90%;
+    h2 {
+      font-size: 1.6em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+  #addHouseResult {
+    font-size: 1.5em;
+  }
+
+  #congrats {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+
+  #addPresentation {
+    font-size: 1em;
+  } 
+}

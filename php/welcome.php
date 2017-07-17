@@ -33,13 +33,13 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="sigilBkg">
         
     <div class="wrapper">
-      <div class="jumbotron">
-        <h1>Welcome to our comunity!</h1>
-        <h3>Get started by taking our survey and getting sorted into your house.</h3>
-        <p><a class="btn btn-primary btn-lg my-btn" href="#" onclick="location.href='survey'" role="button">Take survey</a></p>
+      <div class="jumbotron myJumbotron">
+        <h2>Welcome to our comunity</h2>
+        <p>Get started by taking our survey and getting sorted into your house.</p>
+        <button class="myBtn woodBtn btn pull-right"><a  href="#" onclick="location.href='survey'" role="button">Take survey</a></button>
       </div>
     </div>
 

@@ -33,10 +33,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="sigilBkg">
         
     <div class="wrapper">
-      <div class="jumbotron">
+      <div class="jumbotron myJumbotron">
         <h1 id="addHouseResult">
           <?php
             require 'createConnection.php';
@@ -54,13 +54,13 @@
                 echo "You're a ".$houseName.'!';
             }
           ?></h1>
-        <h2>Congrats! You have been sorted into your rightful Westerosi home</h2>
+        <h2 id="congrats">Congrats, you have been sorted into your rightful Westerosi home</h2>
         <p id="addPresentation">
           <?php
             echo $houseName_array['HouseDescription'];
           ?>
         </p>
-        <p><a class="btn btn-primary btn-lg my-btn" href="#" onclick="location.href='main'" role="button">Learn more</a></p>
+        <button class="myBtn woodBtn btn pull-right"><a href="#" onclick="location.href='main'" role="button">Learn more</a></button>
       </div>
     </div>
 
