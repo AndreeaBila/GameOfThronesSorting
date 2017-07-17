@@ -1,0 +1,667 @@
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('../img/pattern2.jpg');
+    background-size: 70%;
+    color: #3B221A;
+}
+
+.small-show {
+    visibility: hidden;
+}
+
+.container {
+    width: 85%;
+}
+
+
+.my-nav, .navbar {
+    background-image: url('../img/woodTexture.png');
+}
+
+.navbar {
+    height: 80px !important;
+}
+
+.navbar-nav li {
+    margin-top: 15px;
+    font-size: 120%;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+    background-color: transparent !important;
+}
+
+#addTitle,
+#addTitle:hover,
+#addTitle:focus,
+#addTitle:active,
+.caret {
+    color: #ECCBA0;
+}
+
+.dropdown-menu>li>a {
+    color: #333;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+.flag {
+    margin-top: -3px;
+    margin-left: 15%;
+    width: 90%;
+}
+
+.clear {
+    clear: both;
+}
+
+.my-content {
+    background-color: white;
+    padding: 20px;
+    margin-top: 60px;
+    box-shadow: 10px 10px 70px 5px black;
+}
+
+.home img,
+.family img {
+    width: 70%;
+}
+
+.content-left {
+    padding: 20px;
+}
+
+.content-left h3 {
+    margin-top: 40px;
+    font-size: 180%;
+}
+
+.content-left p {
+    margin-left: 10%;
+    width: 80%;
+    font-size: 140%;
+    text-align: justify;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 350%;
+}
+
+.sigil {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.navbar-brand img {
+    width: 25%;
+    margin-top: -15px;
+}
+
+.main-body {
+    max-height: 420px;
+    overflow-y: scroll;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#Content {
+    max-width: 100%;
+    max-height: 450px;
+}
+
+.btn-1 {
+    width: 30%;
+    margin: 1% 35%;
+}
+
+.twoButtons {
+    margin: 2% 0% 2% 30%;
+}
+
+.btn-2 {
+    width: 30%;
+    display: inline-block;
+}
+
+.btn,
+.btn:active:focus, 
+.btn:focus, 
+.btn:active, 
+.btn:active:hover{
+    background-image: url("../img/woodTexture.png") !important;
+    box-shadow: 10px 10px 40px black;
+    color: #ECCBA0 !important;
+    outline: none;
+}
+
+.btn:hover {
+    transform: scale(0.95,0.95);
+    outline: none;
+}
+
+.modal {
+    margin-top: 70px;
+}
+
+.modal-header {
+    background-image: url("../img/woodTexture.png") !important;
+    color: #ECCBA0 !important;
+}
+
+.well, #postsForm input, #postsForm textarea {
+    background-image: url('../img/paper1.jpg');
+    color: #3B221A;
+}
+
+.model-content {
+    background-image: url("../img/pattern2.png") !important;
+}
+
+#postsForm label {
+    font-weight: normal;
+    font-size: 130%;
+}
+
+hr {
+    border-color: #DBBD91;
+}
+
+@media screen 
+and (max-width: 1720px)
+and (min-width: 1500px) {
+    h1 {
+       font-size: 270%;  
+    }
+
+    h2 {
+        font-size: 180%;
+    }
+
+    .content-left h3 {
+        font-size: 150%;
+    }
+
+    .content-left p {
+        font-size: 130%;
+    }
+
+    .flag {
+        margin-left: -20px;
+        width: 115%;
+    } 
+    .sigil {
+        margin-top: 5px;
+    }
+}
+
+@media screen 
+and (max-width: 1499.999px)
+and (min-width: 1300px) {
+    h1 {
+       font-size: 270%;  
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .content-left h3 {
+        font-size: 135%;
+    }
+
+    .content-left p {
+        font-size: 120%;
+    }
+
+    .flag {
+        margin-left: -40px;
+        width: 120%;
+    } 
+    .sigil {
+        width: 55%;
+        margin-top: 13px;
+    }
+}
+
+@media screen 
+and (max-width: 1299.999px)
+and (min-width: 1100px) {
+    h1 {
+       font-size: 230%;  
+    }
+
+    h2 {
+        font-size: 124%;
+    }
+
+    .content-left h3 {
+        font-size: 115%;
+    }
+
+    .content-left p {
+        font-size: 100%;
+    }
+
+    .flag {
+        margin-left: -40px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 15px;
+    }
+}
+
+@media screen 
+and (max-width: 1099.999px)
+and (min-width: 992px) {
+    h1 {
+       font-size: 220%;  
+    }
+
+    h2 {
+        font-size: 107%;
+    }
+
+    .content-left h3 {
+        font-size: 98%;
+    }
+
+    .content-left p {
+        font-size: 88%;
+    }
+
+    .flag {
+        margin-left: -40px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 15px;
+    }
+
+    #addTitle {
+        font-size: 75%;
+    }
+}
+
+@media screen 
+and (max-width: 991.999px)
+and (min-width: 830px) {
+    h1 {
+       font-size: 170%;  
+    }
+
+    h2 {
+        font-size: 83%;
+    }
+
+    .content-left h3 {
+        font-size: 80%;
+    }
+
+    .content-left p {
+        font-size: 75%;
+    }
+
+    .flag {
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    #addTitle {
+        font-size: 70%;
+    }
+
+    .navbar-brand img {
+        width: 20%;
+    }
+}
+
+@media screen 
+and (max-width: 829.999px)
+and (min-width: 779px) {
+    h1 {
+       font-size: 150%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 75%;
+    }
+
+    .my-content {
+        margin-top: 40px;
+    }
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 80%;
+    }
+
+    .content-left p {
+        font-size: 75%;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        height: 60px !important;
+    }
+
+    .navbar-nav li {
+        margin-top: 5px;
+        margin-right: -5px;
+        font-size: 70%;
+    }
+
+    .navbar-brand img {
+        width: 17%;
+    }    
+}
+
+@media screen 
+and (max-width: 778.999px)
+and (min-width: 767px) {
+    h1 {
+       font-size: 150%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 75%;
+    }
+
+    .my-content {
+        margin-top: 40px;
+    }
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 80%;
+    }
+
+    .content-left p {
+        font-size: 75%;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        height: 60px !important;
+    }
+
+    #addTitle {
+        font-size: 80%;
+        margin-top: -50px;
+        margin-left: 120px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 300px;
+    }
+
+    .navbar-brand img {
+        width: 17%;
+    }   
+
+}
+
+@media screen 
+and (max-width: 766.999px)
+and (min-width: 480px) {
+    h1 {
+       font-size: 230%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 160%;
+        margin-bottom: -200px;
+    }
+
+    .my-content {
+        margin-top: -900px;
+    }
+
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 130%;
+    }
+
+    .content-left p {
+        font-size: 100%;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .change-left {
+        float: left !important;
+    }
+
+    #addTitle {
+        
+        margin-top: -50px;
+        margin-left: 80px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 300px;
+    }
+    .navbar-brand img {
+        width: 17%;
+    }
+
+    .small-hide {
+        visibility: hidden;
+    }
+    
+}
+
+@media screen 
+and (max-width: 479.999px)
+and (min-width: 365px) {
+    h1 {
+       font-size: 210%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 140%;
+        margin-bottom: -150px;
+    }
+
+    .my-content {
+        margin-top: -900px;
+    }
+
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 110%;
+    }
+
+    .content-left p {
+        font-size: 90%;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .change-left {
+        float: left !important;
+    }
+
+    #addTitle {
+        font-size: 90%;
+        margin-top: -50px;
+        margin-left: 50px;
+        width: 250px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 250px;
+    }
+
+    .navbar-brand img {
+        width: 17%;
+    }
+
+    .small-hide {
+        visibility: hidden;
+    }
+}
+
+
+@media screen 
+and (max-width: 364.999px)
+and (min-width: 280px) {
+    h1 {
+       font-size: 180%;  
+    }
+
+    h2 {
+        margin-top: -5px;
+        font-size: 120%;
+        margin-bottom: -100px;
+    }
+
+    .my-content {
+        margin-top: -800px;
+    }
+
+    .content-left h3 {
+        margin-top: 20px;
+        font-size: 100%;
+    }
+
+    .content-left p {
+        font-size: 90%;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .flag {
+        margin-top: 0px;
+        margin-left: -30px;
+        width: 120%;
+    } 
+
+    .sigil {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .change-left {
+        float: left !important;
+    }
+
+    #addTitle {
+        font-size: 80%;
+        margin-top: -50px;
+        margin-left: 50px;
+        width: 250px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 230px;
+    }
+
+    .navbar-brand img {
+        width: 20%;
+    }
+
+    .small-hide {
+        visibility: hidden;
+    }
+}
+
+@media screen 
+and (max-width: 334.999px)
+and (min-width: 310px) {
+    h2 {
+        margin-bottom: -70px;
+    }
+
+    .my-content {
+        margin-top: -700px;
+    }
+    #addTitle {
+        font-size: 80%;
+        margin-top: -50px;
+        margin-left: 50px;
+        width: 250px;
+        position: absolute;
+    }
+
+    .caret{
+        margin-top: -100px;
+        margin-left: 225px;
+    }
+
+    .small-hide {
+        visibility: hidden;
+    }
+}
+

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: gameOfThronesFont;
+  src: url(../img/got.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+}
+
+body {
+  font-family: $body-font;
+  font-size: 16px;
+  min-width: 300px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: $footer-height;
+}
+
+.clear {
+  clear: both;
+}
+
+.greyBackground {
+  background-color: $base-color;
+}
+
+.hrShadow {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}

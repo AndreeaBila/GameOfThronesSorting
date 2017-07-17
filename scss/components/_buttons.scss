@@ -1,0 +1,25 @@
+.woodBtn {
+  background-image: url('../img/woodtexture.png');
+  //background-attachment: fixed;
+  padding: 0.8em;
+  color: $secondary-color;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
+}
+
+.myBtn {
+  border: none;
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
+}
+
+.myBtn:hover {
+  transform: scale(0.98, 0.98);
+}
+
+.myBtn:hover, 
+.myBtn:active,
+.myBtn:focus,
+.myBtn:active:focus {
+  outline: none;
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
+}

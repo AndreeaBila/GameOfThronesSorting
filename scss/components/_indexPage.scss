@@ -1,0 +1,29 @@
+.indexContent {
+  img {
+    width: 100%;
+    position: center;
+    size: cover;
+    opacity: 0.8;
+    margin: 3vh 0vh;
+  }
+
+  #indexButton {
+    font-size: 1.4em;
+  }
+  margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 800px) {
+  .indexContent {
+  img {
+    //position: center;
+    opacity: 0.8;
+    margin: 3vh 0vh;
+  }
+
+  #indexButton {
+    font-size: 1.2em;
+  }
+  margin-bottom: 5vh;
+}
+}

@@ -1,16 +1,16 @@
 <footer class="myFooter">
-    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  
+  <div class="text-center disclaimer">
+    <h5 >Disclaimer</h5>
+    <p class="disclaimer"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>This website and all of its content was created by fans for fans, for pure entertainment.</p>
+  </div>
+ 
+ <hr class="hrShadow">
 
-    <div class="myFooterRight">
-        <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
-        <a href="https://twitter.com/twitter" target="_blank"><img src="../img/twitter.png" alt="Twitter"></a>
-        <a href="https://wordpress.com/com-vs-org/" target="_blank"><img src="../img/wordpress.png" alt="WordPress"></a>
-    </div>
+  <div class="belowFooter">
+    <p class="pull-left">Copyright &copy;AppSolution Team;</p>
+    <p class="pull-right">AppSolution&trade; 2017 | All Rights Reserved </p>
+  </div>
 
-    <div class="myFooterLeft">
-        <p>Copyright Andreea Bîlă & Andreea Diaconu</p>
-    </div>
-
-    <div class="myClear"></div>
-
+  <div class="myClear"></div>
 </footer>

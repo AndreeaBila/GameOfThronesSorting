@@ -1,0 +1,20 @@
+.myNav {
+  background-image: url('../img/woodTexture.png');
+  background-attachment: fixed;
+  height: 70px;
+  margin-top: 10px;
+  li {
+    padding: 1.4em 2em;
+    a {
+      color: $secondary-color;
+    }
+  }
+
+  .logo {
+    img {
+      margin-top: -5px;
+      margin-left: 2em;
+      width: 80px;
+    }
+  }
+}
