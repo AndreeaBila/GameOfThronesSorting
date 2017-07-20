@@ -14,9 +14,6 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- FontAwesome -->
-    <script src="https://use.fontawesome.com/8dd7dadaef.js"></script>
     
     <!--Google fonts for this project  -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300i,400" rel="stylesheet">
@@ -25,8 +22,8 @@
     <link href="../css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/westermore2.ico">
 
+    <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../js/toLogin.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -58,14 +55,19 @@
         <div class="text-center">
           <button class="woodBtn myBtn" id="indexButton">Find out where you belong</button>
         </div>
+        <script>
+          $('#indexButton').click(function() {
+            window.location.href = '../php/login';
+          });
+        </script>
         
         
 
         <?php include 'footer.php'; ?>
       </div>
-    
-      <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <!-- FontAwesome -->
+      <script src="https://use.fontawesome.com/8dd7dadaef.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    <script src="../js/login.js"></script>
       <!-- The js script for this file -->

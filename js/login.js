@@ -75,7 +75,7 @@ function createAccount() {
             if (response == "Error") {
                 $('#signup_generalAlert').show(300);
             } else {
-                window.location.href = '../php/main';
+                window.location.href = '../php/welcome';
             }
         },
         error: function(response) {
@@ -101,7 +101,15 @@ function signIn() {
             if (response == "Error") {
                 $('#login_emailAlert').show(400);
             } else {
-                window.location.href = '../php/main';
+                //get the house id from the database
+                $.getJSON('../php/getHouseID.php', function(data) {
+                    var houseID = data;
+                    if (houseID == 1) {
+                        window.location.href = '../php/welcome';
+                    } else {
+                        window.location.href = '../php/main';
+                    }
+                });
             }
         },
         error: function(response) {
