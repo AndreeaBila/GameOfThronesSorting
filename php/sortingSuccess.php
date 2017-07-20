@@ -1,9 +1,10 @@
-<?php 
+ <?php 
   session_start();
   require_once "security.php";
-  checkSession();
-  checkHouseIDSet(); 
+  //checkSession();
+  //checkHouseIDSet();  
 ?>
+
 <!DOCTYPE html>
 <html lang="en-Us">
   <head>
@@ -36,7 +37,7 @@
   <body class="sigilBkg">
         
     <div class="wrapper">
-      <div class="jumbotron myJumbotron">
+      <div class="jumbotron myJumbotron to-page-center">
         <h1 id="addHouseResult">
           <?php
             require 'createConnection.php';
@@ -71,5 +72,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- The js script for this file -->
     <script src="../js/survey.js"></script>
+    <script src="../js/margin.js"></script>
   </body>
 </html>

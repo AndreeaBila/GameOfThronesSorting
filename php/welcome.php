@@ -1,8 +1,8 @@
 <?php
   session_start();
   require_once "security.php";
-  checkSession();
-  checkHouseIDNull();
+  //checkSession();
+  //checkHouseIDNull();
 ?>
 <!DOCTYPE html>
 <html lang="en-Us">
@@ -36,7 +36,7 @@
   <body class="sigilBkg">
         
     <div class="wrapper">
-      <div class="jumbotron myJumbotron">
+      <div class="jumbotron myJumbotron to-page-center">
         <h2>Welcome to our comunity</h2>
         <p>Get started by taking our survey and getting sorted into your house.</p>
         <button class="myBtn woodBtn btn pull-right"><a  href="#" onclick="location.href='survey'" role="button">Take survey</a></button>
@@ -48,6 +48,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../Bootstrap/js/bootstrap.min.js"></script>
     <!-- The js script for this file -->
-    <!--<script src="../js/survey.js"></script>-->
+    <script src="../js/margin.js"></script>
   </body>
 </html>

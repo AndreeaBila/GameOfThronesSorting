@@ -467,8 +467,6 @@ footer .belowFooter {
   width: 70%;
   height: fit-content;
   box-sizing: border-box;
-  margin: 0 auto;
-  margin-top: 5vh;
   padding: 3em 3em 6em 3em;
   border-radius: 15px !important;
   box-shadow: 20px 20px 70px 10px black;
