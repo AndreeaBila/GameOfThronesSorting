@@ -47,7 +47,7 @@ $(function() {
 // RADIO CONTROLS
 function radio(x, y, z) {
     if (document.getElementById('option' + x).checked) {
-        document.getElementById('icon' + x).style.color = "#8C3F49";
+        document.getElementById('icon' + x).style.color = "#E4C575";
         document.getElementById('icon' + y).style.color = "white";
         document.getElementById('icon' + z).style.color = "white";
     }

@@ -2,10 +2,10 @@ $(function() {
 
   //Function that places the element on the center of the page
  
-    var marginTop = ($(window).height() -  $('.to-page-center').height()) / 2;
+    var marginTop = (($('.to-page-center').parent().height() -  $('.to-page-center').height()) / 2) -100;
     marginTop = marginTop + 'px';
 
-    var marginLeft = ($(window).width() -  $('.to-page-center').width()) / 2;
+    var marginLeft = (($('.to-page-center').parent().width() -  $('.to-page-center').width()) / 2);
     marginLeft = marginLeft + 'px';
 
     console.log('document');
