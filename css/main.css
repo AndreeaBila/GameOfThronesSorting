@@ -492,14 +492,18 @@ footer .belowFooter {
   .answear-section {
     height: 50vh;
   }
+  /* line 32, ../scss/components/_survey.scss */
+  .answear-section .answear-form {
+    margin-top: 2vh !important;
+  }
 
-  /* line 34, ../scss/components/_survey.scss */
+  /* line 37, ../scss/components/_survey.scss */
   .question-section {
     height: 50vh;
   }
 }
 /*Making the Radio Buttons Invisible*/
-/* line 41, ../scss/components/_survey.scss */
+/* line 44, ../scss/components/_survey.scss */
 input[type="radio"] {
   opacity: 0;
   width: 0;
@@ -507,20 +511,77 @@ input[type="radio"] {
 }
 
 /*Radio Icons Styling*/
-/* line 48, ../scss/components/_survey.scss */
+/* line 51, ../scss/components/_survey.scss */
 .fa-circle {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 360px) and (max-height: 500px) {
-  /* line 54, ../scss/components/_survey.scss */
+@media screen and (max-width: 340px) and (max-height: 500.9999px) {
+  /* line 57, ../scss/components/_survey.scss */
   .answear-section {
-    font-size: 1.1em;
+    font-size: 1em;
+  }
+  /* line 59, ../scss/components/_survey.scss */
+  .answear-section #submit {
+    font-size: 0.8em;
   }
 
-  /* line 58, ../scss/components/_survey.scss */
+  /* line 64, ../scss/components/_survey.scss */
   .question-section {
     font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 340px) and (min-height: 501px) {
+  /* line 73, ../scss/components/_survey.scss */
+  .answear-section {
+    font-size: 1.2em;
+  }
+  /* line 75, ../scss/components/_survey.scss */
+  .answear-section #submit {
+    font-size: 0.8em;
+  }
+
+  /* line 80, ../scss/components/_survey.scss */
+  .question-section {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 450px) and (min-height: 501px) {
+  /* line 87, ../scss/components/_survey.scss */
+  .answear-section {
+    font-size: 1.3em;
+  }
+  /* line 89, ../scss/components/_survey.scss */
+  .answear-section #submit {
+    font-size: 0.8em;
+  }
+
+  /* line 94, ../scss/components/_survey.scss */
+  .question-section {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  /* line 102, ../scss/components/_survey.scss */
+  .answear-section {
+    font-size: 1.2em;
+  }
+  /* line 103, ../scss/components/_survey.scss */
+  .answear-section .answear-form {
+    margin-top: 6vh !important;
+  }
+  /* line 107, ../scss/components/_survey.scss */
+  .answear-section #submit {
+    font-size: 0.7em;
+  }
+
+  /* line 112, ../scss/components/_survey.scss */
+  .question-section {
+    font-size: 1.5em;
+  }
+  /* line 114, ../scss/components/_survey.scss */
+  .question-section .question-p {
+    margin-top: 11vh;
   }
 }
 /* line 1, ../scss/components/_sorting.scss */

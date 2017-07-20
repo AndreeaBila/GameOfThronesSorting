@@ -42,6 +42,12 @@ $(function() {
             }
         });
     });
+
+
+    //Central vertical align for question div and answear form
+    var topMargin = (($('.vertical-center').parent().height() - $('.vertical-center').height()) / 2) - 50;
+    topMargin = topMargin + 'px';
+    $('.vertical-center').css({'margin-top': topMargin}); 
 });
 
 // RADIO CONTROLS

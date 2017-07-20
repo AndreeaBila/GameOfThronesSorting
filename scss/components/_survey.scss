@@ -29,6 +29,9 @@
 @media screen and (max-width: 767.9999px) {
   .answear-section {
     height: 50vh;
+    .answear-form {
+      margin-top: 2vh !important
+    }
   }
 
   .question-section{
@@ -49,10 +52,13 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 360px) 
-and (max-height: 500px) {
+@media screen and (max-width: 340px) 
+and (max-height: 500.9999px) {
   .answear-section {
-    font-size: 1.1em
+    font-size: 1em;
+    #submit {
+      font-size: 0.8em;
+    }
   }
 
   .question-section{
@@ -60,3 +66,56 @@ and (max-height: 500px) {
   }
 
 }
+
+
+@media screen and (max-width: 340px) 
+and (min-height: 501px) {
+  .answear-section {
+    font-size: 1.2em;
+    #submit {
+      font-size: 0.8em;
+    }
+  }
+
+  .question-section{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 450px) 
+and (min-height: 501px) {
+  .answear-section {
+    font-size: 1.3em;
+    #submit {
+      font-size: 0.8em;
+    }
+  }
+
+  .question-section{
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (max-width: 700px) 
+and (orientation: landscape) {
+  .answear-section {
+    .answear-form {
+      margin-top: 6vh !important;
+    }
+    font-size: 1.2em;
+    #submit {
+      font-size: 0.7em;
+    }
+  }
+
+  .question-section {
+    font-size: 1.5em;
+    .question-p {
+      margin-top: 11vh;
+    }
+  }
+
+}
+
+

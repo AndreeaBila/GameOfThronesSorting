@@ -38,13 +38,13 @@
 
     <section class="pull-left col-md-7 col-sm-7 col-xs-12 text-center fill question-section">
       <!--<div class="message">Get sorted into your House</div>-->
-      <div class="question-div to-page-center text-center">
+      <div class="question-div vertical-center text-center">
         <p class="question-p" id="question"></p>
       </div>
     </section>
 
      <section class="pull-right col-md-5 col-sm-5 col-xs-12 answear-section">
-      <form class="answear-form to-page-center">
+      <form class="answear-form vertical-center">
         <div class="radio">
           <label><input type="radio" name="option" id="option1"><i class="fa fa-circle" aria-hidden="true" id="icon1"></i><span id='answear1'></span></label>
         </div>
@@ -65,7 +65,6 @@
     <script src="../../Bootstrap/js/bootstrap.min.js"></script>
     <!-- The js script for this file -->
     <script src="../js/survey.js"></script>
-    <script src="../js/margin.js"></script>
     
   </body>
 </html>
