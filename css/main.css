@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 10, ../scss/base/_base.scss */
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 16px;
   min-width: 300px;
 }
@@ -116,29 +116,40 @@ html, body {
 /* line 1, ../scss/layout/_header.scss */
 .myNav {
   background-image: url("../img/woodTexture.png");
-  background-attachment: fixed;
   height: 70px;
   margin-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
 }
-/* line 7, ../scss/layout/_header.scss */
+/* line 6, ../scss/layout/_header.scss */
 .myNav li {
   padding: 1.5em 2em;
 }
-/* line 9, ../scss/layout/_header.scss */
+/* line 8, ../scss/layout/_header.scss */
 .myNav li a {
   color: #e4c575;
 }
-/* line 15, ../scss/layout/_header.scss */
+/* line 14, ../scss/layout/_header.scss */
 .myNav .logo img {
   margin-top: -5px;
   margin-left: 2em;
   width: 80px;
   box-shadow: 0 9px 0px 0px #202020, 0 -9px 0px 0px #202020, 12px 0 15px -4px rgba(0, 0, 0, 0.7), -12px 0 15px -4px rgba(0, 0, 0, 0.7);
 }
+/* line 23, ../scss/layout/_header.scss */
+.myNav .wLogo img {
+  margin-top: -5px;
+  margin-left: 2em;
+  width: 80px;
+  box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.7), -12px 0 15px -4px rgba(0, 0, 0, 0.7);
+}
+
+/* line 34, ../scss/layout/_header.scss */
+.mainBkg .myNav {
+  margin-top: 1px;
+}
 
 /* line 1, ../scss/layout/_footer.scss */
-footer {
+#myFooter {
   height: 120px;
   position: absolute;
   bottom: 0;
@@ -148,22 +159,22 @@ footer {
   color: #323232;
 }
 /* line 11, ../scss/layout/_footer.scss */
-footer .disclaimer h5 {
+#myFooter .disclaimer h5 {
   margin-top: 20px;
 }
 /* line 14, ../scss/layout/_footer.scss */
-footer .disclaimer p {
+#myFooter .disclaimer p {
   margin-bottom: -5px;
 }
 /* line 19, ../scss/layout/_footer.scss */
-footer .belowFooter {
+#myFooter .belowFooter {
   margin-top: -18px;
   padding: 0px 10px;
 }
 
 @media screen and (max-width: 571px) and (min-width: 502px) {
   /* line 28, ../scss/layout/_footer.scss */
-  footer {
+  #myFooter {
     height: 145px;
   }
 
@@ -174,7 +185,7 @@ footer .belowFooter {
 }
 @media screen and (max-width: 501.99999px) and (min-width: 306px) {
   /* line 38, ../scss/layout/_footer.scss */
-  footer {
+  #myFooter {
     height: 160px;
   }
 
@@ -185,13 +196,200 @@ footer .belowFooter {
 }
 @media screen and (max-width: 305.9999px) {
   /* line 48, ../scss/layout/_footer.scss */
-  footer {
+  #myFooter {
     height: 180px;
   }
 
   /* line 51, ../scss/layout/_footer.scss */
   .wrapper {
     padding-bottom: 180px;
+  }
+}
+/* line 1, ../scss/layout/_content.scss */
+.mainBkg {
+  background-image: url("../img/pattern2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 9, ../scss/layout/_content.scss */
+.my-content {
+  background-color: white !important;
+  margin-top: 70px !important;
+  padding-top: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 16, ../scss/layout/_content.scss */
+.my-content .sigil {
+  width: 6em;
+}
+/* line 20, ../scss/layout/_content.scss */
+.my-content h1 {
+  padding: 0.5em 0em 0.2em;
+}
+/* line 24, ../scss/layout/_content.scss */
+.my-content h4 {
+  padding: 2em 0em;
+}
+/* line 28, ../scss/layout/_content.scss */
+.my-content p {
+  text-align: justify !important;
+  font-size: 1.2em;
+}
+/* line 33, ../scss/layout/_content.scss */
+.my-content .content-left {
+  padding: 1em 1em 3em;
+}
+/* line 35, ../scss/layout/_content.scss */
+.my-content .content-left img {
+  max-width: 100%;
+}
+/* line 40, ../scss/layout/_content.scss */
+.my-content .flag {
+  margin-top: -40px;
+  max-width: 100%;
+}
+
+/* line 49, ../scss/layout/_content.scss */
+.myNav .change-left ul li {
+  padding: 1.5em 1em !important;
+  cursor: pointer;
+}
+/* line 52, ../scss/layout/_content.scss */
+.myNav .change-left ul li a {
+  text-decoration: none;
+}
+/* line 55, ../scss/layout/_content.scss */
+.myNav .change-left ul li a:hover {
+  text-decoration: none;
+}
+
+/* line 64, ../scss/layout/_content.scss */
+.modal .main-body {
+  max-height: 60vh;
+  overflow-y: scroll;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* line 73, ../scss/layout/_content.scss */
+.modal #Content {
+  max-width: 100%;
+  max-height: 300px;
+}
+/* line 78, ../scss/layout/_content.scss */
+.modal .modalBtn {
+  padding: 2em;
+}
+/* line 83, ../scss/layout/_content.scss */
+.modal #sendRaven .modalBtn {
+  padding: 1em 2em 5em;
+}
+/* line 88, ../scss/layout/_content.scss */
+.modal .modal-header {
+  background-image: url("../img/woodTexture.png") !important;
+  background-size: cover;
+  background-position: center;
+  color: #ECCBA0 !important;
+}
+/* line 95, ../scss/layout/_content.scss */
+.modal .well, .modal #postsForm input, .modal #postsForm textarea {
+  background-image: url("../img/paper1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #3B221A;
+}
+/* line 105, ../scss/layout/_content.scss */
+.modal #postsForm label {
+  font-weight: normal;
+  font-size: 130%;
+}
+/* line 110, ../scss/layout/_content.scss */
+.modal hr {
+  border-color: #DBBD91;
+}
+
+@media screen and (max-width: 766.999px) {
+  /* line 117, ../scss/layout/_content.scss */
+  .small-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 486px) and (min-width: 386px) {
+  /* line 126, ../scss/layout/_content.scss */
+  .my-content {
+    width: 85%;
+  }
+  /* line 128, ../scss/layout/_content.scss */
+  .my-content p {
+    font-size: 1em;
+  }
+  /* line 131, ../scss/layout/_content.scss */
+  .my-content h1 {
+    font-size: 1.7em;
+  }
+  /* line 134, ../scss/layout/_content.scss */
+  .my-content h4 {
+    padding: 1em 0em;
+  }
+
+  /* line 140, ../scss/layout/_content.scss */
+  #sendRaven .modalBtn button {
+    width: 150px !important;
+  }
+}
+@media screen and (max-width: 385.99999px) {
+  /* line 149, ../scss/layout/_content.scss */
+  .my-content {
+    width: 90%;
+  }
+  /* line 151, ../scss/layout/_content.scss */
+  .my-content .content-left {
+    padding: 0.1em 0.1em 3em;
+  }
+  /* line 154, ../scss/layout/_content.scss */
+  .my-content p {
+    font-size: 1em;
+  }
+  /* line 157, ../scss/layout/_content.scss */
+  .my-content h1 {
+    font-size: 1.6em;
+  }
+  /* line 160, ../scss/layout/_content.scss */
+  .my-content h4 {
+    padding: 1em 0em;
+  }
+
+  /* line 166, ../scss/layout/_content.scss */
+  #sendRaven .modalBtn button {
+    width: 100px !important;
+  }
+}
+@media screen and (max-width: 470.99999px) and (min-width: 380px) {
+  /* line 177, ../scss/layout/_content.scss */
+  .myNav .wLogo img {
+    width: 70px;
+    margin-left: 5px;
+  }
+  /* line 184, ../scss/layout/_content.scss */
+  .myNav .change-left ul li {
+    padding: 1.8em 0.5em !important;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 379.9999px) {
+  /* line 196, ../scss/layout/_content.scss */
+  .myNav .wLogo img {
+    width: 60px;
+    margin-left: 5px;
+  }
+  /* line 203, ../scss/layout/_content.scss */
+  .myNav .change-left ul li {
+    padding: 2em 0.15em !important;
+    font-size: 0.8em;
   }
 }
 /* line 1, ../scss/components/_buttons.scss */
@@ -201,7 +399,7 @@ footer .belowFooter {
   color: #e4c575;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
-  min-width: 200px;
+  width: 200px;
 }
 
 /* line 11, ../scss/components/_buttons.scss */
@@ -222,6 +420,11 @@ footer .belowFooter {
   outline: none;
 }
 
+/* line 29, ../scss/components/_buttons.scss */
+.btnCenter {
+  margin: 0 auto;
+}
+
 /* line 1, ../scss/components/_indexPage.scss */
 .indexJumbotron {
   height: 65vh;
@@ -236,28 +439,29 @@ footer .belowFooter {
 #indexButton {
   font-size: 1.7em;
   margin: 1.5em;
+  width: fit-content;
 }
 
 @media screen and (max-width: 500px) {
-  /* line 18, ../scss/components/_indexPage.scss */
+  /* line 19, ../scss/components/_indexPage.scss */
   #indexButton {
     font-size: 1em;
   }
 }
 @media screen and (max-aspect-ratio: 3 / 2) and (orientation: portrait) {
-  /* line 26, ../scss/components/_indexPage.scss */
+  /* line 27, ../scss/components/_indexPage.scss */
   .jumbotron {
     height: 45vh;
   }
 }
 @media screen and (max-aspect-ratio: 16 / 9) and (orientation: portrait) {
-  /* line 33, ../scss/components/_indexPage.scss */
+  /* line 34, ../scss/components/_indexPage.scss */
   .jumbotron {
     height: 38vh;
   }
 }
 @media screen and (max-aspect-ratio: 16 / 9) and (min-aspect-ratio: 4 / 3) and (orientation: portrait) {
-  /* line 42, ../scss/components/_indexPage.scss */
+  /* line 43, ../scss/components/_indexPage.scss */
   .jumbotron {
     height: 50vh;
   }

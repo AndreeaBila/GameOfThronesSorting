@@ -1,0 +1,210 @@
+.mainBkg {
+  background-image: url('../img/pattern2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.my-content {
+  background-color: white !important;
+  margin-top: 70px !important;
+  padding-top: 40px;
+  width: 80%;
+  margin: 0 auto;
+
+  .sigil {
+    width: 6em;
+  }
+
+  h1 {
+    padding: 0.5em 0em 0.2em;
+  }
+
+  h4 {
+    padding: 2em 0em;  
+  }
+  
+  p {
+    text-align: justify !important;
+    font-size: 1.2em;
+  }
+
+  .content-left {
+    padding: 1em 1em 3em;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .flag {
+    margin-top: -40px;
+    max-width: 100%;
+  }
+}
+
+.myNav {
+  .change-left {
+    ul {
+      li {
+        padding: 1.5em 1em !important;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .main-body {
+    max-height: 60vh;
+    overflow-y: scroll;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+  #Content {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .modalBtn {
+    padding: 2em;
+  }
+
+  #sendRaven {
+    .modalBtn{
+      padding: 1em 2em 5em;
+    }
+  }
+
+  .modal-header {
+      background-image: url("../img/woodTexture.png") !important;
+      background-size: cover;
+      background-position: center;
+      color: #ECCBA0 !important;
+  }
+
+  .well, #postsForm input, #postsForm textarea {
+      background-image: url('../img/paper1.jpg');
+      background-size: cover;
+      background-position: center;
+      //background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #3B221A;
+  }
+
+
+  #postsForm label {
+      font-weight: normal;
+      font-size: 130%;
+  }
+
+  hr {
+      border-color: #DBBD91;
+  }
+}
+
+
+@media screen and (max-width: 766.999px) {
+  .small-hide {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 486px)
+and (min-width: 386px) {
+  .my-content {
+    width: 85%;
+    p {
+      font-size: 1em;
+    }
+    h1 {
+      font-size: 1.7em;
+    }
+    h4 {
+      padding: 1em 0em; 
+    }
+  }
+  #sendRaven {
+    .modalBtn {
+      button {
+        width: 150px !important;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 385.99999px) {
+  .my-content {
+    width: 90%;
+    .content-left {
+      padding: 0.1em 0.1em 3em;
+    }
+    p {
+      font-size: 1em;
+    }
+    h1 {
+      font-size: 1.6em;
+    }
+    h4 {
+      padding: 1em 0em; 
+    }
+  }
+  #sendRaven {
+    .modalBtn {
+      button {
+        width: 100px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470.99999px)
+and (min-width: 380px) {
+  .myNav {
+    .wLogo {
+      img {
+        width: 70px;
+        margin-left: 5px;
+      }
+    }
+    .change-left {
+      ul {
+        li {
+          padding: 1.8em 0.5em !important;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 379.9999px) {
+  .myNav {
+    .wLogo {
+      img {
+        width: 60px;
+        margin-left: 5px;
+      }
+    }
+    .change-left {
+      ul {
+        li {
+          padding: 2em 0.15em !important;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}

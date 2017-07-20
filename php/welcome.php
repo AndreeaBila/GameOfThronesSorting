@@ -1,8 +1,8 @@
 <?php
   session_start();
   require_once "security.php";
-  //checkSession();
-  //checkHouseIDNull();
+  checkSession();
+  checkHouseIDNull();
 ?>
 <!DOCTYPE html>
 <html lang="en-Us">
@@ -19,6 +19,10 @@
         
     <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/8dd7dadaef.js"></script>
+
+    <!--Google fonts for this project  -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300i,400" rel="stylesheet">
+    
     <!-- My CSS -->
     <link href="../css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/westermore2.ico">

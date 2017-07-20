@@ -1,4 +1,6 @@
 $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+    
     //get the house id from the database
     $.getJSON('../php/getHouseID.php', function(data) {
         var houseID = data;

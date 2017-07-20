@@ -1,6 +1,5 @@
 .myNav {
   background-image: url('../img/woodTexture.png');
-  background-attachment: fixed;
   height: 70px;
   margin-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
@@ -18,5 +17,21 @@
       width: 80px;
       box-shadow: 0 9px 0px 0px $base-color, 0 -9px 0px 0px $base-color, 12px 0 15px -4px rgba(0, 0, 0, 0.7), -12px 0 15px -4px rgba(0, 0, 0, 0.7);
     }
+  }
+
+  .wLogo {
+    img {
+      margin-top: -5px;
+      margin-left: 2em;
+      width: 80px;
+      box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.7), -12px 0 15px -4px rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+
+.mainBkg {
+  .myNav {
+    margin-top: 1px;
   }
 }
