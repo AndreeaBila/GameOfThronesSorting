@@ -455,6 +455,74 @@ footer .belowFooter {
     width: 80% !important;
   }
 }
+/* line 1, ../scss/components/_survey.scss */
+.answear-section {
+  height: 100vh;
+  position: relative;
+  color: white;
+  font-size: 1.5em;
+}
+/* line 6, ../scss/components/_survey.scss */
+.answear-section #submit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* line 13, ../scss/components/_survey.scss */
+.question-section {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 2em;
+}
+/* line 20, ../scss/components/_survey.scss */
+.question-section .question-p {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 767.9999px) {
+  /* line 30, ../scss/components/_survey.scss */
+  .answear-section {
+    height: 50vh;
+  }
+
+  /* line 34, ../scss/components/_survey.scss */
+  .question-section {
+    height: 50vh;
+  }
+}
+/*Making the Radio Buttons Invisible*/
+/* line 41, ../scss/components/_survey.scss */
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+/*Radio Icons Styling*/
+/* line 48, ../scss/components/_survey.scss */
+.fa-circle {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 360px) and (max-height: 500px) {
+  /* line 54, ../scss/components/_survey.scss */
+  .answear-section {
+    font-size: 1.1em;
+  }
+
+  /* line 58, ../scss/components/_survey.scss */
+  .question-section {
+    font-size: 1.4em;
+  }
+}
 /* line 1, ../scss/components/_sorting.scss */
 .sigilBkg {
   background-image: url("../img/2.jpg");

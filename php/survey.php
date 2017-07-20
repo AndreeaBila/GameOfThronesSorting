@@ -35,9 +35,16 @@
     <![endif]-->
   </head>
   <body>
-        
-    <section class="pull-right col-md-5 answear-section">
-      <form class="answear-form">
+
+    <section class="pull-left col-md-7 col-sm-7 col-xs-12 text-center fill question-section">
+      <!--<div class="message">Get sorted into your House</div>-->
+      <div class="question-div to-page-center text-center">
+        <p class="question-p" id="question"></p>
+      </div>
+    </section>
+
+     <section class="pull-right col-md-5 col-sm-5 col-xs-12 answear-section">
+      <form class="answear-form to-page-center">
         <div class="radio">
           <label><input type="radio" name="option" id="option1"><i class="fa fa-circle" aria-hidden="true" id="icon1"></i><span id='answear1'></span></label>
         </div>
@@ -49,14 +56,7 @@
         </div>
       </form>
 
-      <button class="btn btn-lg pull-right my-btn" id="submit">Submit</button>
-    </section>
-
-    <section class="pull-left col-md-7 text-center fill question-section">
-      <!--<div class="message">Get sorted into your House</div>-->
-      <div class="question-div">
-        <p class="question-p" id="question"></p>
-      </div>
+      <button class="myBtn woodBtn" id="submit">Submit</button>
     </section>
       
     <!--jQuery (necessary for Bootstrap's JavaScript plugins)--> 
@@ -65,5 +65,7 @@
     <script src="../../Bootstrap/js/bootstrap.min.js"></script>
     <!-- The js script for this file -->
     <script src="../js/survey.js"></script>
+    <script src="../js/margin.js"></script>
+    
   </body>
 </html>
