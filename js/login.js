@@ -19,20 +19,20 @@ $('#loginButton').click(function() {
 });
 
 //script that will run when the sing up button is clicked
-$('#signupButton').click(function() {
-    if ($('#signupPassword').val() == $('#signupRePassword').val()) {
-        if (checkDetails()) {
-            createAccount();
-        } else {
-            $('#signup_fillDetailsAlert').show(300);
-        }
-    } else {
-        if (!checkDetails()) {
-            $('#signup_fillDetailsAlert').show(300);
-        }
-        $('#signup_passwordAlert').show(300);
-    }
-});
+// $('#signupButton').click(function() {
+//     if ($('#signupPassword').val() == $('#signupRePassword').val()) {
+//         if (checkDetails()) {
+//             createAccount();
+//         } else {
+//             $('#signup_fillDetailsAlert').show(300);
+//         }
+//     } else {
+//         if (!checkDetails()) {
+//             $('#signup_fillDetailsAlert').show(300);
+//         }
+//         $('#signup_passwordAlert').show(300);
+//     }
+// });
 
 //this function will close the alert that was displayed when the cross button is clicked
 $('a.close').click(function() {
@@ -62,27 +62,65 @@ $('#signupForm').keypress(function(e) {
 //verify if his passwords match and handle the process
 //if they do call this method to begin the create account process
 function createAccount() {
-    //get the form into a json format
-    var formString = $('#signupForm').serialize();
-    //create an ajax connection with the database
-    $.ajax({
-        data: formString,
-        type: 'post',
-        url: '../php/createAccount.php',
-        success: function(response) {
-            //don't do anything
-            //php will move the user to the next page in the structure
-            if (response == "Error") {
+    //check if the two passwords match
+    if ($('#signupPassword').val() == $('#signupRePassword').val()) {
+        //verify if the server response is status 2xx
+        //create email object
+        var userEmail = {
+            email: $('#signupEmail').val()
+        };
+        var result = false;
+        //send the introduced email to the server to verify its uniqueness
+        $.ajaxSetup({ async: false });
+        $.ajax({
+            data: userEmail,
+            type: 'get',
+            url: '../php/verifyUniqueEmail.php',
+            success: function(response) {
+                if (response == "false") {
+                    $('#signup_generalAlert').show(300);
+                    result = false;
+                } else {
+                    result = true;
+                }
+            },
+            error: function(response) {
+                //display an alert staiting that the singup information was wrong
                 $('#signup_generalAlert').show(300);
-            } else {
-                window.location.href = '../php/welcome';
+                result = false;
             }
-        },
-        error: function(response) {
-            //display an alert staiting that the singup information was wrong
-            $('#signup_generalAlert').show(300);
-        }
-    });
+        });
+        return result;
+    } else {
+        //inform the user that the thw passwords do not match
+        $('#signup_passwordAlert').show(300);
+        return false;
+    }
+
+
+
+
+    //get the form into a json format
+    // var formString = $('#signupForm').serialize();
+    // //create an ajax connection with the database
+    // $.ajax({
+    //     data: formString,
+    //     type: 'post',
+    //     url: '../php/createAccount.php',
+    //     success: function(response) {
+    //         //don't do anything
+    //         //php will move the user to the next page in the structure
+    //         if (response == "Error") {
+    //             $('#signup_generalAlert').show(300);
+    //         } else {
+    //             window.location.href = '../php/welcome';
+    //         }
+    //     },
+    //     error: function(response) {
+    //         //display an alert staiting that the singup information was wrong
+    //         $('#signup_generalAlert').show(300);
+    //     }
+    // });
 }
 
 //LOG IN SCRIPT

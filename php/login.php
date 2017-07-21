@@ -149,7 +149,7 @@
       </form>
 
       <!-- Signup Form -->
-      <form class="signup text-center" id="signupForm">
+      <form action="createAccount.php" method="post" onsubmit="return createAccount()" class="signup text-center" id="signupForm">
         <h3>Create Account</h3>
         
         <div class="form-group form-inline">
@@ -209,7 +209,7 @@
           <strong>Sorry!</strong> You have to fill in all the details and a valid email adress!
         </div>
 
-        <input class="woodBtn myBtn" type="button" id="signupButton" value="Sign Up">
+        <input class="woodBtn myBtn" type="submit" id="signupButton" value="Sign Up">
 
         <button id="signupReturnToLogin" type="button" >Already Have an Account</button>
       </form>

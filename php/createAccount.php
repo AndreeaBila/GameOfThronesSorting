@@ -7,34 +7,14 @@
     require_once "User.php";
     //retrieve the data from the front end application and prevent XSS attacks
     $tempUser = new User(0,strip_tags($_POST['signupName']), strip_tags($_POST['signupPassword']), '', strip_tags($_POST['signupEmail']), strip_tags($_POST['signupTitle']), strip_tags($_POST['signupDoB']), 0);
-
-    //verify if the given email adress is unique
-    if(checkEmail($db, $tempUser) == true){
-        //the email is unique
-        //we can proceed with the registration process
-        if(register($db, $tempUser) == true){
-            $userID = getUserID($db, $tempUser->email);
-            $_SESSION['id'] = $userID;
-            echo $userID;
-        }else{
-            echo "Error";
-        }
+    //the email is unique
+    //we can proceed with the registration process
+    if(register($db, $tempUser) == true){
+        $userID = getUserID($db, $tempUser->email);
+        $_SESSION['id'] = $userID;
+        header('Location: welcome');
     }else{
-        echo "Error";
-    }
-
-
-    //method needed to check if the given email by the user is unique
-    function checkEmail($db, $tempUser){
-        //retrieve every email address from the database
-        $response = $db->query("SELECT Email FROM users;");
-        //loop thorugh the email addresses and check if there are duplciates
-        while($row = mysqli_fetch_array($response, MYSQLI_ASSOC)){
-            if($row['Email'] == $tempUser->email){
-                return false;
-            }
-        }
-        return true;
+        die("Error");
     }
 
     //method needed to register the user into the database
