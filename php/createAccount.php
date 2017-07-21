@@ -1,6 +1,6 @@
 <?php
+    session_start();
     //file needed to create a user account on the database
-
     //create database connection
     require 'createConnection.php';
     //import the user file to have access to the user class
@@ -14,8 +14,7 @@
         //we can proceed with the registration process
         if(register($db, $tempUser) == true){
             $userID = getUserID($db, $tempUser->email);
-            session_id($userID);
-            session_start();
+            $_SESSION['id'] = $userID;
             echo $userID;
         }else{
             echo "Error";

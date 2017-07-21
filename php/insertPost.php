@@ -5,7 +5,7 @@
     //import the user file to have access to the user class
     require_once "Post.php";
     //get the current user id
-    $userID = session_id();
+    $userID = $_SESSION['id'];
 
     //get the house id for the current user
     $response = $db->query("SELECT HouseID FROM users WHERE(UserID = $userID);");

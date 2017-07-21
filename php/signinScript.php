@@ -1,4 +1,5 @@
 <?php
+    session_start();
     //script needed for the login process
     //create a connection with the database
     require 'createConnection.php';
@@ -17,8 +18,7 @@
     //create a new hash for the given password
     $tempPassword = sha1($salt.'--'.$password);
     if($tempPassword == $dbPassword){
-        session_id($userID);
-        session_start();
+        $_SESSION['id'] = $userID;
         echo $userID;
         exit();
     }else{

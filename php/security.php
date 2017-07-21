@@ -1,13 +1,13 @@
 <?php
     //script that will verify is the current session has been set up corectly
     function checkSession(){
-        if(!is_numeric(session_id())){
+        if(!isset($_SESSION['id'])){
             header("Location: index");
             exit();
         }
     }
     function checkAccessResources(){
-        $userID = session_id();
+        $userID = $_SESSION['id'];
         $urlID = $_GET['userID'];
         if($userID != $urlID){
             header("Location: index");
@@ -27,7 +27,7 @@
         }
     }
     function getHouseID(){
-        $userID = session_id();
+        $userID = $_SESSION['id'];
         require 'createConnection.php';
         $response = $db->query("SELECT HouseID FROM users WHERE(UserID = $userID);");
         $array = mysqli_fetch_array($response, MYSQLI_ASSOC);

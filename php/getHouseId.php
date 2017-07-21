@@ -4,7 +4,7 @@
      //create database connection
     require 'createConnection.php';
     //get session id for the user
-    $userID = session_id();
+    $userID = $_SESSION['id'];
     //get the house id of the current user
     $query = "SELECT * FROM users WHERE(UserID = $userID);";
     $result = $db->query($query);

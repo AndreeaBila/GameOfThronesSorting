@@ -50,7 +50,7 @@
                 //create database connection
                 require_once "User.php";
                 require 'createConnection.php';
-                $userID = session_id();
+                $userID = $_SESSION['id'];
                 //select the user's title name and houseID
                 $query = "SELECT Title, Name, HouseID FROM users WHERE(UserID = $userID);";
                 $response = $db->query($query);
