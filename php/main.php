@@ -157,10 +157,6 @@
                 <div class="main-body">
                   <form id="postsForm">
                     <div class="form-group">
-                      <label for="Date">Date</label>
-                      <input class="form-control" type="date" name="date" id="dateModalInput" value="">
-                    </div>
-                    <div class="form-group">
                       <label for="Details">Subject</label>
                       <input class="form-control" type="text" name="titleModalInput" id="titleModalInput" value="">
                     </div>

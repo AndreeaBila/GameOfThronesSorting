@@ -18,22 +18,6 @@ $('#loginButton').click(function() {
     signIn();
 });
 
-//script that will run when the sing up button is clicked
-// $('#signupButton').click(function() {
-//     if ($('#signupPassword').val() == $('#signupRePassword').val()) {
-//         if (checkDetails()) {
-//             createAccount();
-//         } else {
-//             $('#signup_fillDetailsAlert').show(300);
-//         }
-//     } else {
-//         if (!checkDetails()) {
-//             $('#signup_fillDetailsAlert').show(300);
-//         }
-//         $('#signup_passwordAlert').show(300);
-//     }
-// });
-
 //this function will close the alert that was displayed when the cross button is clicked
 $('a.close').click(function() {
     $(this).parent().hide();
@@ -96,31 +80,6 @@ function createAccount() {
         $('#signup_passwordAlert').show(300);
         return false;
     }
-
-
-
-
-    //get the form into a json format
-    // var formString = $('#signupForm').serialize();
-    // //create an ajax connection with the database
-    // $.ajax({
-    //     data: formString,
-    //     type: 'post',
-    //     url: '../php/createAccount.php',
-    //     success: function(response) {
-    //         //don't do anything
-    //         //php will move the user to the next page in the structure
-    //         if (response == "Error") {
-    //             $('#signup_generalAlert').show(300);
-    //         } else {
-    //             window.location.href = '../php/welcome';
-    //         }
-    //     },
-    //     error: function(response) {
-    //         //display an alert staiting that the singup information was wrong
-    //         $('#signup_generalAlert').show(300);
-    //     }
-    // });
 }
 
 //LOG IN SCRIPT
@@ -155,13 +114,4 @@ function signIn() {
             $('#login_emailAlert').show(400);
         }
     });
-}
-
-//script to check if every detail has been filled
-function checkDetails() {
-    var str = $('#signupEmail').val();
-    if ($('#signupName').val() == '' || $('#signupEmail').val() == '' || $('#signupPassword').val() == '' || str.indexOf('@') == -1) {
-        return false;
-    }
-    return true;
 }

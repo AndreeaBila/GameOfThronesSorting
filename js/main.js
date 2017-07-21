@@ -1,6 +1,6 @@
 $(function() {
     $('[data-toggle="tooltip"]').tooltip();
-    
+
     //get the house id from the database
     $.getJSON('../php/getHouseID.php', function(data) {
         var houseID = data;
@@ -25,7 +25,6 @@ $(function() {
             success: function(response) {
                 //get the posts from the database
                 $('#returnToNetwork').click();
-                requestNotification();
             },
             error: function(response) {}
         });
@@ -81,14 +80,14 @@ function updatePage() {
 }
 
 //function neede toappend each post to the post forum
-function appendPost(element) {
+function appendPost(element, type) {
     $.ajax({
         data: element,
         type: "get",
         url: '../php/getCurrentUser.php',
         success: function(response) {
             var result = JSON.parse(response);
-            createPost(element, result);
+            createPost(element, result, type);
         },
         error: function(response) {
 
@@ -96,45 +95,101 @@ function appendPost(element) {
     });
 }
 
-function createPost(element, response) {
-    //add the main container for the post - well 
-    $('#post-body').append('<div class="well" id="' + element.postID + '">');
-    //add the footer
-    $('#' + element.postID).append('<footer>');
-    //add the <p> element to display the date that the post was created on
-    $('#' + element.postID + ' footer').append('<p class="pull-right">' + element.dateCreated + '</p>');
-    //add the h4 tag to display the user information
-    if (response.houseID != "Night") {
-        $('#' + element.postID + ' footer').append('<h4>' + response.title + " " + response.name + " of House " + response.houseID + '</h4>');
+function createPost(element, response, type) {
+    if (response.houseID != 'Night') {
+        var text = response.title + " " + response.name + " of House " + response.houseID;
     } else {
-        $('#' + element.postID + ' footer').append('<h4>' + response.title + " " + response.name + " of The Night's Watch </h4>");
+        var text = response.title + " " + response.name + " of The Night's Watch";
     }
-    //add the <p> element for the tags
-    $('#' + element.postID + ' footer').append('<p>' + element.title + '</p>');
-    //close the footer
-    $('#' + element.postID).append('</footer>');
-    //add the space line <hr>
-    $('#' + element.postID).append('<hr>');
-    //add the <p> item to show the post content
-    $('#' + element.postID).append('<p>' + element.content + '</p>');
-    //close the main container well
-    $('#post-body').append('</div>');
+
+    if (type == 'append') {
+        $('#post-body').append(
+            $('<div/>')
+            .attr('id', element.postID)
+            .addClass('well')
+            .append(
+                $('<footer/>')
+                .append(
+                    $('<p/>')
+                    .addClass('pull-right')
+                    .text(element.dateCreated)
+                )
+                .append(
+                    $('<h4/>')
+                    .text(text)
+                )
+                .append(
+                    $('<p/>')
+                    .text(element.title)
+                )
+            )
+            .append(
+                $('<hr>')
+            )
+            .append(
+                $('<p/>')
+                .text(element.content)
+            )
+        );
+    } else if (type == 'prepend') {
+        $('#post-body').prepend(
+            $('<div/>')
+            .attr('id', element.postID)
+            .addClass('well')
+            .append(
+                $('<footer/>')
+                .append(
+                    $('<p/>')
+                    .addClass('pull-right')
+                    .text(element.dateCreated)
+                )
+                .append(
+                    $('<h4/>')
+                    .text(text)
+                )
+                .append(
+                    $('<p/>')
+                    .text(element.title)
+                )
+            )
+            .append(
+                $('<hr>')
+            )
+            .append(
+                $('<p/>')
+                .text(element.content)
+            )
+        );
+    }
 }
 
 async function requestNotification() {
-    //get the posts from the database
-    $.ajaxSetup({ async: false });
-    $.getJSON('../php/getPosts.php', function(data) {
-        var savedData = $('#numberOfPosts').val();
-        if (savedData < data.length) {
-            $('#post-body').empty();
-            data.forEach(function(element) {
-                appendPost(element);
-            }, this);
+    //get the number of posts from the database and check if there are any new posts
+    $.getJSON('../php/getNumberOfPosts.php', function(number) {
+        if (number > $('#numberOfPosts').val()) {
+            //a new post has been added
+            //get the number of new posts
+            var dif = { number: number - $('#numberOfPosts').val() };
+            $.ajax({
+                data: dif,
+                type: 'get',
+                url: '../php/getPosts.php',
+                success: function(response) {
+                    var data = JSON.parse(response);
+                    if ($('#numberOfPosts').val() == 0) {
+                        var type = 'append';
+                    } else {
+                        var type = 'prepend';
+                    }
+                    $('#numberOfPosts').val(data.length + parseInt($('#numberOfPosts').val()));
+                    for (var i = 0; i < data.length; i++) {
+                        appendPost(data[i], type);
+                    }
+                }
+            });
         }
     });
-    $.ajaxSetup({ async: true });
-    await sleep(10000);
+    await sleep(5000);
     requestNotification();
 }
 
