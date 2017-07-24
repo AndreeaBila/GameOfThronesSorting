@@ -179,6 +179,14 @@
           </div>
         </div>
       </div>
+
+      <style>
+        /*.scrollable is the class that is being added in the js function to each paragrpah that contains the content of the post*/
+        .scrollable{
+          word-wrap: break-word; 
+          overflow-y: scroll;
+        }
+      </style>
   
       <?php include 'footer.php' ?>
 

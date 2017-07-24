@@ -129,6 +129,7 @@ function createPost(element, response, type) {
             .append(
                 $('<p/>')
                 .text(element.content)
+                .addClass('scrollable')
             )
         );
     } else if (type == 'prepend') {
@@ -158,6 +159,7 @@ function createPost(element, response, type) {
             .append(
                 $('<p/>')
                 .text(element.content)
+                .addClass('scrollable')
             )
         );
     }
