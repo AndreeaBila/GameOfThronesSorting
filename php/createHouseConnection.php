@@ -11,5 +11,4 @@
     $stmt = $db->prepare($query);
     $stmt->bind_param("s", $houseName);
     $stmt->execute();
-
 ?>
