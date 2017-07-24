@@ -12,7 +12,7 @@
   box-sizing: border-box;
   //margin: 0 auto;
   //margin-top: 5vh;
-  padding: 3em 3em 6em 3em;
+  padding: 3em;
   border-radius: 15px !important;
   box-shadow: 20px 20px 70px 10px black;
   box-shadow: 20px 20px 70px 10px black;
@@ -62,7 +62,7 @@ and (min-width: 874px) {
 and (max-width: 873.9999px)
 and (min-width: 596px) {
   .myJumbotron {
-    padding: 2em 2em 6em 2em;
+    padding: 2em;
     width: 85%;
     h2 {
       font-size: 2.5em;
@@ -89,7 +89,7 @@ and (min-width: 596px) {
 and (max-width: 595.9999px)
 and (min-width: 493px) {
   .myJumbotron {
-    padding: 1em 1em 6em 1em;
+    padding: 1em;
     width: 90%;
     h2 {
       font-size: 2em;
@@ -116,7 +116,7 @@ and (min-width: 493px) {
 and (max-width: 492.9999px)
 and (min-width: 468px) {
   .myJumbotron {
-    padding: 1em 1em 6em 1em;
+    padding: 1em;
     width: 90%;
     h2 {
       font-size: 2em;
@@ -143,7 +143,7 @@ and (min-width: 468px) {
 and (max-width: 467.9999px)
 and (min-width: 333px) {
   .myJumbotron {    
-    padding: 1em 1em 6em 1em;
+    padding: 1em;
     width: 90%;
     h2 {
       font-size: 1.8em;
@@ -169,7 +169,7 @@ and (min-width: 333px) {
 @media screen 
 and (max-width: 332.9999px) {
   .myJumbotron {
-    padding: 1em 1em 6em 1em;
+    padding: 1em;
     width: 90%;
     h2 {
       font-size: 1.6em;
