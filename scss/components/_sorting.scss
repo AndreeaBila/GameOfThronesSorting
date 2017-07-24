@@ -6,6 +6,8 @@
 
 .myJumbotron {
   width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   box-sizing: border-box;
   //margin: 0 auto;
@@ -188,4 +190,11 @@ and (max-width: 332.9999px) {
   #addPresentation {
     font-size: 1em;
   } 
+}
+
+@media screen and (orientation: portrait) {
+  .to-page-center {
+    position: initial;
+    margin-top: 10px;
+  }
 }
