@@ -131,16 +131,6 @@
                   <h2>Raven  Network</h2>
                 </div>
                 <div class="main-body" id="post-body">
-                  <!--<div class="well">
-                    <footer>
-                      <p class="pull-right">5th of May 2017</p> 
-                      <h4>Queen Andreea of House Lannister</h4>
-                      <p>| #lorem #ipsum</p>
-                    </footer>
-                    <hr>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam itaque cumque unde provident sunt ea 
-                    quae. Vero unde, optio harum iure qui dolores sed animi ipsam ratione vitae. Saepe, delectus! </p>
-                  </div>-->
                 </div>
 
                 <div class="text-center modalBtn">
@@ -158,7 +148,7 @@
                   <form id="postsForm">
                     <div class="form-group">
                       <label for="Details">Subject</label>
-                      <input class="form-control" type="text" name="titleModalInput" id="titleModalInput" value="">
+                      <input class="form-control" type="text" name="titleModalInput" id="titleModalInput" maxlength="20">
                     </div>
                     <div class="form-group">
                       <label for="Content">Message:</label>
@@ -184,7 +174,6 @@
         /*.scrollable is the class that is being added in the js function to each paragrpah that contains the content of the post*/
         .scrollable{
           word-wrap: break-word; 
-          overflow-y: scroll;
         }
       </style>
   
