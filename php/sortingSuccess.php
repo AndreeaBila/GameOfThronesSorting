@@ -1,5 +1,5 @@
- <?php
-  if(session_status() != PHP_SESSION_ACTIVE) session_start();
+<?php
+  session_start();
   require_once "security.php";
   checkSession();
   checkHouseIDSet();  
