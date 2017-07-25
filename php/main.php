@@ -148,7 +148,7 @@
                   <form id="postsForm">
                     <div class="form-group">
                       <label for="Details">Subject</label>
-                      <input class="form-control" type="text" name="titleModalInput" id="titleModalInput" maxlength="20">
+                      <input class="form-control" type="text" name="titleModalInput" id="titleModalInput" maxlength="30">
                     </div>
                     <div class="form-group">
                       <label for="Content">Message:</label>

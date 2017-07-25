@@ -28,6 +28,11 @@ $(function() {
         centerPage();
     });
 
+    //check the orientation of the page
+    screen.orientation.onchange = function() {
+        centerPage();
+    }
+
     function centerPage() {
         $(".to-page-center").centerX();
         if ($('.to-page-center').height() * 1.5 < $(window).height()) {
