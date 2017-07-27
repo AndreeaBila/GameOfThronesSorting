@@ -2,7 +2,7 @@
     "questionArray": [{
             "question": "Which one of these is more important to you?",
             "option_1": {
-                "answear": "Familly",
+                "answear": "Family",
                 "house": "Stark"
             },
             "option_2": {
@@ -31,7 +31,8 @@
                 "house": "Baratheon"
             },
             "backgroundImage": "url('../img/questions/question2.jpg')",
-            "backgroundColor": "#EC815F"
+            "backgroundColor": "#536857"
+            
         },
         {
             "question": "Which one of these is your weapon of choice?",
@@ -48,10 +49,10 @@
                 "house": "Lannister"
             },
             "backgroundImage": "url('../img/questions/question3.jpg')",
-            "backgroundColor": "#C8D0A9"
+            "backgroundColor": "#373B26"
         },
         {
-            "question": "Which skill would you reather learn?",
+            "question": "Which skill would you rather learn?",
             "option_1": {
                 "answear": "How to be merciful",
                 "house": "Targaryen"
@@ -68,7 +69,7 @@
             "backgroundColor": "#403136"
         },
         {
-            "question": "Your friend has commited a crime punishable by death. You're the one who passes the sentence. What do you do?",
+            "question": "Your friend has committed a crime punishable by death. You're the one who passes the sentence. What do you do?",
             "option_1": {
                 "answear": "You find a loophole to protect them",
                 "house": "Lannister"
@@ -78,7 +79,7 @@
                 "house": "Stark"
             },
             "option_3": {
-                "answear": "You simply pardon them - power has it's perks",
+                "answear": "You simply pardon them - power has its perks",
                 "house": "Martell"
             },
             "backgroundImage": "url('../img/questions/question5.jpg')",
@@ -115,8 +116,8 @@
                 "answear": "The Lord of Light",
                 "house": "Baratheon"
             },
-            "backgroundImage": "url('../img/questions/question6.jpg')",
-            "backgroundColor": "#D4761C"
+            "backgroundImage": "url('../img/questions/question7.jpg')",
+            "backgroundColor": "#09547E"
         },
         {
             "question": "Are your ancestors:",
@@ -125,69 +126,69 @@
                 "house": "Stark"
             },
             "option_2": {
-                "answear": "The andals",
+                "answear": "Andals",
                 "house": "Lannister"
             },
             "option_3": {
-                "answear": "The rhayoners",
+                "answear": "Rhoynars",
                 "house": "Martell"
             },
-            "backgroundImage": "url('../img/questions/question6.jpg')",
-            "backgroundColor": "#D4761C"
+            "backgroundImage": "url('../img/questions/question8.jpg')",
+            "backgroundColor": "#5F3052"
         },
         {
-            "question": "What do you consider to be the most important resource?",
+            "question": "What is the essential resource in a war?",
             "option_1": {
                 "answear": "Money",
                 "house": "Lannister"
             },
             "option_2": {
-                "answear": "Men power",
+                "answear": "Manpower",
                 "house": "Night"
             },
             "option_3": {
                 "answear": "Motivation",
                 "house": "Targaryen"
             },
-            "backgroundImage": "url('../img/questions/question6.jpg')",
-            "backgroundColor": "#D4761C"
+            "backgroundImage": "url('../img/questions/question9.jpg')",
+            "backgroundColor": "#C50026"
         },
         {
             "question": "What would you always fight for?",
             "option_1": {
-                "answear": "Heritage",
+                "answear": "Your taditions and heritage",
                 "house": "Stark"
             },
             "option_2": {
-                "answear": "Prevelance",
+                "answear": "A position of power",
                 "house": "Baratheon"
             },
             "option_3": {
                 "answear": "Justice",
                 "house": "Targaryen"
             },
-            "backgroundImage": "url('../img/questions/question6.jpg')",
-            "backgroundColor": "#D4761C"
+            "backgroundImage": "url('../img/questions/question10.jpg')",
+            "backgroundColor": "#EC815F"
         },
         {
             "question": "How would you impose respect?",
             "option_1": {
-                "answear": "Discipline",
+                "answear": "Through flawless discipline",
                 "house": "Martell"
             },
             "option_2": {
-                "answear": "Strength",
+                "answear": "Through pure strength",
                 "house": "Targaryen"
             },
             "option_3": {
-                "answear": "Status",
+                "answear": "Through earned status",
                 "house": "Night"
             },
-            "backgroundImage": "url('../img/questions/question6.jpg')",
-            "backgroundColor": "#D4761C"
+            "backgroundImage": "url('../img/questions/question11.jpg')",
+            "backgroundColor": "#360D07"
         },
         {
-            "question": "What would you start a war for?",
+            "question": "What is worth starting a war for?",
             "option_1": {
                 "answear": "Love",
                 "house": "Baratheon"
@@ -200,8 +201,8 @@
                 "answear": "Fear",
                 "house": "Night"
             },
-            "backgroundImage": "url('../img/questions/question6.jpg')",
-            "backgroundColor": "#D4761C"
+            "backgroundImage": "url('../img/questions/question12.jpg')",
+            "backgroundColor": "#758B96"
         }
     ]
 }
