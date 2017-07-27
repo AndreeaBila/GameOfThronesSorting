@@ -100,6 +100,108 @@
             },
             "backgroundImage": "url('../img/questions/question6.jpg')",
             "backgroundColor": "#D4761C"
+        },
+        {
+            "question": "Would you rather follow:",
+            "option_1": {
+                "answear": "The old gods",
+                "house": "Stark"
+            },
+            "option_2": {
+                "answear": "The seven gods",
+                "house": "Lannister"
+            },
+            "option_3": {
+                "answear": "The Lord of Light",
+                "house": "Baratheon"
+            },
+            "backgroundImage": "url('../img/questions/question6.jpg')",
+            "backgroundColor": "#D4761C"
+        },
+        {
+            "question": "Are your ancestors:",
+            "option_1": {
+                "answear": "The first men",
+                "house": "Stark"
+            },
+            "option_2": {
+                "answear": "The andals",
+                "house": "Lannister"
+            },
+            "option_3": {
+                "answear": "The rhayoners",
+                "house": "Martell"
+            },
+            "backgroundImage": "url('../img/questions/question6.jpg')",
+            "backgroundColor": "#D4761C"
+        },
+        {
+            "question": "What do you consider to be the most important resource?",
+            "option_1": {
+                "answear": "Money",
+                "house": "Lannister"
+            },
+            "option_2": {
+                "answear": "Men power",
+                "house": "Night"
+            },
+            "option_3": {
+                "answear": "Motivation",
+                "house": "Targaryen"
+            },
+            "backgroundImage": "url('../img/questions/question6.jpg')",
+            "backgroundColor": "#D4761C"
+        },
+        {
+            "question": "What would you always fight for?",
+            "option_1": {
+                "answear": "Heritage",
+                "house": "Stark"
+            },
+            "option_2": {
+                "answear": "Prevelance",
+                "house": "Baratheon"
+            },
+            "option_3": {
+                "answear": "Justice",
+                "house": "Targaryen"
+            },
+            "backgroundImage": "url('../img/questions/question6.jpg')",
+            "backgroundColor": "#D4761C"
+        },
+        {
+            "question": "How would you impose respect?",
+            "option_1": {
+                "answear": "Discipline",
+                "house": "Martell"
+            },
+            "option_2": {
+                "answear": "Strength",
+                "house": "Targaryen"
+            },
+            "option_3": {
+                "answear": "Status",
+                "house": "Night"
+            },
+            "backgroundImage": "url('../img/questions/question6.jpg')",
+            "backgroundColor": "#D4761C"
+        },
+        {
+            "question": "What would you start a war for?",
+            "option_1": {
+                "answear": "Love",
+                "house": "Baratheon"
+            },
+            "option_2": {
+                "answear": "Revenge",
+                "house": "Martell"
+            },
+            "option_3": {
+                "answear": "Fear",
+                "house": "Night"
+            },
+            "backgroundImage": "url('../img/questions/question6.jpg')",
+            "backgroundColor": "#D4761C"
         }
     ]
 }
