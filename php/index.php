@@ -12,6 +12,9 @@
     
     <title>Westermore</title>
 
+    <meta name="description" content="So you're a big fan of Game of Thrones and you're looking for a quiz to find
+     out which westerosi house you fit into? We got you.">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
