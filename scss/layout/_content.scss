@@ -8,7 +8,7 @@
 
 .my-content {
   background-color: white !important;
-  margin-top: 70px !important;
+  margin-top: -20px !important;
   padding-top: 40px;
   width: 80%;
   margin: 0 auto;
@@ -44,9 +44,14 @@
 }
 
 .myNav {
+  position: relative;
   .change-left {
     ul {
+      position: absolute;
+      top: 0;
+      right: 0;
       li {
+        
         padding: 1.5em 1em !important;
         cursor: pointer;
         a {
@@ -112,8 +117,36 @@
   }
 }
 
+@media screen and (max-width: 1100px)
+and (min-width: 900px) {
+  .my-content {
+    .sigil {
+      width: 4.5em;
+    }
 
-@media screen and (max-width: 766.999px) {
+    h1 {
+      padding: 0.5em 0em 0.2em;
+      font-size: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 899.9999px)
+and (min-width: 768px) {
+  .my-content {
+    .sigil {
+      width: 3.5em;
+    }
+
+    h1 {
+      padding: 0.5em 0em 0.2em;
+      font-size: 1.6em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767.999px) {
   .small-hide {
     display: none;
   }
@@ -170,8 +203,8 @@ and (min-width: 386px) {
   }
 }
 
-@media screen and (max-width: 470.99999px)
-and (min-width: 380px) {
+@media screen and (max-width: 550.99999px)
+and (min-width: 440px) {
   .myNav {
     .wLogo {
       img {
@@ -190,7 +223,8 @@ and (min-width: 380px) {
   }
 }
 
-@media screen and (max-width: 379.9999px) {
+@media screen and (max-width: 439.9999px)
+and (min-width: 340px) {
   .myNav {
     .wLogo {
       img {
@@ -208,3 +242,24 @@ and (min-width: 380px) {
     }
   }
 }
+
+@media screen and (max-width: 339.9999px) {
+  .myNav {
+    .wLogo {
+      img {
+        width: 55px;
+        margin-left: 5px;
+      }
+    }
+    .change-left {
+      ul {
+        li {
+          padding: 2.4em 0.15em !important;
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+}
+
+

@@ -198,3 +198,5 @@ async function requestNotification() {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+$('.alert').hide();

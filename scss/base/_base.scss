@@ -112,3 +112,93 @@ html, body {
     }
   }
 }
+
+.settings {
+  background-color: white;
+   h1 {
+    margin: 20px 0px 30px;
+  }
+  margin: 0 auto;
+  width: 40%;  
+  input, label {
+    display: block !important;
+  }
+
+  label {
+    margin-top: 30px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select {
+    width: 100% !important;
+    height: 45px !important;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"]:active,
+  input[type="email"]:active,
+  input[type="password"]:active,
+  input[type="date"]:active,
+  select:active,
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  input[type="submit"] {
+    margin: 20px auto;
+  }
+
+}
+
+@media screen and (max-width: 1220px)
+and (min-width: 910px) {
+  .settings {
+    width: 50%;  
+  }
+}
+
+@media screen and (max-width: 999.9999px)
+and (min-width: 730px) {
+  .settings {
+    width: 60%;  
+  }
+}
+
+
+@media screen and (max-width: 729.9999px)
+and (min-width: 610px) {
+  .settings {
+    width: 70%;  
+  }
+}
+
+
+@media screen and (max-width: 609.9999px)
+and (min-width: 520px) {
+  .settings {
+    width: 80%;  
+  }
+}
+
+@media screen and (max-width: 519.9999px)
+and (min-width: 460px) {
+  .settings {
+    width: 90%;  
+  }
+}
+
+@media screen and (max-width: 459.9999px)
+and (min-width: 160px) {
+  .settings {
+    width: 95%;  
+  }
+}
