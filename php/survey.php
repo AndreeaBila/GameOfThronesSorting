@@ -40,7 +40,10 @@
   <body>
 
     <section class="pull-left col-md-7 col-sm-7 col-xs-12 text-center fill question-section">
-      <!--<div class="message">Get sorted into your House</div>-->
+      <div class="copyrights">
+        <i class="fa fa-copyright fa-lg" id="copyrightIcon" aria-hidden="true"></i>
+        <p id="copyrightText">Work by &copyRobert Ball. Find more on <a href="http://beautifuldeath.com/" target="_blank">beautifuldeath</a> or on <a href="http://robertmball.co.uk/" target="_blank">his website</a></p> 
+      </div>
       <div class="question-div vertical-center text-center">
         <p class="question-p" id="question"></p>
       </div>
@@ -68,5 +71,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    <!-- The js script for this file -->
     <script src="../js/survey.js"></script>
     
+    <script src="../js/copyright.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </body>
 </html>

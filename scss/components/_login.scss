@@ -36,9 +36,18 @@
   input[type="email"],
   input[type="text"],
   input[type="password"],
-  input[type="date"] {
+  input[type="date"],
+ {
     width: 40%;
     display: inline-block;
+  }
+
+  .check {
+    color: $placeholder-color;
+  }
+
+  input[type="checkbox"] {
+    margin: 30px 0px;
   }
 
   button {

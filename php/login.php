@@ -211,6 +211,12 @@
           <strong>Sorry!</strong> You have to fill in all the details and a valid email adress!
         </div>
 
+        <input type="checkbox" name="termsCheckbox" required><span class="check">By checking this box you confirm that you 
+        have read and agreed to our <a href='terms.php' target='_blank'>Terms and Conditions</a>, 
+        including our <a href='cookiePolicy.php' target='_blank'>Cookie Policy</a></span>
+
+        <br>
+
         <input class="woodBtn myBtn" type="submit" id="signupButton" value="Sign Up">
 
         <button id="signupReturnToLogin" type="button" >Already Have an Account</button>

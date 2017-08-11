@@ -79,14 +79,24 @@
       <div class="my-content container">       
         <section class="col-md-9 col-sm-9 content-left pull-left text-center">
           <div class="col-md-3 col-sm-3 col-xs-12 icon">
-            <img class="sigil" id="titleSigil" src="">
+            <div class="overlayContainer">
+              <img class="sigil" id="titleSigil" src="">
+              <div class="overlay">
+                <div class="overlayContent">Work by &copyRam De Guzman. Find more at <a href="https://pahiram.wordpress.com/" target="_blank">pahiram.wordpress.com</a></div>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
             <h1 id="addHouse"></h1>
             <h4 id="addWords"></h3>
           </div>
           <div class="col-md-3 col-sm-3 icon small-hide">
-            <img class="sigil" id="titleSigil" src="">
+            <div class="overlayContainer">
+              <img class="sigil" id="titleSigil" src="">
+              <div class="overlay">
+                <div class="overlayContent">Work by &copyRam De Guzman. Find more at <a href="https://pahiram.wordpress.com/" target="_blank">pahiram.wordpress.com</a></div>
+              </div>
+            </div>
           </div>
                   
           <div class="overview col-md-12 col-sm-12 col-xs-12">
@@ -96,15 +106,24 @@
 
           <div class="family col-md-12 col-sm-12 col-xs-12">
             <h4>Members, Friends, Ancestors and Household</h4>
-            <img id="familyPhoto" src="">  
+            <div class="overlayContainer"> 
+              <img id="familyPhoto" src=""> 
+              <div class="overlay">
+                <div class="overlayContent">Work by &copyNigel Dennis. Find more at <a href="http://www.reach.tv/creatives/nigel-dennis/whatwg" target="_blank">reach.tv</a></div>
+              </div>
+            </div>
             <p id="aboutFamily"></p>
           </div>
           
           <div class="home col-md-12 col-sm-12 col-xs-12">
             <h4>Home</h4>
-            <img id="homePath" src="">
+            <div class="overlayContainer">
+              <img id="homePath" src="">
+              <div class="overlay">
+                <div class="overlayContent">Work by &copyLucía Gómez. Find more at <a href="http://lucecitagmz.com/" target="_blank">lucecitagmz.com</a></div>
+              </div>
+            </div>
             <p id="aboutHome"></p>
-              
           </div>
 
           <div class="more col-md-12 col-sm-12 col-xs-12">
@@ -114,7 +133,12 @@
         </section>
 
         <aside class="col-md-3 col-sm-3 text-center pull-right small-hide">
-          <img class="flag" src="" alt="">
+          <div class="overlayContainer"> 
+              <img class="flag" src="" alt=""> 
+              <div class="overlay">
+                <div class="overlayContent">Work by &copyRhys Cooper. Find more at <a href="http://studioseppuku.bigcartel.com/" target="_blank">studioseppuku</a></div>
+              </div>
+            </div>
         </aside>
       </div>
 

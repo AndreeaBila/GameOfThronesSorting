@@ -37,3 +37,78 @@ html, body {
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
+.copyrights {
+  margin: 5px;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 5px;
+  opacity: 0.8;
+  width: fit-content;
+  background-color: black;
+  color: white;
+  a {
+    font-size: 14px;
+    color: lightskyblue;
+  }
+}
+
+.overlayContainer {
+  position: relative;
+  margin-bottom: 1.85em;
+}
+
+
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlayContainer:hover .image {
+  opacity: 0.3;
+}
+
+.overlayContainer:hover .overlay {
+  opacity: 1;
+}
+
+.overlayContent {
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 5px;
+  opacity: 0.8;
+  width: fit-content;
+  background-color: black;
+  color: white;
+  a {
+    font-size: 14px;
+    color: lightskyblue;
+  }
+}
+
+.terms {
+  width: 70%;
+  margin: 0 auto;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $body-font !important;
+    margin: 15px 0px;
+  }
+  p, h4 {
+    text-align: justify;
+  }
+  h4 {
+    text-decoration: underline;
+  }
+
+  ul {
+    li {
+      margin-left: 50px;
+      text-align: justify;
+    }
+  }
+}

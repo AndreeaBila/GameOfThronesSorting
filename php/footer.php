@@ -2,7 +2,8 @@
   
   <div class="text-center disclaimer">
     <h5 >Disclaimer</h5>
-    <p class="disclaimer"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>This website and all of its content was created by fans for fans, for pure entertainment.</p>
+    <p class="disclaimer"><i class="fa fa-copyright" aria-hidden="true"></i>2017 Home Box Office, Inc. All Rights Reserved. HBO&reg and related service marks are the property of Home Box Office, Inc.</p>
+    <p class="disclaimer"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>This website was created by fans for fans, for pure entertainment.</p>
   </div>
  
  <hr class="hrShadow">
