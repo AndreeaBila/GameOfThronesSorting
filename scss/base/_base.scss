@@ -37,6 +37,7 @@ html, body {
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
+//Copyright
 .copyrights {
   margin: 5px;
   padding: 3px;
@@ -52,12 +53,11 @@ html, body {
   }
 }
 
+//Copyright images overlay
 .overlayContainer {
   position: relative;
   margin-bottom: 1.85em;
 }
-
-
 
 .overlay {
   transition: .5s ease;
@@ -91,6 +91,7 @@ html, body {
   }
 }
 
+//Term and conditions style
 .terms {
   width: 70%;
   margin: 0 auto;
@@ -113,6 +114,8 @@ html, body {
   }
 }
 
+
+//Settings Page
 .settings {
   background-color: white;
    h1 {
@@ -153,7 +156,7 @@ html, body {
     outline: none;
     box-shadow: none;
   }
-  input[type="submit"] {
+  input[type="button"] {
     margin: 20px auto;
   }
 
