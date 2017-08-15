@@ -78,7 +78,10 @@
       <div class="my-content container">
         <form class="settings">
           <h1 class="text-center"><i class="fa fa-wrench" aria-hidden="true"></i>Account Settings</h1>
-
+          <div class="alert alert-success alert-dismissable alert-custom" id="signup_successAlert">
+            <a class="close" aria-label="close">&times;</a>
+            <strong>Success!</strong> Your changes have been saved.
+          </div>
           <div class="form-group">
           <label for="user"><i class="fa fa-user" aria-hidden="true"></i> Name</label>
           <input type="text" name="settingsName" id="settingsName" placeholder="First Name" required>

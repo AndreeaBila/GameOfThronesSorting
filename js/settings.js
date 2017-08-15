@@ -46,7 +46,9 @@ $(function() {
                         type: "post",
                         url: "../php/changeUserSettings.php",
                         success: function(data) {
-                            location.reload();
+                            $("#signup_successAlert").show(500);
+                            $('#settingsPassword').val('');
+                            $('#settingsRePassword').val('');
                         },
                         error: function(data) {
 
