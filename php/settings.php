@@ -76,12 +76,12 @@
       <div class="clear"></div>
 
       <div class="my-content container">
-        <div class="settings">
+        <form class="settings">
           <h1 class="text-center"><i class="fa fa-wrench" aria-hidden="true"></i>Account Settings</h1>
 
           <div class="form-group">
           <label for="user"><i class="fa fa-user" aria-hidden="true"></i> Name</label>
-          <input type="text" name="signupName" placeholder="First Name" required>
+          <input type="text" name="settingsName" id="settingsName" placeholder="First Name" required>
          </div>
 
         <div class="alert alert-danger alert-dismissable alert-custom" id="signup_generalAlert">
@@ -91,17 +91,17 @@
 
         <div class="form-group">
           <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-          <input type="email" name="signupEmail" id="signupEmail" placeholder="Email" required>
+          <input type="email" name="settingsEmail" id="settingsEmail" placeholder="Email" required>
         </div>
 
         <div class="form-group">
           <label for="password"><i class="fa fa-key" aria-hidden="true"></i> New Password</label>
-          <input type="password" name="signupPassword" id="signupPassword" placeholder="Password" required>
+          <input type="password" name="settingsPassword" id="settingsPassword" placeholder="Password">
         </div>
 
         <div class="form-group">
           <label for="repassword"><i class="fa fa-key" aria-hidden="true"></i> Retype New Password</label>
-          <input type="password" name="signupRePassword" id="signupRePassword" placeholder="Retype Password" required>
+          <input type="password" name="settingsRePassword" id="settingsRePassword" placeholder="Retype Password">
         </div>
 
         <div class="alert alert-warning alert-dismissable alert-custom" id="signup_passwordAlert">
@@ -110,13 +110,13 @@
         </div>
 
         <div class="form-group">
-            <label for="dob"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Date of Birth</label>
-          <input type="date" name="signupDoB" required>
+          <label for="dob"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Date of Birth</label>
+          <input type="date" name="settingsDob" id="settingsDob" required>
         </div>
 
         <div class="form-group">
           <label for="title"><i class="fa fa-sitemap" aria-hidden="true"></i> Title</label>
-          <select id="signupTitle" placeholder="Title" name="signupTitle" required>
+          <select id="settingsTitle" placeholder="Title" name="settingsTitle" required>
             <option value="" disabled selected id="optionPlaceholder">Title</option>
             <option value="andal">Andal</option>
             <option value="lady">Lady</option>
@@ -140,8 +140,8 @@
           <p><i class="fa fa-file-text" aria-hidden="true"></i> Read our <a href='terms.php' target='_blank'>Terms and Conditions</a> and our 
           <a href='cookiePolicy.php' target='_blank'>Cookie Policy</a> again. </p>
 
-        <input class="woodBtn myBtn" type="submit" id="saveChanges" value="Save Changes">
-        </div>
+        <input class="woodBtn myBtn" type="button" id="saveChanges" value="Save Changes">
+        </form>
       </div>
   
       <?php include 'footer.php' ?>
@@ -152,6 +152,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/settings.js"></script>
   </body>
 </html>

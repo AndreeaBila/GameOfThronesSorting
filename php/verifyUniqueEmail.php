@@ -10,16 +10,15 @@
 
   //method needed to check if the given email by the user is unique
     function checkEmail($db, $email){
+        $count = 0;
       //retrieve every email address from the database
       $response = $db->query("SELECT Email FROM users;");
       //loop thorugh the email addresses and check if there are duplciates
       while($row = mysqli_fetch_array($response, MYSQLI_ASSOC)){
           if($row['Email'] == $email){
-              echo 'false';
-              return false;
+              $count++;
           }
       }
-      echo 'true';
-      return true;
+      echo $count;
     }
 ?>

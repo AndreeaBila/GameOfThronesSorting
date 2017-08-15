@@ -61,7 +61,7 @@ function createAccount() {
             type: 'get',
             url: '../php/verifyUniqueEmail.php',
             success: function(response) {
-                if (response == "false") {
+                if (response == 0) {
                     $('#signup_generalAlert').show(300);
                     result = false;
                 } else {
